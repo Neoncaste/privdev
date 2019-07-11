@@ -18,20 +18,20 @@ imperial_ideas = {
 	propaganda = {
 		prestige_decay = -0.01
 	}
-	military_growth = {
-		ae_impact = -0.1
-	}
 	place_in_the_sun = {
 		prestige = 0.5
-	}
-	administrative_expansion = {
-		core_creation = -0.1
 	}
 	colonial_elite = {
 		land_maintenance_modifier = -0.05
 	}
 	foreign_office = {
 		global_regiment_cost = -0.1
+	}
+		administrative_expansion = {
+		core_creation = -0.1
+	}
+		military_growth = {
+		ae_impact = -0.1
 	}
 	colonial_garrison = {
 		max_states = 5
