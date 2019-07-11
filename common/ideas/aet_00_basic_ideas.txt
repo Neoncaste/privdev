@@ -15,14 +15,14 @@ imperial_ideas = {
 		global_autonomy = -0.05
 	}
 
-	propaganda = {
-		prestige_decay = -0.01
-	}
 	place_in_the_sun = {
 		prestige = 0.5
 	}
 	colonial_elite = {
 		land_maintenance_modifier = -0.05
+	}
+		propaganda = {
+		prestige_decay = -0.01
 	}
 	foreign_office = {
 		global_regiment_cost = -0.1
@@ -171,7 +171,7 @@ professionalism_ideas = {
 		general_cost = -0.15
 	}
 	border_fortifications = {
-		fort_maintenance_modifier = -0.25
+		leader_siege = 1
 	}
 	martial_tradition = {
 		free_leader_pool = 2
