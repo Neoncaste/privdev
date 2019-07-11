@@ -1,0 +1,214 @@
+exchange_technology_for_trade_rights = { 
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = innovativeness_ideas
+	}
+		
+	global_foreign_trade_power = 0.2
+		
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tolerance_act = { 
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = religious_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = religious_ideas
+	}
+		
+	global_missionary_strength = 0.01
+	tolerance_heretic = 2
+	tolerance_heathen = 1
+		
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			religious_ideas = 1
+		}
+		modifier = {
+		factor = 10
+		estate_influence = {
+		estate = estate_church
+			influence = 60
+			}
+		}
+	}
+}
+
+establish_economic_footholds_abroad = { 
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = economic_ideas
+	}
+		
+	trade_steering = 0.2
+	trade_efficiency = 0.1
+		
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+global_reach = { 
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = expansion_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = expansion_ideas
+	}
+		
+	global_institution_spread = 0.15
+		
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+copy_legislation_from_abroad = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = administrative_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = administrative_ideas
+	}
+		
+	administrative_efficiency = 0.10
+	build_time = -0.10
+		
+	ai_will_do = {
+		factor = 1		
+		modifier = {
+			factor = 10
+			num_of_states = 35
+		}
+	}
+}
+
+diplomatic_rights = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = humanist_ideas
+	}
+		
+	improve_relation_modifier = 0.50
+		
+	ai_will_do = {
+		factor = 1		
+		modifier = {
+			factor = 10
+			num_of_diplomatic_relations = 4
+		}
+	}
+}
+
+stake_our_claims = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = bureaucratic_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = bureaucratic_ideas
+	}
+		
+	fabricate_claims_cost= -0.50
+		
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+foreign_aid = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = industrial_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = industrial_ideas
+	}
+		
+	defensiveness = 0.25
+		
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+
+global_culture_shift = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = cultural_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = cultural_ideas
+	}
+		
+	culture_conversion_cost = -0.2
+		
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+international_development = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = internationalism_ideas
+		has_idea_group = development_ideas
+	}
+	allow = {
+		full_idea_group = internationalism_ideas
+		full_idea_group = development_ideas
+	}
+		
+	diplomatic_reputation = 1
+	prestige_decay = -0.01
+		
+	ai_will_do = {
+		factor = 1
+	}
+}
