@@ -11,7 +11,8 @@ imperial_ideas = {
 	category = DIP
 
 	bonus = {
-		can_chain_claim = yes
+		state_maintenance_modifier = -0.25
+		global_autonomy = -0.05
 	}
 
 	propaganda = {
