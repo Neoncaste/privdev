@@ -152,29 +152,29 @@ professionalism_ideas = {
 	category = MIL
 
 	bonus = {
-		yearly_army_professionalism = 0.01
+		drill_decay_modifier = -0.33
 	}
 
-	baggage_trains = {
-		movement_speed = 0.05
-	}
 	comissioned_officers = {
-		free_leader_pool = 2
+		yearly_army_professionalism = 0.01
 	}
 	oath_of_allegiance = {
 		discipline = 0.05
 	}
+	baggage_trains = {
+		movement_speed = 0.10
+	}
 	troop_rotation = {
-		reserves_organisation = 0.15
+		land_morale = 0.1
 	}
 	military_academies = {
-		general_cost = -0.25
+		general_cost = -0.15
 	}
 	border_fortifications = {
-		rival_border_fort_maintenance = -0.50
+		fort_maintenance_modifier = -0.25
 	}
 	martial_tradition = {
-		drill_decay_modifier = -0.33
+		free_leader_pool = 2
 	}
 
 	ai_will_do = {
