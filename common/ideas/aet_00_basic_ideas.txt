@@ -318,11 +318,11 @@ logistics_ideas = {
 	category = MIL
 	
 	bonus = {
-	 	fort_maintenance_modifier = -0.33
+        defensiveness = 0.15
 	}
 
 	military_granaries = {
-		global_supply_limit_modifier = 0.25
+		global_supply_limit_modifier = 0.20
 	}
 	unrestricted_warfare = {
 		loot_amount = 0.33
@@ -331,16 +331,16 @@ logistics_ideas = {
 		land_forcelimit_modifier = 0.20
 	}
 	quality_rations = {
-		recover_army_morale_speed = 0.15
+		land_attrition = -0.20
 	}
 	general_staff = {
-		mil_advisor_cost = -0.25
+		siege_ability = 0.1
 	}
 	reserves = {
-		garrison_size = 0.33
+		reinforce_cost_modifier = -0.25
 	}
 	supply_ships = {
-		naval_attrition = -0.20
+		fort_maintenance_modifier = -0.33
 	}
 
 	ai_will_do = {

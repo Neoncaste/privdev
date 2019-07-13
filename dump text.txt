@@ -1,0 +1,43 @@
+logistics_ideas = {
+	category = MIL
+	
+	bonus = {
+	 	fort_maintenance_modifier = -0.33
+	}
+
+	military_granaries = {
+		global_supply_limit_modifier = 0.25
+	}
+	unrestricted_warfare = {
+		loot_amount = 0.33
+	}
+	regional_levies = {
+		land_forcelimit_modifier = 0.20
+	}
+	quality_rations = {
+		recover_army_morale_speed = 0.15
+	}
+	general_staff = {
+		mil_advisor_cost = -0.25
+	}
+	reserves = {
+		garrison_size = 0.33
+	}
+	supply_ships = {
+		naval_attrition = -0.20
+	}
+
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+
+land_attrition = -0.20 3
+global_supply_limit_modifier = 0.20 5
+loot_amount = 0.33 2
+land_forcelimit_modifier = 0.20 4
+siege_ability = 0.1 6
+reinforce_cost_modifier = -0.25 1
+fort_maintenance_modifier = -0.33 7
+defensiveness = 0.15 - BONUS
