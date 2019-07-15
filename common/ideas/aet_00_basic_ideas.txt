@@ -301,12 +301,12 @@ unity_ideas = {
 		promote_culture_cost = -0.15
 	}
 	official_religion = {
-		religious_unity = 0.25
-		global_missionary_strength = 0.03
+		religious_unity = 0.15
+		global_missionary_strength = 0.01
 	}
 	import_tax = {
-		institution_spread_from_true_faith = 0.15
-		enforce_religion_cost = -0.5
+		institution_spread_from_true_faith = 0.10
+		enforce_religion_cost = -0.50
 	}
 	assimiliation = {
 		years_of_nationalism = -10
