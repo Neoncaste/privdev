@@ -31,7 +31,7 @@ imperial_ideas = {
 		core_creation = -0.1
 	}
 		military_growth = {
-		ae_impact = -0.1
+		ae_impact = -0.15
 	}
 	colonial_garrison = {
 		max_states = 5
@@ -280,26 +280,31 @@ unity_ideas = {
 	category = DIP
 	
 	bonus = {
-	 	global_autonomy = -0.05
+	 	innovativeness_gain = 0.5
 	}
 	
 	national_spirit = {
-		global_spy_defence = 0.50
+		global_unrest = -1
+		global_autonomy = -0.025
 	}
 	homogeneous_beliefs = {
 		warscore_cost_vs_other_religion = -0.20 
 	}
 	language_standardisation = {
-		global_institution_spread = 0.10
+		embracement_cost = 0.20
+		diplomatic_annexation_cost = -0.2
 	}
 	internal_talent = {
-	 	same_culture_advisor_cost = -0.15
+		same_culture_advisor_cost = -0.15
+		promote_culture_cost = -0.15
 	}
 	official_religion = {
 		religious_unity = 0.25
+		global_missionary_strength = 0.03
 	}
 	import_tax = {
-		global_own_trade_power = 0.15
+		institution_spread_from_true_faith = 0.15
+		enforce_religion_cost = -0.5
 	}
 	assimiliation = {
 		years_of_nationalism = -10
@@ -386,44 +391,43 @@ competitiveness_ideas = {
 	category = DIP
 	
 	bonus = {
-	 	inflation_reduction = 0.1
+	 	production_efficiency = 0.10
 	}
 
-	undercutting = {
-		trade_steering = 0.33
-	}
 	targeted_boycotting = {
-		embargo_efficiency = 0.25
+		light_ship_cost = -0.33
 	}
 	nationalised_trade_corporation = {
 		center_of_trade_upgrade_cost = -0.33
+		colonists = 1
 	}
 	pax_commercium = {
-		justify_trade_conflict_cost = -0.75
+		prestige = 0.5
+		monthly_splendor = 1
 	}
 	maritime_patrols = {
-		own_coast_naval_combat_bonus = 1.0
-	}
+		global_ship_trade_power = 0.2
+	
 	legal_codes = {
 		diplomatic_reputation = 1
+		merchants = 1
 	}
 	nation_of_opportunity = {
 		global_colonial_growth = 15 
+	}
+	undercutting = {
+		trade_steering = 0.33
 	}
 
 	ai_will_do = {
 		factor = 2
 		modifier = {
-			factor = 0
+			factor = 2
 			is_colonial_nation = yes
 		}
 		modifier = {
 			factor = 0
 			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
 		}		
 		modifier = {
 			factor = 0
@@ -457,18 +461,6 @@ competitiveness_ideas = {
 		}
 		modifier = {
 			factor = 0.1
-			capital_scope = {
-				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
-				}
-			}
-			NOT = { technology_group = high_american }
-		}
-		modifier = {
-			factor = 0.1
 			NOT = { is_year = 1490 }
 			capital_scope = {
 				NOT = {
@@ -497,24 +489,25 @@ competitiveness_ideas = {
 			num_of_ports = 20
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			OR = {
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-				tag = POR
-				tag = CAS
-				tag = SPA
+				tag = MAM
+				tag = TUR
 				tag = MNG
 				tag = MLC
 				tag = BEI
 				tag = ZAN
 				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = ICE
 				tag = JAP
 				tag = AYU
 				tag = VEN
-				
+				tag = HOL
+				tag = BRI
+				tag = SAV
+				tag = KOR
 			}
 		}
 	}
@@ -701,6 +694,26 @@ raiding_ideas = {
 				has_reform = pirate_kingdom
 				has_reform = war_against_the_world_government
 				has_reform = black_market_consortium_government
+				tag = MAM
+				tag = TUR
+				tag = MNG
+				tag = MLC
+				tag = BEI
+				tag = ZAN
+				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = ICE
+				tag = JAP
+				tag = AYU
+				tag = VEN
+				tag = HOL
+				tag = BRI
+				tag = SAV
+				tag = KOR
+				tag = KNI
+				tag = NAX
+				tag = CYP
 			}
 		}
 	}
