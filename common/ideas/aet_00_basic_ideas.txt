@@ -20,6 +20,7 @@ imperial_ideas = {
 	}
 	colonial_elite = {
 		land_maintenance_modifier = -0.05
+		army_tradition_decay = -0.1
 	}
 		propaganda = {
 		prestige_decay = -0.01
@@ -31,7 +32,7 @@ imperial_ideas = {
 		core_creation = -0.1
 	}
 		military_growth = {
-		ae_impact = -0.1
+		ae_impact = -0.15
 	}
 	colonial_garrison = {
 		max_states = 5
@@ -159,7 +160,8 @@ professionalism_ideas = {
 		yearly_army_professionalism = 0.01
 	}
 	oath_of_allegiance = {
-		discipline = 0.05
+		discipline = 0.025
+		prestige_from_land = 0.10
 	}
 	baggage_trains = {
 		movement_speed = 0.10
@@ -280,26 +282,31 @@ unity_ideas = {
 	category = DIP
 	
 	bonus = {
-	 	global_autonomy = -0.05
+	 	innovativeness_gain = 0.5
 	}
 	
 	national_spirit = {
-		global_spy_defence = 0.50
+		global_unrest = -1
+		global_autonomy = -0.025
 	}
 	homogeneous_beliefs = {
 		warscore_cost_vs_other_religion = -0.20 
 	}
 	language_standardisation = {
-		global_institution_spread = 0.10
+		embracement_cost = -0.20
+		diplomatic_annexation_cost = -0.2
 	}
 	internal_talent = {
-	 	same_culture_advisor_cost = -0.15
+		same_culture_advisor_cost = -0.15
+		promote_culture_cost = -0.15
 	}
 	official_religion = {
 		religious_unity = 0.25
+		global_missionary_strength = 0.03
 	}
 	import_tax = {
-		global_own_trade_power = 0.15
+		institution_spread_from_true_faith = 0.15
+		enforce_religion_cost = -0.5
 	}
 	assimiliation = {
 		years_of_nationalism = -10
@@ -386,44 +393,43 @@ competitiveness_ideas = {
 	category = DIP
 	
 	bonus = {
-	 	inflation_reduction = 0.1
+	 	production_efficiency = 0.10
 	}
 
-	undercutting = {
-		trade_steering = 0.33
-	}
 	targeted_boycotting = {
-		embargo_efficiency = 0.25
+		light_ship_cost = -0.33
 	}
 	nationalised_trade_corporation = {
 		center_of_trade_upgrade_cost = -0.33
+		colonists = 1
 	}
 	pax_commercium = {
-		justify_trade_conflict_cost = -0.75
+		prestige = 0.5
+		monthly_splendor = 1
 	}
 	maritime_patrols = {
-		own_coast_naval_combat_bonus = 1.0
+		global_ship_trade_power = 0.2
 	}
 	legal_codes = {
 		diplomatic_reputation = 1
+		merchants = 1
 	}
 	nation_of_opportunity = {
 		global_colonial_growth = 15 
+	}
+	undercutting = {
+		trade_steering = 0.33
 	}
 
 	ai_will_do = {
 		factor = 2
 		modifier = {
-			factor = 0
+			factor = 2
 			is_colonial_nation = yes
 		}
 		modifier = {
 			factor = 0
 			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject = yes
 		}		
 		modifier = {
 			factor = 0
@@ -457,18 +463,6 @@ competitiveness_ideas = {
 		}
 		modifier = {
 			factor = 0.1
-			capital_scope = {
-				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
-				}
-			}
-			NOT = { technology_group = high_american }
-		}
-		modifier = {
-			factor = 0.1
 			NOT = { is_year = 1490 }
 			capital_scope = {
 				NOT = {
@@ -497,24 +491,35 @@ competitiveness_ideas = {
 			num_of_ports = 20
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			OR = {
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-				tag = POR
-				tag = CAS
-				tag = SPA
+				tag = MAM
+				tag = TUR
 				tag = MNG
 				tag = MLC
 				tag = BEI
 				tag = ZAN
 				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = ICE
 				tag = JAP
 				tag = AYU
+				tag = HOL
+				tag = BRI
+				tag = SAV
+				tag = KOR
+				tag = NOV
+				tag = POM
+				tag = TUS
+				tag = PER
+				tag = HSA
+				tag = GER
+				tag = HLR
+				tag = ITA
+				tag = GEN
 				tag = VEN
-				
+				tag = TER
 			}
 		}
 	}
@@ -564,24 +569,30 @@ internationalism_ideas = {
 
 	socialites = {
 		diplomats = 2
+		envoy_travel_time = -0.2
 	}
 	national_archives = {
-		claim_duration = 0.33
+		ae_impact = -0.10
+		core_creation = -0.05
 	}
 	adaptive_foreign_policy = {
-		rival_change_cost = -0.75
+		improve_relation_modifier = 0.25
+		diplomatic_annexation_cost = -0.10
 	}
 	deliberate_leaks = {
-		power_projection_from_insults = 0.15
+		merc_maintenance_modifier = -0.20
+		possible_condottieri = 0.33
 	}
 	integrated_governments = {
 		reduced_liberty_desire = 15
 	}
 	double_agents = {
-		spy_offence = 0.33
+		technology_cost = -0.05
+		prestige_decay = -0.01
 	}
 	expanded_court = {
 		diplomatic_upkeep = 2
+		vassal_income = 0.15
 	}
 
 	ai_will_do = {
@@ -642,30 +653,32 @@ raiding_ideas = {
 	category = MIL
 	
 	bonus = {
-	 	privateer_efficiency = 0.33
+	 	global_trade_power = 0.10
 	}
 
 	impressment = {
-		capture_ship_chance = 0.25
+		capture_ship_chance = 0.33
+		global_tax_modifier = 0.05
 	}
 	rationing = {
-		naval_attrition = -0.15
+		naval_attrition = -0.20
 	}
 	scourge_of_the_coast = {
 		privateer_efficiency = 0.33
 		may_perform_slave_raid = yes
 	}
 	patrol_ships = {
-		loot_amount = 
+		loot_amount = 0.25
 	}
 	dedicated_drydocks = {
-		global_ship_cost = -0.15
+		global_ship_cost = -0.20
 	}
 	raiding_parties = {
 		movement_speed_onto_off_boat_modifier = -0.50
 	}
 	mortar_ships = {
 		global_naval_barrage_cost = -0.33
+		siege_blockade_progress = 1
 	}
 
 	ai_will_do = {
@@ -699,6 +712,31 @@ raiding_ideas = {
 				has_reform = pirate_kingdom
 				has_reform = war_against_the_world_government
 				has_reform = black_market_consortium_government
+				tag = MAM
+				tag = TUR
+				tag = MLC
+				tag = BEI
+				tag = ZAN
+				tag = NOR
+				tag = ICE
+				tag = VEN
+				tag = KNI
+				tag = NAX
+				tag = CYP
+				tag = MAL
+				tag = CRI
+				tag = TUN
+				tag = EGY
+				tag = TRP
+				tag = MOR
+				tag = FEZ
+				tag = ALG
+				tag = TLC
+				tag = AJU
+				tag = MKS
+				tag = MTR
+				tag = MSA
+				tag = TER
 			}
 		}
 	}
