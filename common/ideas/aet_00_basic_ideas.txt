@@ -656,7 +656,7 @@ raiding_ideas = {
 		may_perform_slave_raid = yes
 	}
 	patrol_ships = {
-		loot_amount = 
+		loot_amount = 0.25
 	}
 	dedicated_drydocks = {
 		global_ship_cost = -0.15
