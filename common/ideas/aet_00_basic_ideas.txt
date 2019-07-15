@@ -409,7 +409,7 @@ competitiveness_ideas = {
 	}
 	maritime_patrols = {
 		global_ship_trade_power = 0.2
-	
+	}
 	legal_codes = {
 		diplomatic_reputation = 1
 		merchants = 1
