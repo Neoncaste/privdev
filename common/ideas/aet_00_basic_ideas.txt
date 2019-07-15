@@ -20,6 +20,7 @@ imperial_ideas = {
 	}
 	colonial_elite = {
 		land_maintenance_modifier = -0.05
+		army_tradition_decay = -0.1
 	}
 		propaganda = {
 		prestige_decay = -0.01
@@ -159,7 +160,8 @@ professionalism_ideas = {
 		yearly_army_professionalism = 0.01
 	}
 	oath_of_allegiance = {
-		discipline = 0.05
+		discipline = 0.025
+		prestige_from_land = 0.10
 	}
 	baggage_trains = {
 		movement_speed = 0.10
@@ -503,11 +505,21 @@ competitiveness_ideas = {
 				tag = ICE
 				tag = JAP
 				tag = AYU
-				tag = VEN
 				tag = HOL
 				tag = BRI
 				tag = SAV
 				tag = KOR
+				tag = NOV
+				tag = POM
+				tag = TUS
+				tag = PER
+				tag = HSA
+				tag = GER
+				tag = HLR
+				tag = ITA
+				tag = GEN
+				tag = VEN
+				tag = TER
 			}
 		}
 	}
@@ -557,24 +569,30 @@ internationalism_ideas = {
 
 	socialites = {
 		diplomats = 2
+		envoy_travel_time = -0.2
 	}
 	national_archives = {
-		claim_duration = 0.33
+		ae_impact = -0.10
+		core_creation = -0.05
 	}
 	adaptive_foreign_policy = {
-		rival_change_cost = -0.75
+		improve_relation_modifier = 0.25
+		diplomatic_annexation_cost = -0.10
 	}
 	deliberate_leaks = {
-		power_projection_from_insults = 0.15
+		merc_maintenance_modifier = -0.20
+		possible_condottieri = 0.33
 	}
 	integrated_governments = {
 		reduced_liberty_desire = 15
 	}
 	double_agents = {
-		spy_offence = 0.33
+		technology_cost = -0.05
+		prestige_decay = -0.01
 	}
 	expanded_court = {
 		diplomatic_upkeep = 2
+		vassal_income = 0.15
 	}
 
 	ai_will_do = {
@@ -696,24 +714,29 @@ raiding_ideas = {
 				has_reform = black_market_consortium_government
 				tag = MAM
 				tag = TUR
-				tag = MNG
 				tag = MLC
 				tag = BEI
 				tag = ZAN
-				tag = DEN
-				tag = SWE
 				tag = NOR
 				tag = ICE
-				tag = JAP
-				tag = AYU
 				tag = VEN
-				tag = HOL
-				tag = BRI
-				tag = SAV
-				tag = KOR
 				tag = KNI
 				tag = NAX
 				tag = CYP
+				tag = MAL
+				tag = CRI
+				tag = TUN
+				tag = EGY
+				tag = TRP
+				tag = MOR
+				tag = FEZ
+				tag = ALG
+				tag = TLC
+				tag = AJU
+				tag = MKS
+				tag = MTR
+				tag = MSA
+				tag = TER
 			}
 		}
 	}
