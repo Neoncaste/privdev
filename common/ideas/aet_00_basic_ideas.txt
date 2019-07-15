@@ -293,7 +293,7 @@ unity_ideas = {
 		warscore_cost_vs_other_religion = -0.20 
 	}
 	language_standardisation = {
-		embracement_cost = 0.20
+		embracement_cost = -0.20
 		diplomatic_annexation_cost = -0.2
 	}
 	internal_talent = {
