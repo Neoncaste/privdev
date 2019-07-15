@@ -642,14 +642,15 @@ raiding_ideas = {
 	category = MIL
 	
 	bonus = {
-	 	privateer_efficiency = 0.33
+	 	global_trade_power = 10
 	}
 
 	impressment = {
-		capture_ship_chance = 0.25
+		capture_ship_chance = 0.33
+		global_tax_modifier = 0.05
 	}
 	rationing = {
-		naval_attrition = -0.15
+		naval_attrition = -0.20
 	}
 	scourge_of_the_coast = {
 		privateer_efficiency = 0.33
@@ -659,13 +660,14 @@ raiding_ideas = {
 		loot_amount = 0.25
 	}
 	dedicated_drydocks = {
-		global_ship_cost = -0.15
+		global_ship_cost = -0.20
 	}
 	raiding_parties = {
 		movement_speed_onto_off_boat_modifier = -0.50
 	}
 	mortar_ships = {
 		global_naval_barrage_cost = -0.33
+		siege_blockade_progress = 1
 	}
 
 	ai_will_do = {
