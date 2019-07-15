@@ -653,7 +653,7 @@ raiding_ideas = {
 	category = MIL
 	
 	bonus = {
-	 	global_trade_power = 10
+	 	global_trade_power = 0.10
 	}
 
 	impressment = {
