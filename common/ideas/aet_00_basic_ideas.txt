@@ -318,7 +318,7 @@ logistics_ideas = {
 	category = MIL
 	
 	bonus = {
-        defensiveness = 0.15
+        infantry_power = 0.1
 	}
 
 	military_granaries = {
@@ -337,7 +337,7 @@ logistics_ideas = {
 		siege_ability = 0.1
 	}
 	reserves = {
-		reinforce_cost_modifier = -0.25
+		defensiveness = 0.15
 	}
 	supply_ships = {
 		fort_maintenance_modifier = -0.33
