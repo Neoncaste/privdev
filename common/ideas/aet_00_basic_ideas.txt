@@ -325,7 +325,7 @@ logistics_ideas = {
 		global_supply_limit_modifier = 0.20
 	}
 	unrestricted_warfare = {
-		loot_amount = 0.33
+		loot_amount = 0.25
 	}
 	regional_levies = {
 		land_forcelimit_modifier = 0.20
@@ -652,11 +652,11 @@ raiding_ideas = {
 		naval_attrition = -0.15
 	}
 	scourge_of_the_coast = {
-		global_tax_modifier = 0.05
+		privateer_efficiency = 0.33
 		may_perform_slave_raid = yes
 	}
 	patrol_ships = {
-		blockade_efficiency = 0.20
+		loot_amount = 
 	}
 	dedicated_drydocks = {
 		global_ship_cost = -0.15
