@@ -26,8 +26,7 @@ oligarchy_reform = {
 		global_tax_modifier = 0.10
 		max_absolutism = -50
 		global_unrest = +1.00
-		yearly_corruption = +0.20
-		war_exhaustion = +0.05
+		yearly_corruption = +0.10
 		
 	}
 	custom_attributes = {
@@ -42,7 +41,7 @@ merchants_reform = {
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
-		trade_efficiency = +0.10
+		trade_efficiency = +0.05
 		global_unrest = +1.00
 		war_exhaustion = +0.05
 	}
@@ -101,7 +100,9 @@ venice_merchants_reform = {
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
+		trade_efficiency = +0.10
 		yearly_corruption = -0.1
+		trade_steering = +0.1
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -165,6 +166,7 @@ pirate_republic_reform = {
 		republican_tradition = -1
 		max_absolutism = -50
 		naval_forcelimit_modifier = 0.5
+		privateer_efficiency = +0.20
 		capture_ship_chance = 0.33
 		may_perform_slave_raid_on_same_religion = yes
 	}
@@ -206,7 +208,7 @@ pirate_republic_reform = {
 
 noble_elite_reform = {
 	icon = "nobleman"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
