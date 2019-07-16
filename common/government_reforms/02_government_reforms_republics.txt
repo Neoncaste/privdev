@@ -916,7 +916,7 @@ provincial_governments_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		state_maintenance_modifier = -0.25
-		global_autonomy = +0.03
+		global_autonomy = +0.05
 	}
 	ai = {
 		factor = 1
@@ -929,7 +929,7 @@ administrative_divisions_reform = {
 	modifiers = {
 		max_states = 5
 		republican_tradition = +0.25
-		yearly_corruption = -0.10
+		yearly_corruption = +0.10
 		global_autonomy = -0.05
 	}
 	ai = {
@@ -1053,6 +1053,7 @@ political_principle_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		possible_adm_policy = 1
+		global_autonomy = -0.01
 	}
 }
 
@@ -1061,6 +1062,7 @@ moral_principle_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		possible_dip_policy = 1
+		yearly_corruption = -0.01
 	}
 }
 
@@ -1073,7 +1075,6 @@ landholders_reform = {
 		manpower_recovery_speed = 0.05
 		land_maintenance_modifier = -0.025
 		local_manpower_modifier = +0.1
-		max_absolutism = 10
 		
 		
 	}
@@ -1190,12 +1191,13 @@ strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = 30
+		max_absolutism = 10
 		monthly_autonomy = -0.1
 		land_forcelimit_modifier = +0.05
-		yearly_absolutism = +0.025
 		discipline = 0.025
 		yearly_corruption = -0.30
+		free_mil_policy = 1
+		global_unrest = -1.00
 	}
 }
 
@@ -1211,5 +1213,6 @@ reinforce_republican_values_reform = {
 		development_cost = -0.10
 		land_morale = 0.05
 		yearly_corruption = -0.30
+	yearly_absolutism = -1.00
 	}
 }
