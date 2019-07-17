@@ -217,12 +217,14 @@ noble_elite_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.25
-		global_autonomy = +0.33
-		land_morale = 0.05
+		global_autonomy = +0.5
+		land_morale = 0.7.5
+		cavalry_power = 0.1
 		global_unrest = +3.00
-		prestige = -3
+		prestige = -5
 		republican_tradition = -20
-		
+		diplomatic_reputation = -2
+		yearly_corruption = +0.2
 	}
 	duration = 8
 
@@ -249,7 +251,9 @@ presidential_despot_reform = {
 		yearly_absolutism = +0.10	
 		land_morale = 0.1
 		global_unrest = +3
-		prestige = -5
+		prestige = -10
+		diplomatic_reputation = -2
+		yearly_corruption = +0.5
 	}
 
 	custom_attributes = {
