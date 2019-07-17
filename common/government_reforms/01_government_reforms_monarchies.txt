@@ -1193,6 +1193,11 @@ aristocratic_court_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		army_tradition_decay = -0.005
+		effect = {
+			set_country_flag = populists_in_government
+			lose_reforms = 3
+			change_government = republic
+		}
 	}
 }
 
