@@ -55,7 +55,11 @@ estate_nobility_disaster = {
 		global_tax_modifier = -0.25
 		global_trade_power = -0.25
 		trade_efficiency = -0.25
-		change_government = republic
+		effect = {
+			change_government = republic
+			set_legacy_government = noble_elite
+			add_stability = -2
+			set_country_flag = recently_changed_government_flag
 	}
 
 	on_start = estate_disasters.1
