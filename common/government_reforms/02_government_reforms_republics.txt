@@ -211,7 +211,7 @@ noble_elite_reform = {
 	potential = {
 		have_had_reform = aristocratic_court_reform 
 		}
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
 	lock_level_when_selected = yes
