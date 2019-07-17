@@ -20,7 +20,7 @@ feudalism_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
-	nobility_influence = 10 
+	nobility_influence = +10.00
 	}
 }
 
