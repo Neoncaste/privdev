@@ -209,7 +209,7 @@ pirate_republic_reform = {
 noble_elite_reform = {
 	icon = "nobleman"
 	potential = {
-		hasreform = noble_elite_reform
+		has reform = noble_elite_reform
 	}
 	allow_normal_conversion = no
 	legacy_equivalent = noble_republic
