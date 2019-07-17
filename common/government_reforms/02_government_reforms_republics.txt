@@ -17,7 +17,8 @@ republic_mechanic = {
 
 oligarchy_reform = {
 	icon = "people_walking"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
+	
 	duration = 4
 	legacy_equivalent = oligarchic_republic
 	valid_for_nation_designer = yes
@@ -37,7 +38,7 @@ oligarchy_reform = {
 
 merchants_reform = {
 	icon = "politician"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
@@ -232,7 +233,7 @@ noble_elite_reform = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = no
 		enables_aristocratic_idea_group = yes
-		locked_government_type = yes
+		locked_government_type = no
 	}
 }
 
