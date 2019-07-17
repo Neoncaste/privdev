@@ -17,3 +17,4 @@
  flavor_AETtur.EVTNAME0001:0 "We are victorious!"
  flavor_AETtur.EVTDESC0001:0 "With the capture of our primary goal, Konstantiyye, we can finally claim our place as the chosen followers of Allah. The false Caliphs to the south currently hold our rightful title of protectors of Islam. We must remedy this."
  flavor_AETtur.EVTOPTA0001:0 "We must turn our attention to the decaying false Caliphate in the south."
+ AET_CAN_MAKE_STATE:0 "All provinces must be an accepted culture to create a state."

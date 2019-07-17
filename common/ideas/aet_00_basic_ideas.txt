@@ -557,6 +557,37 @@ development_ideas = {
 
 	ai_will_do = {
 		factor = 2
+		modifier = {
+			factor = 2
+			OR = {
+				tag = MAM
+				tag = TUR
+				tag = MNG
+				tag = MLC
+				tag = BEI
+				tag = ZAN
+				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = ICE
+				tag = JAP
+				tag = AYU
+				tag = HOL
+				tag = BRI
+				tag = SAV
+				tag = KOR
+				tag = NOV
+				tag = POM
+				tag = TUS
+				tag = PER
+				tag = HSA
+				tag = GER
+				tag = HLR
+				tag = ITA
+				tag = GEN
+				tag = VEN
+				tag = TER
+		}
 	}
 }
 

@@ -69,6 +69,15 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "AET_CAN_MAKE_STATE"
+		potential = {
+		}
+		allow = {
+			all_province_in_state = {
+				has_owner_accepted_culture = yes
+			}
+		}
 }
 
 can_abandon_state = {
