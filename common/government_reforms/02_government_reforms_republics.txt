@@ -17,7 +17,7 @@ republic_mechanic = {
 
 oligarchy_reform = {
 	icon = "people_walking"
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	
 	duration = 4
 	legacy_equivalent = oligarchic_republic
@@ -38,7 +38,7 @@ oligarchy_reform = {
 
 merchants_reform = {
 	icon = "politician"
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
@@ -209,9 +209,7 @@ pirate_republic_reform = {
 
 noble_elite_reform = {
 	icon = "nobleman"
-	potential = {
-		have_had_reform = aristocratic_court_reform 
-		}
+	
 	allow_normal_conversion = yes
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
@@ -222,7 +220,7 @@ noble_elite_reform = {
 	modifiers = {
 		army_tradition = 0.25
 		global_autonomy = +0.33
-		land_morale = 0.1
+		land_morale = 0.05
 		global_unrest = +3.00
 		prestige = -3
 		republican_tradition = -20
@@ -253,7 +251,7 @@ presidential_despot_reform = {
 		yearly_absolutism = +0.10	
 		land_morale = 0.1
 		global_unrest = +3
-		prestige = -3
+		prestige = -5
 	}
 
 	custom_attributes = {
