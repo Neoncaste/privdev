@@ -16,13 +16,13 @@ option = {
 }
 nobility_coup = {
 	potential = {
-        has_country_modifier = noble_estate_in_power
+        has_country_modifier = nobility_in_power
 	}
 
 	
 	
 	trigger = {
-        has_country_modifier = noble_estate_in_power
+        has_country_modifier = nobility_in_power
         effect = {
             set_country_flag = populists_in_government
             lose_reforms = 3
