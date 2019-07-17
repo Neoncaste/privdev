@@ -20,6 +20,8 @@ feudalism_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
+		global_autonomy = -0.005
+		global_tax_modifier = +0.005
 	}
 }
 
@@ -31,6 +33,8 @@ autocracy_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		unjustified_demands = -0.1
+		local_unrest = -0.025
+		global_manpower_modifier = +0.025
 	}
 }
 
