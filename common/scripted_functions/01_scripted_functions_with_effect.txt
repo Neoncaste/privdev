@@ -13,7 +13,10 @@ is_triggered_only =  yes
 option = {
 	name = disasters_aet.EVTOPTA0003
 }
-}
+}can_start = {
+    has_any_disaster = yes
+    has_country_modifier = noble_estate_in_power}
+    
 nobility_coup = {
 	immediate = {
         set_country_flag = noble_estate_in_power}
