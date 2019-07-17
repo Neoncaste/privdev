@@ -215,6 +215,9 @@ noble_elite_reform = {
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
 	lock_level_when_selected = yes
+	potential = {
+		has_reform = aristocratic_court_reform 
+	}
 	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.25

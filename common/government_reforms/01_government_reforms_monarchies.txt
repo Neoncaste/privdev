@@ -1191,13 +1191,19 @@ royal_decree_reform = {
 aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	modifiers = {
-		army_tradition_decay = -0.005
-		effect = {
-			set_country_flag = populists_in_government
-			lose_reforms = 3
-			change_government = republic
-		}
+	trigger = {
+		NOT = { has_government_attribute_short_desc = locked_government_type }
+		is_emperor = no
+		NOT = { is_lesser_in_union = yes }
+	}
+	effect = {
+		set_country_flag = populists_in_government
+		lose_reforms = 3
+		change_government = republic
+	}
+	ai = {
+		factor = 0
+	}
 	}
 }
 
