@@ -16,13 +16,7 @@ option = {
 }
 nobility_coup = {
 	immediate = {
-        set_country_flag = noble_estate_in_power
-	}
-
-	
-	
-	trigger = {
-        set_country_flag = noble_estate_in_power
+        set_country_flag = noble_estate_in_power}
         effect = {
             set_country_flag = populists_in_government
             lose_reforms = 3
