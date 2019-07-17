@@ -209,15 +209,14 @@ pirate_republic_reform = {
 noble_elite_reform = {
 	icon = "nobleman"
 	potential = {
-		has_reform = noble_elite_reform
-	}
+		have_had_reform = aristocratic_court_reform 
+		}
 	allow_normal_conversion = no
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
 	lock_level_when_selected = yes
 	potential = {
-		has_reform = aristocratic_court_reform 
-	}
+		has_reform = 
 	nation_designer_cost = 0
 	modifiers = {
 		army_tradition = 0.25
