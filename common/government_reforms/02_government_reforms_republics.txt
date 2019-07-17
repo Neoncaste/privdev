@@ -217,21 +217,20 @@ noble_elite_reform = {
 	lock_level_when_selected = yes
 	nation_designer_cost = 0
 	modifiers = {
-		global_autonomy = +0.5
-		land_morale = 0.25
-		cavalry_power = 0.1
-		global_unrest = +3.00
-		prestige = -5
-		republican_tradition = -20
-		diplomatic_reputation = -2
-		yearly_corruption = +0.2
+		republican_tradition = -3
+		add_estate_influence_modifier = {
+			estate = estate_nobility
+			desc = EST_VAL_BRAHMIN_MINISTER #placeholder
+			influence = 20
+			duration = 3650
+		}
 	}
 	duration = 8
 
 	custom_attributes = {
 		enables_plutocratic_idea_group = no
 		enables_aristocratic_idea_group = yes
-		locked_government_type = no
+	
 	}
 }
 
