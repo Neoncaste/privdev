@@ -92,6 +92,7 @@ merchants_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
+		
 	}
 }
 
@@ -1094,7 +1095,7 @@ citizenry_reform = {
 		max_absolutism = -10}
 		potential = {
 			NOT = {
-				has_reform = noble_elite_reform
+				has_reform = noble_elite_reform}
 	}
 }
 
