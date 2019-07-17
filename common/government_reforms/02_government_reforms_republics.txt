@@ -216,9 +216,8 @@ noble_elite_reform = {
 	lock_level_when_selected = yes
 	nation_designer_cost = 0
 	modifiers = {
-		army_tradition = 0.25
 		global_autonomy = +0.5
-		land_morale = 0.7.5
+		land_morale = 0.25
 		cavalry_power = 0.1
 		global_unrest = +3.00
 		prestige = -5
@@ -778,7 +777,7 @@ republican_authoritarianism_reform = {
 	potential = {
 		NOT = {
 			has_reform = pirate_republic_reform
-			has_reform = noble_elite_reform
+			
 		}
 	}
 	modifiers = {
@@ -794,7 +793,7 @@ nepotism_reform = {
 	potential = {
 		NOT = {
 			has_reform = pirate_republic_reform
-			has_reform = noble_elite_reform
+			
 		}
 	}
 	modifiers = {
@@ -1093,6 +1092,9 @@ citizenry_reform = {
 		land_morale = 0.05
 		production_efficiency = +0.05
 		max_absolutism = -10
+		potential = {
+			NOT = {
+				has_reform = noble_elite_reform
 	}
 }
 
@@ -1125,7 +1127,9 @@ universal_suffrage_reform = {
 		num_accepted_cultures = 1
 		global_unrest = -1.00
 		republican_tradition = +1.00
-	}
+	}potential = {
+		NOT = {
+			has_reform = noble_elite_reform
 }
 
 #Question of Dictatorship
