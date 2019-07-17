@@ -30,6 +30,62 @@ country_event = {
 			}
 			add_local_autonomy = 25
 		}
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				development = 10
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = 	noble_rebels
+				religion = ROOT
+				size = 1
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				development = 10
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = 	noble_rebels
+				religion = ROOT
+				size = 1
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				development = 10
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = 	pretender_rebels
+				religion = ROOT
+				size = 3
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+				development = 10
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = 	pretender_rebels
+				religion = ROOT
+				size = 1
+				win = yes
+			}
+			add_local_autonomy = 25
+		}
 		set_country_flag = had_civil_war
 	}
 	
