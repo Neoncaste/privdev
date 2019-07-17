@@ -56,7 +56,6 @@ estate_nobility_disaster = {
 		global_trade_power = -0.25
 		trade_efficiency = -0.25
 		change_government = republic
-		set_legacy_government = noble_elite
 	}
 
 	on_start = estate_disasters.1
