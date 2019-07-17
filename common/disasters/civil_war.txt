@@ -17,6 +17,9 @@ civil_war = {
 		has_any_disaster = no
 		has_regency = no
 		average_home_autonomy = 30
+		NOT = { mil = 3 }
+		NOT = { dip = 3 }
+		NOT = { adm = 3 }
 		if = {
 			limit = {
 				has_reform = celestial_empire
