@@ -20,7 +20,7 @@ feudalism_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
-	nobility_influence = +10.00
+		
 	}
 }
 
@@ -33,6 +33,7 @@ autocracy_reform = {
 	modifiers = {
 		unjustified_demands = -0.1
 		max_absolutism = +5.00
+		yearly_corruption = +0.1
 	}
 }
 
@@ -60,6 +61,8 @@ plutocratic_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		merchants = 1
+		trade_efficiency = 0.5
+		max_absolutism = -20
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -87,7 +90,7 @@ grand_duchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		max_states = 2
+		max_states = 3
 	}
 }
 
@@ -115,6 +118,7 @@ indian_sultanate_reform = {
 
 	modifiers = {
 		tolerance_heathen = 3
+		num_accepted_cultures = 2
 	}
 
 	conditional = {
@@ -162,7 +166,8 @@ shogunate = {
 	modifiers = {
 		diplomats = 1
 		envoy_travel_time = -0.25
-		max_absolutism = 5
+		max_absolutism = 10
+		army_tradition = 0.25
 	}
 
 	custom_attributes = {
@@ -231,6 +236,7 @@ indep_daimyo = {
 		land_morale = 0.1
 		infantry_power = 0.1
 		max_states = -3
+		defensiveness = 0.1
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -272,6 +278,7 @@ celestial_empire = {
 
 	modifiers = {
 		prestige = 0.5
+		yearly_corruption = 0.1
 	}
 	
 	ai = {
