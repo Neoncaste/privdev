@@ -596,72 +596,6 @@ competitiveness_ideas = {
 	}
 }
 
-development_ideas = {
-	category = ADM
-	
-	bonus = {
-	administrative_efficiency = 0.05
-	}
-
-	school_of_architecture = {
-		build_cost = -0.10
-	}
-	maintained_roads = {
-		development_cost = -0.20
-	}
-	flexible_policies = {
-		state_maintenance_modifier = -0.20
-	}
-	marketplace_of_ideas = {
-		technology_cost = -0.05
-	}
-	non_discriminatory_trade_practices = {
-		trade_company_investment_cost = -0.25
-		native_assimilation = 0.25
-	}
-	bailouts = {
-		prestige = 1
-	}
-	ministries = {
-		global_institution_spread = 0.10
-	}
-
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 2
-			OR = {
-				tag = MAM
-				tag = TUR
-				tag = MNG
-				tag = MLC
-				tag = BEI
-				tag = ZAN
-				tag = DEN
-				tag = SWE
-				tag = NOR
-				tag = ICE
-				tag = JAP
-				tag = AYU
-				tag = HOL
-				tag = BRI
-				tag = SAV
-				tag = KOR
-				tag = NOV
-				tag = POM
-				tag = TUS
-				tag = PER
-				tag = HSA
-				tag = GER
-				tag = HLR
-				tag = ITA
-				tag = GEN
-				tag = VEN
-				tag = TER
-		}
-	}
-}
-
 internationalism_ideas = {
 	category = DIP
 	
@@ -837,6 +771,73 @@ raiding_ideas = {
 				tag = MKS
 				tag = MTR
 				tag = MSA
+				tag = TER
+			}
+		}
+	}
+}
+
+development_ideas = {
+	category = ADM
+	
+	bonus = {
+	administrative_efficiency = 0.05
+	}
+
+	school_of_architecture = {
+		build_cost = -0.10
+	}
+	maintained_roads = {
+		development_cost = -0.20
+	}
+	flexible_policies = {
+		state_maintenance_modifier = -0.20
+	}
+	marketplace_of_ideas = {
+		technology_cost = -0.05
+	}
+	non_discriminatory_trade_practices = {
+		trade_company_investment_cost = -0.25
+		native_assimilation = 0.25
+	}
+	bailouts = {
+		prestige = 1
+	}
+	ministries = {
+		global_institution_spread = 0.10
+	}
+
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 2
+			OR = {
+				tag = MAM
+				tag = TUR
+				tag = MNG
+				tag = MLC
+				tag = BEI
+				tag = ZAN
+				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = ICE
+				tag = JAP
+				tag = AYU
+				tag = HOL
+				tag = BRI
+				tag = SAV
+				tag = KOR
+				tag = NOV
+				tag = POM
+				tag = TUS
+				tag = PER
+				tag = HSA
+				tag = GER
+				tag = HLR
+				tag = ITA
+				tag = GEN
+				tag = VEN
 				tag = TER
 			}
 		}
