@@ -214,8 +214,8 @@ bureaucratic_ideas = {
 		build_time = -0.25
 	}
 	local_councils = {
-		idea_cost = -0.05
 		global_tax_modifier = 0.05
+		idea_cost = -0.05
 	}
 	splendid_court = {
 		yearly_corruption = -0.10
