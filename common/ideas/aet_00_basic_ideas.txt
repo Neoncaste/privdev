@@ -243,7 +243,7 @@ industrial_ideas = {
 
 	rapid_industrialisation = {
 		build_cost = -0.20
-	}	
+	}
 	competitive_economy = {
 		ship_power_propagation = 0.2
 	}
@@ -376,8 +376,24 @@ logistics_ideas = {
 
 	ai_will_do = {
 		factor = 2
+		modifier = {
+			factor = 4
+			capital_scope = {
+					region = bengal_region
+					region = coromandel_region
+					region = deccan_region
+					region = hindustan_region
+					region = western_india_region
+					region = persia_region
+					region = khoransan_region
+					region = anatolia_region
+					region = arabia_region
+					region = caucasia_region
+					region = mashriq_region
+				}
+			}
+		}
 	}
-}
 
 cultural_ideas = {
 	category = ADM
@@ -385,7 +401,6 @@ cultural_ideas = {
 	bonus = {
 	 	religious_unity = 0.25
 	}
-
 	open_leadership = {
 		advisor_pool = 2
 	}
