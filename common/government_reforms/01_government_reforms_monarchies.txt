@@ -1311,6 +1311,7 @@ regional_representation_reform = {
 		legitimacy = 0.5
 		years_of_nationalism = -3
 		stability_cost_modifier = -0.05
+		max_absolutism = -5
 	}
 }
 
@@ -1323,7 +1324,7 @@ political_absolutism_reform = {
 		max_absolutism = 5
 		yearly_absolutism = 0.1
 		yearly_corruption = 0.20
-		global_unrest = +1
+		global_unrest = +2
 
 	}
 }
@@ -1336,7 +1337,7 @@ legislative_houses_reform = {
 		embracement_cost = -0.10
 		local_autonomy = +0.1
 		global_unrest = -1
-		max_absolutism = -10
+		max_absolutism = -20
 		land_morale = 0.05
 	}
 }
