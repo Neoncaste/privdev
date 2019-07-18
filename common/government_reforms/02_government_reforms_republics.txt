@@ -218,11 +218,9 @@ noble_elite_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		republican_tradition = -3
-		add_estate_influence_modifier = {
+		add_estate_influence = {
 			estate = estate_nobility
-			desc = EST_VAL_BRAHMIN_MINISTER #placeholder
 			influence = 20
-			duration = 3650
 		}
 	}
 	duration = 8
@@ -978,8 +976,8 @@ broaden_executive_powers_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		stability_cost_modifier = -0.15
-		global_autonomy = -0.5
-		state_maintenance_modifier = -0.25
+		global_autonomy = -0.025
+		state_maintenance_modifier = -0.15
 		yearly_corruption = +0.33
 	}
 }
