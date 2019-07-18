@@ -221,6 +221,9 @@ noble_elite_reform = {
 		add_estate_influence = {
 			estate = estate_nobility
 			influence = 20
+			global_autonomy = +0.1
+			yearly_corruption = 0.1
+			global_unrest = +1
 		}
 	}
 	duration = 8

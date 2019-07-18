@@ -279,7 +279,7 @@ celestial_empire = {
 	modifiers = {
 		prestige = 0.5
 		yearly_corruption = 0.15
-		yearly_absolutism = 1
+		yearly_absolutism = -1
 		core_creation = +0.20
 		ae_impact = +0.20
 	}
@@ -323,6 +323,7 @@ elective_monarchy = {
 		global_unrest = -1
 		max_absolutism = -30
 		max_states = 2
+		yearly_corruption = 0.1
 	}
 
 	conditional = {
@@ -376,10 +377,11 @@ english_monarchy = {
 	legacy_equivalent = english_monarchy_legacy
 	start_territory_to_estates = 0.3
 	modifiers = {
-		max_states = 1
+		max_states = 3
 		legitimacy = 0.5
 		global_unrest = -1
-		max_absolutism = -30
+		max_absolutism = -20
+		naval_forcelimit_modifier = +10
 	}
 
 	conditional = {
@@ -629,7 +631,7 @@ feudal_theocracy = {
 		missionaries = 1
 		global_missionary_strength = 0.01
 		tolerance_own = 2
-		max_states = 1
+		max_states = 2
 	}
 
 	custom_attributes = {
@@ -814,6 +816,8 @@ revolutionary_empire_reform = {
 		global_manpower_modifier = 0.25
 		land_morale = 0.10
 		global_autonomy = -0.2
+		yearly_corruption = 0.1
+		max_absolutism = 10
 		max_states = 3
 	}
 
@@ -851,8 +855,8 @@ mandala_reform = {
 	legacy_equivalent = despotic_monarchy
 	modifiers = {
 		vassal_income = 0.15
-		vassal_forcelimit_bonus = 1
-		max_states = 1
+		vassal_forcelimit_bonus = 2
+		max_states = 2
 	}
 }
 
@@ -892,7 +896,7 @@ nayankara_reform = {
 		}
 	}
 	modifiers = {
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 2
 		global_manpower_modifier = 0.15
 	}
 }
@@ -939,6 +943,7 @@ rajput_kingdom = {
 	legacy_equivalent = feudal_monarchy
 	modifiers = {
 		army_tradition = 0.5
+		global_autonomy = -0.1
 	}
 }
 
@@ -967,6 +972,7 @@ enforce_privileges_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_manpower_modifier = 0.15
+		land_forcelimit_modifier = +0.5
 	}
 }
 
@@ -975,6 +981,7 @@ quash_noble_power_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_tax_modifier = 0.1
+		local_autonomy = -0.05
 	}
 }
 
@@ -1078,6 +1085,7 @@ centralize_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_autonomy = -0.05
+		yearly_corruption = -0.05
 	}
 }
 
@@ -1085,7 +1093,9 @@ decentralize_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
 	modifiers = {
-		num_accepted_cultures = 2
+		num_accepted_cultures = 3
+		global_unrest = -1
+
 	}
 }
 
@@ -1126,6 +1136,7 @@ clergy_in_administration_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		free_adm_policy = 1
+		global_heretic_missionary_strength = +0.01
 		#Extra loyalty
 	}
 }
@@ -1147,7 +1158,10 @@ of_noble_bearing_reform = {
 	}
 	modifiers = {
 		leader_cost = -0.1
+		yearly_corruption = 0.1
+		prestige_from_land = +0.2
 		#Extra Loyalty
+	
 	}
 }
 
@@ -1156,6 +1170,8 @@ meritocratic_focus_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		advisor_cost = -0.1
+		build_time = 0.1
+		allowed_num_of_buildings = 1
 	}
 }
 
@@ -1194,7 +1210,8 @@ royal_decree_reform = {
 	icon = "king"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = 5
+		max_absolutism = 10
+		local_unrest = 1
 	}
 }
 
@@ -1206,16 +1223,14 @@ aristocratic_court_reform = {
 		is_emperor = no
 		NOT = { is_lesser_in_union = yes }
 	}
-	effect = {
-		set_country_flag = populists_in_government
-		lose_reforms = 3
-		change_government = republic
-	}
 	ai = {
 		factor = 0
 	}
 	modifiers = {
 		army_tradition_decay = -0.005
+		cavalry_cost = -0.1
+		war_exhaustion = -0.1
+
 	}
 }
 
