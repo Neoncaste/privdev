@@ -1170,7 +1170,7 @@ meritocratic_focus_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		advisor_cost = -0.1
-		build_time = 0.1
+		build_time = -0.1
 		allowed_num_of_buildings = 1
 	}
 }
@@ -1284,6 +1284,7 @@ general_estates_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		production_efficiency = 0.1
+		advisor_pool = +2
 	}
 }
 
@@ -1294,6 +1295,9 @@ letat_cest_moi_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		max_states = 5
+		global_unrest = 1
+		yearly_corruption = 0.2
+		max_absolutism = 10
 	}
 }
 
@@ -1302,6 +1306,9 @@ regional_representation_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		min_autonomy_in_territories = -0.10
+		legitimacy = 0.5
+		years_of_nationalism = -3
+		stability_cost_modifier = -0.05
 	}
 }
 
@@ -1313,6 +1320,8 @@ political_absolutism_reform = {
 	modifiers = {
 		max_absolutism = 5
 		yearly_absolutism = 0.1
+		yearly_corruption = 0.10
+
 	}
 }
 
@@ -1321,6 +1330,10 @@ legislative_houses_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		possible_adm_policy = 1
+		embracement_cost = -10
+		global_unrest = -1
+		max_absolutism = -10
+		land_morale = 0.05
 	}
 }
 
