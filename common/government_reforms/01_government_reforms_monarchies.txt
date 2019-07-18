@@ -280,8 +280,8 @@ celestial_empire = {
 		prestige = 0.5
 		yearly_corruption = 0.15
 		yearly_absolutism = 1
-		local_core_creation = +0.020
-		ae_impact = +0.020
+		local_core_creation = +0.20
+		ae_impact = +0.20
 	}
 	
 	ai = {
