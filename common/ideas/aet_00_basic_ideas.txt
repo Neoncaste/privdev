@@ -223,7 +223,6 @@ bureaucratic_ideas = {
 
 	ai_will_do = {
 		factor = 1
-		}
 		modifier = {
 			factor = 2
 			num_of_cities = 20
@@ -231,6 +230,7 @@ bureaucratic_ideas = {
 		modifier = {
 			factor = 2
 			num_of_cities = 50
+		}
 	}
 }
 
