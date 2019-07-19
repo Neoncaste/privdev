@@ -67,7 +67,7 @@ NDefines.NCountry.MAX_CROWN_COLONIES = 6 --Increased from 4
 --NEconomy
 NDefines.NEconomy.DEBASE_MAX_STORED_MONTHS = 30 --Decreased from 30
 NDefines.NEconomy.DEBASE_MONTHS_PER_CHARGE = 6 --Decreased from 12
-NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 10 --Decreased from 90
+NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 6 --Decreased from 90
 NDefines.NEconomy.DEBASE_ADDED_CORRUPTION = 2 --Decreased from 2
 NDefines.NEconomy.AUTONOMY_AT_DIPLO_ANNEX = 50 --Decreased from 60
 NDefines.NEconomy.AUTONOMY_AT_CONQUEST = 60 --Increased from 50
