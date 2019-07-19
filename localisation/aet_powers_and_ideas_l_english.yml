@@ -8,11 +8,11 @@
  administrative_expansion:0 "Administrative Expansion"
  administrative_expansion_desc:0 "Much like the need for more troops, empires require numerous and efficient administrators."
  propaganda:0 "Propaganda"
- propaganda_desc:0 "We should ensure the loyalty of different faiths and cultures within our empire to allow for our seamless rule. "
+ propaganda_desc:0 "We should ensure the loyalty of different faiths and cultures within our empire to allow for our seamless rule."
  colonial_elite:0 "Colonial Elite"
  colonial_elite_desc:0 "There are men of talent found throughout our great empire, and we should recuit those who excel into our central bureaucracy."
  foreign_office:0 "Foreign Office"
- foreign_office_desc:0 "The creation of a government Foreign Office to safeguard our interests overseas will benefit us greatly on the world stage. "
+ foreign_office_desc:0 "The creation of a government Foreign Office to safeguard our interests overseas will benefit us greatly on the world stage."
  colonial_garrison:0 "Colonial Garrison"
  colonial_garrison_desc:0 "The burdens of empire should be shared between all of its citizens. We should recuit locally in colonies to ensure an ample supply of soldiers to man the frontier."
  #
@@ -82,7 +82,7 @@
  reserves:0 "Reserves"
  reserves_desc:0 "Our garrisons across the nation should not be neglected. In the unlikely event the enemy breaches our borders, they will be our main line of defence and should be expanded accordingly."
  ministry_of_defence:0 "Ministry of Defence"
- ministry_of_defence_desc:0 "The creation of a state run department that shall oversee the constant inspections of our most vital fortifications will allow us to alleviate some of the costs of running such an advanced network of defences.
+ ministry_of_defence_desc:0 "The creation of a state run department that shall oversee the constant inspections of our most vital fortifications will allow us to alleviate some of the costs of running such an advanced network of defences."
  #
  cultural_ideas:0 "Cultural Ideas"
  cultural_ideas_bonus:0 "Full Cultural Ideas"
@@ -100,7 +100,6 @@
  tolerant_society_desc:0 "Our people must learn to accept people from newly aquired regions of our nation. If we wish to expand, it is vital we can focus on external threats and trust that our internal stability is guaranteed."
  international_influence:0 "International Influence"
  international_influence_desc:0 "Our people, culure and ideas must spread internationally to ensure we can influence the hearts and minds of foreign citizens."
-
  #
  development_ideas:0 "Development Ideas"
  development_ideas_bonus:0 "Full Development Ideas"
@@ -149,7 +148,7 @@
  integrated_governments:0 "Integrated Governments"
  integrated_governments_desc:0 "Our vassals, clients and dependent states must have a unified administration with our central government so as to efficiently manage all of our realms."
  house_of_wisdom:0 "House of Wisdom"
- house_of_wisdom_desc:0 "Institutions catered towards the scientific revolution will allow our state to continue its path of technological innovation.
+ house_of_wisdom_desc:0 "Institutions catered towards the scientific revolution will allow our state to continue its path of technological innovation."
  expanded_court:0 "Expanded Court"
  expanded_court_desc:0 "We must expand our court to allow more and more foreign dignitaries to stay for extended periods of time. This will allow us greater opportunities to engage in meaningful relations with other states."
  #
@@ -186,7 +185,7 @@
  line_of_battle_desc:0 "By lining up our naval vessels in a manner where they can maintain concentrated fire on a target whilst also remaining on the move we can overwhelm our enemies."
  unrelenting_fire:0 "Unrelenting Fire"
  unrelenting_fire_desc:0 "By maintaining a constant barage of artillery we can diminish the ability of the defenders to repair breaches and prevent them from obtaining any respite."
- 
+ #
  industrial_ideas:0 "Industrial Ideas"
  industrial_ideas_bonus:0 "Full Industrial Ideas"
  competitive_economy:0 "Competitive Economy"
@@ -203,6 +202,3 @@
  machinery_desc:0 "The creation of the first rudimentary machine-driven production lines is enabling us to free up some of the workforce, causing shorter working hours, more economic freedom and higher standards of living."
  rapid_industrialisation:0 "Rapid Industrialisation"
  rapid_industrialisation_desc:0 "Our nation is rapidly industrialising, an influx of new labourers will generate cheaper infastructure." 
-
-
- 
