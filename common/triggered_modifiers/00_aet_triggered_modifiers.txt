@@ -37,17 +37,3 @@ aet_league_war_tolerance = {
 	tolerance_heretic = -3
 	tolerance_heathen = -3
 }
-
-#####################################
-#AI Culture Conversion Cost
-#####################################
-aet_ai_culture_conversion_cost = {
-	potential = {
-		ai = yes
-	}
-	trigger = {
-		ai = yes
-		}
-	culture_conversion_cost = -1.00
-	promote_culture_cost = -0.50
-}
