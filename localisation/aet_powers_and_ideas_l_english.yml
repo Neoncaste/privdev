@@ -7,7 +7,7 @@
  intelligence_services_desc:0 "A growing nation such as ours has enemies on all sides. The creation of intelligence services will allow us to prepare for threats before they even happen."
  administrative_expansion:0 "Administrative Expansion"
  administrative_expansion_desc:0 "Much like the need for more troops, empires require numerous and efficient administrators."
- imperial_household:0 "Imperial Household
+ imperial_household:0 "Imperial Household"
  imperial_household_desc:0 "The creation of a imperial dynasty has allowed us to spread our influence much further than our physical borders."
  colonial_elite:0 "Colonial Elite"
  colonial_elite_desc:0 "There are men of talent found throughout our great empire, and we should recuit those who excel into our central bureaucracy."
@@ -15,6 +15,8 @@
  foreign_office_desc:0 "The creation of a government Foreign Office to safeguard our interests overseas will benefit us greatly on the world stage."
  colonial_garrison:0 "Colonial Garrison"
  colonial_garrison_desc:0 "The burdens of empire should be shared between all of its citizens. We should recuit locally in colonies to ensure an ample supply of soldiers to man the frontier."
+ propaganda:0 "Propaganda"
+ propaganda_desc:0 "We should ensure the loyalty of different faiths and cultures in our nation. To allow for our seamless rule."
  #
  professionalism_ideas:0 "Professionalism Ideas"
  professionalism_ideas_bonus:0 "Full Professionalism Ideas"
