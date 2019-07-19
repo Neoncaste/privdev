@@ -18,7 +18,7 @@ imperial_ideas = {
 	place_in_the_sun = {
 		prestige = 0.5
 	}
-	colonial_elite = {
+	colonial_garrison = {
 		land_maintenance_modifier = -0.05
 		army_tradition_decay = -0.1
 	}
@@ -34,7 +34,7 @@ imperial_ideas = {
 		military_growth = {
 		ae_impact = -0.15
 	}
-	colonial_garrison = {
+	propaganda = {
 		max_states = 5
 	}
 
@@ -330,7 +330,7 @@ unity_ideas = {
 		religious_unity = 0.15
 		global_missionary_strength = 0.01
 	}
-	import_tax = {
+	aggressive_conversion = {
 		institution_spread_from_true_faith = 0.10
 		enforce_religion_cost = -0.50
 	}
@@ -357,7 +357,7 @@ logistics_ideas = {
 	military_granaries = {
 		global_supply_limit_modifier = 0.33
 	}
-	unrestricted_warfare = {
+	conscription = {
 		manpower_recovery_speed = 0.15
 	}
 	regional_levies = {
@@ -372,7 +372,7 @@ logistics_ideas = {
 	reserves = {
 		defensiveness = 0.15
 	}
-	supply_ships = {
+	ministry_of_defence = {
 		fort_maintenance_modifier = -0.25
 	}
 
@@ -406,10 +406,10 @@ cultural_ideas = {
 	open_leadership = {
 		advisor_pool = 2
 	}
-	integrationist_policies = {
+	integration_policies = {
 		culture_conversion_cost = -0.25
 	}
-	international_influence = {
+	 One_Culture = {
 		stability_cost_modifier = -0.10
 	}
 	public_service = {
@@ -424,7 +424,7 @@ cultural_ideas = {
 		num_accepted_cultures = 3
 		tolerance_heretic = 1
 	}
-	placeholder_idea_name = {
+	international_influence= {
 		ae_impact = -0.10
 	}
 
@@ -469,14 +469,14 @@ competitiveness_ideas = {
 	 	production_efficiency = 0.10
 	}
 
-	targeted_boycotting = {
+	ship_money = {
 		light_ship_cost = -0.33
 	}
 	nationalised_trade_corporation = {
 		center_of_trade_upgrade_cost = -0.33
 		colonists = 1
 	}
-	pax_commercium = {
+	prestige_of_trade = {
 		prestige = 0.5
 		monthly_splendor = 1
 	}
@@ -617,14 +617,14 @@ internationalism_ideas = {
 		improve_relation_modifier = 0.25
 		diplomatic_annexation_cost = -0.10
 	}
-	deliberate_leaks = {
+	mercenary_captains= {
 		merc_maintenance_modifier = -0.20
 		possible_condottieri = 0.33
 	}
 	integrated_governments = {
 		reduced_liberty_desire = 15
 	}
-	double_agents = {
+	house_of_wisdom = {
 		technology_cost = -0.05
 		prestige_decay = -0.01
 	}
@@ -789,7 +789,7 @@ development_ideas = {
 	school_of_architecture = {
 		build_cost = -0.10
 	}
-	maintained_roads = {
+	public_services = {
 		development_cost = -0.20
 	}
 	flexible_policies = {
