@@ -410,7 +410,7 @@ cultural_ideas = {
 	integration_policies = {
 		culture_conversion_cost = -0.25
 	}
-	 One_Culture = {
+	one_culture = {
 		stability_cost_modifier = -0.10
 	}
 	public_service = {
