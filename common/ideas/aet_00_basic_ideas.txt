@@ -22,7 +22,7 @@ imperial_ideas = {
 		land_maintenance_modifier = -0.05
 		army_tradition_decay = -0.01
 	}
-	propaganda2 = {
+	imperial_household = {
 		prestige_decay = -0.01
 	}
 	foreign_office = {
@@ -31,7 +31,7 @@ imperial_ideas = {
 	administrative_expansion = {
 		core_creation = -0.1
 	}
-	military_growth = {
+	intelligence_services = {
 		discovered_relations_impact = -0.50
 		spy_offence = 0.2
 	}
