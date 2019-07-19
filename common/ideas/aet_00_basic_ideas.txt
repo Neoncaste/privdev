@@ -671,7 +671,7 @@ strategic_ideas = {
 	storehouses = {
 		defensiveness = 0.25
 	}
-	doubled_watch = {
+	attrition_warfare= {
 		hostile_attrition = 1
 	}
 	line_of_battle = {
@@ -705,7 +705,7 @@ raiding_ideas = {
 		privateer_efficiency = 0.33
 		may_perform_slave_raid = yes
 	}
-	patrol_ships = {
+	pillage_and_plunder = {
 		loot_amount = 0.25
 	}
 	dedicated_drydocks = {
@@ -715,8 +715,8 @@ raiding_ideas = {
 		movement_speed_onto_off_boat_modifier = -0.50
 	}
 	mortar_ships = {
-		global_naval_barrage_cost = -0.33
 		siege_blockade_progress = 1
+		global_naval_barrage_cost = -0.33
 	}
 
 	ai_will_do = {
