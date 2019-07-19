@@ -113,7 +113,7 @@ adapt_to_the_monarch = {
 		full_idea_group = unity_ideas
 	}
 		
-	institution_spread_from_true_faith = 0.1 
+	missionary_maintenance_cost = -0.25
 	culture_conversion_cost = -0.10
 		
 	ai_will_do = {
@@ -153,9 +153,13 @@ family_alliances = {
 		full_idea_group = internationalism_ideas
 	}
 		
-	heir_chance = 0.5
-	prestige = 0.5
-	monthly_support_heir_gain = 0.1
+	legitimacy = 1
+	republican_tradition = 0.5
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+	yearly_absolutism = 0.1
+
 		
 	ai_will_do = {
 		factor = 1
