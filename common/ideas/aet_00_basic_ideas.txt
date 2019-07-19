@@ -22,17 +22,18 @@ imperial_ideas = {
 		land_maintenance_modifier = -0.05
 		army_tradition_decay = -0.01
 	}
-		propaganda = {
+	propaganda = {
 		prestige_decay = -0.01
 	}
 	foreign_office = {
 		global_regiment_cost = -0.1
 	}
-		administrative_expansion = {
+	administrative_expansion = {
 		core_creation = -0.1
 	}
-		military_growth = {
-		ae_impact = -0.15
+	military_growth = {
+		discovered_relations_impact = -0.50
+		spy_offence = 0.2
 	}
 	propaganda = {
 		max_states = 5
@@ -159,10 +160,6 @@ professionalism_ideas = {
 		discipline = 0.025
 		army_tradition_decay = -0.1
 	}
-		comissioned_officers = {
-		yearly_army_professionalism = 0.005
-		army_tradition = 0.25
-	}
 	baggage_trains = {
 		movement_speed = 0.10
 	}
@@ -171,6 +168,10 @@ professionalism_ideas = {
 	}
 	military_academies = {
 		general_cost = -0.15
+	}
+	comissioned_officers = {
+		yearly_army_professionalism = 0.005
+		army_tradition = 0.25
 	}
 	border_fortifications = {
 		leader_siege = 1
@@ -425,7 +426,7 @@ cultural_ideas = {
 		tolerance_heretic = 1
 	}
 	international_influence= {
-		ae_impact = -0.10
+		ae_impact = -0.15
 	}
 
 	ai_will_do = {
@@ -660,7 +661,7 @@ strategic_ideas = {
 	}
 
 	striking_force = {
-		cavalry_flanking = 0.25
+		cavalry_flanking = 0.50
 	}
 	militas = {
 		manpower_recovery_speed = 0.20
