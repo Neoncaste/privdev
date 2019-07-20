@@ -333,7 +333,7 @@ unity_ideas = {
 	}
 	aggressive_conversion = {
 		institution_spread_from_true_faith = 0.10
-		enforce_religion_cost = -0.50
+		enforce_religion_cost = -0.25
 	}
 	assimiliation = {
 		years_of_nationalism = -10
