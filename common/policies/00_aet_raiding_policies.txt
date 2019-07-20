@@ -279,7 +279,7 @@ influence_in_global_ports = {
 	}
 }
 
-foreign_informers = {
+foreign_sabotage = {
 	monarch_power = MIL
 
 	potential = {
@@ -511,7 +511,6 @@ state_sponsored_piracy = {
 	}
 		
 	trade_power_in_fleet_modifier = 1 #flagship fleet only
-	global_tax_income = 0.10
 		
 	ai_will_do = {
 		factor = 1
@@ -542,7 +541,7 @@ false_flag_policy = {
 		full_idea_group = unity_ideas
 	}
 		
-	justify_trade_conflict_cost = -0.33
+	justify_trade_conflict_cost = -0.75
 		
 	ai_will_do = {
 		factor = 1
@@ -573,7 +572,7 @@ headhunting_of_foreign_talent = {
 		full_idea_group = competitiveness_ideas
 	}
 		
-	innovativeness_gain = 1
+	innovativeness_gain = 0.50
 		
 	ai_will_do = {
 		factor = 1
