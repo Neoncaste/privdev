@@ -282,7 +282,7 @@ steal_enemy_plans = {
 		}
 	}
 
-diplomatic_immunity = {
+diplomatic_channels = {
 	monarch_power = DIP
 
 	potential = {

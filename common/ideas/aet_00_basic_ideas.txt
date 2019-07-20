@@ -167,14 +167,15 @@ professionalism_ideas = {
 		land_morale = 0.1
 	}
 	military_academies = {
-		general_cost = -0.15
+		general_cost = -0.10
+		leader_siege = 1
 	}
 	comissioned_officers = {
 		yearly_army_professionalism = 0.005
 		army_tradition = 0.25
 	}
 	border_fortifications = {
-		leader_siege = 1
+		
 		fort_maintenance_modifier = -0.10
 	}
 	martial_tradition = {

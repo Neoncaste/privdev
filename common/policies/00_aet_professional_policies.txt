@@ -190,7 +190,7 @@ government_certifications = {
 		full_idea_group = industrial_ideas
 	}
 		
-	administrative_efficiency = 0.05
+	inflation_reduction = -0.20
 		
 	ai_will_do = {
 		factor = 1		
@@ -217,7 +217,7 @@ multifaith_policy = {
 	papal_influence = 1
 	monthly_fervor_increase = 1
 	yearly_harmony = 1
-	free_leader_pool = 2
+	free_leader_pool = 1
 		
 	ai_will_do = {
 		factor = 1	
@@ -240,8 +240,8 @@ consolidation = {
 		full_idea_group = development_ideas
 	}
 		
-	expel_minorities_cost = -0.50
-	establish_order_cost = -0.50
+	global_autonomy = -0.05
+	min_autonomy_in_territories = -0.10
 		
 	ai_will_do = {
 		factor = 1
@@ -329,7 +329,7 @@ targeted_domination_of_trade = {
 	}
 		
 	justify_trade_conflict_cost = -0.2
-	global_trade_power = 0.20
+	trade_efficiency = 0.10
 		
 	ai_will_do = {
 		factor = 1		
@@ -357,7 +357,7 @@ native_scouts = {
 	}
 		
 	native_uprising_chance = -0.33
-	range = 0.5 
+	range = 0.5
 		
 	ai_will_do = {
 		factor = 1		
@@ -441,7 +441,7 @@ imperial_fortresses = {
 	}
 		
 	garrison_size = 0.33
-	fort_maintenance_modifier = -0.1
+	fort_maintenance_modifier = -0.10
 		
 	ai_will_do = {
 		factor = 1.5	
@@ -460,7 +460,7 @@ constituent_council = {
 		full_idea_group = unity_ideas
 	}
 		
-	diplomatic_annexation_cost = -0.20
+	reduced_liberty_desire = -0.20
 	claim_duration = 0.20
 		
 	ai_will_do = {
