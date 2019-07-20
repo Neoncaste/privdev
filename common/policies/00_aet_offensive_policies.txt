@@ -50,7 +50,7 @@ standardise_communication = {
 		full_idea_group = cultural_ideas
 	}
 		
-	culture_conversion_cost = -0.25
+	prestige = 1
 	legitimacy = 1
 	republican_tradition = 0.5
 	devotion = 1
