@@ -189,7 +189,7 @@ permanent_representative = {
 	}
 		
 	envoy_travel_time = -0.2 
-	prestige_decay = 0.01
+	prestige_decay = -0.01
 		
 	ai_will_do = {
 		factor = 1		
