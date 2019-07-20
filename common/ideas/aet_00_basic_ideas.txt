@@ -211,7 +211,6 @@ bureaucratic_ideas = {
 	}
 	government_grants = {
 		administrative_efficiency = 0.05
-		inflation_reduction = 0.2
 	}
 	contraction_economics = {
 		build_time = -0.25
