@@ -381,7 +381,7 @@ english_monarchy = {
 		legitimacy = 0.5
 		global_unrest = -1
 		max_absolutism = -20
-		naval_forcelimit_modifier = +10
+		naval_forcelimit_modifier = 0.10
 	}
 
 	conditional = {
