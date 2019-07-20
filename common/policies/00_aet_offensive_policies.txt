@@ -78,8 +78,7 @@ recruitment_drive = {
 		full_idea_group = development_ideas
 	}
 		
-	free_mil_policy = 1
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.33
 		
 	ai_will_do = {
 		factor = 1
@@ -98,8 +97,8 @@ foreign_legion = {
 		full_idea_group = imperial_ideas
 	}
 		
-	discipline = 0.05
-	siege_ability = 0.05
+	merc_maintenance_modifier = -0.20
+	mercenary_discipline = 0.05
 		
 	ai_will_do = {
 		factor = 2
@@ -119,7 +118,7 @@ declare_free_trade = {
 	}
 		
 	global_tax_modifier = 0.10
-	production_efficiency = 0.10
+	production_efficiency = 0.05
 		
 	ai_will_do = {
 		factor = 1
@@ -138,7 +137,7 @@ blackmail_foreign_scientists = {
 		full_idea_group = competitiveness_ideas
 	}
 		
-	technology_cost = -0.1 
+	technology_cost = -0.10
 		
 	ai_will_do = {		
 		factor = 2
@@ -157,8 +156,8 @@ diversify_sphere_of_influence_economy = {
 		full_idea_group = internationalism_ideas
 	}
 		
-	vassal_income = 0.2
-	diplomatic_upkeep = 1
+	vassal_income = 0.20
+	vassal_forcelimit_bonus = 0.10
 		
 	ai_will_do = {
 		factor = 1
