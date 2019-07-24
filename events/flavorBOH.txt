@@ -51,9 +51,9 @@ country_event = {
 		define_ruler = {
 			name = "Jirí"
 			dynasty = "z Podebrad"
-			adm = 5
-			dip = 3
-			mil = 3
+			adm = 7
+			dip = 6
+			mil = 8
 		}
 		if = {
 			limit = {
