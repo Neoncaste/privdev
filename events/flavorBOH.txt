@@ -52,7 +52,7 @@ country_event = {
 			name = "Jirí"
 			dynasty = "z Podebrad"
 			adm = 7
-			dip = 6
+			dip = 7
 			mil = 8
 		}
 		if = {
