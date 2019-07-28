@@ -206,7 +206,7 @@ country_event = {
 	}
 	
 	option = {
-		name = flavor_aet.EVTOPTA0008
+		name = flavor_aet.EVTOPTB0008
 		remove_country_modifier = {
 		name = "aet_widespread_corruption"
 		}
