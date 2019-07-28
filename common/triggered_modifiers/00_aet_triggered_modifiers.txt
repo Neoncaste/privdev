@@ -38,22 +38,3 @@ aet_league_war_tolerance = {
 	tolerance_heathen = -3
 }
 
-######################################
-# aet_widespread_corruption
-######################################
-
-aet_widespread_corruption = {
-	potential = {
-		num_of_cities = 1
-	}
-	trigger = {
-		corruption = 6
-		}
-		yearly_corruption = 0.1
-		global_spy_defence = -0.50
-		advisor_cost = 0.25
-		global_tax_modifier = -0.10
-		technology_cost = 0.1
-		idea_cost = 0.1
-}
-

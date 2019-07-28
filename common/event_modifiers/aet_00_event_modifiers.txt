@@ -83,3 +83,15 @@ aet_heir_death = {
 	land_morale = -0.05
 }
 
+##############################
+#CORRUPTION MODIFIERS
+##############################
+
+aet_widespread_corruption = {
+	yearly_corruption = 0.10
+	global_tax_modifier = -0.10
+	global_spy_defence = -0.50
+	advisor_cost = 0.25
+	technology_cost = 0.10
+	idea_cost = 0.10
+}

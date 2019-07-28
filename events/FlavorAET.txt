@@ -156,3 +156,34 @@ country_event = {
 		}
 	}
 }
+
+# Aeternum Widespread Corruption
+country_event = {
+	id = flavor_aet.0007
+	title = "flavor_aet.EVTNAME0007"
+	desc = "flavor_aet.EVTDESC0007"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		corruption = 6
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = flavor_aet.EVTOPTA0007
+		add_country_modifier = {
+		name = "aet_widespread_corruption"
+		duration = -1
+		}
+	}
+	option = {
+		name = flavor_aet.EVTOPTB0007
+		add_country_modifier = {
+		name = "aet_widespread_corruption"
+		duration = -1
+		}
+	}
+}
