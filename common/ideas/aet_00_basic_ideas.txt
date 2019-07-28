@@ -358,7 +358,7 @@ logistics_ideas = {
 	military_granaries = {
 		global_supply_limit_modifier = 0.33
 	}
-	conscription = {
+	aet_conscription = {
 		manpower_recovery_speed = 0.15
 	}
 	regional_levies = {
