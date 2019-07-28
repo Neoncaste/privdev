@@ -166,6 +166,7 @@ country_event = {
 	
 	trigger = {
 		corruption = 6
+		NOT = { has_country_modifier = aet_widespread_corruption }
 	}
 
 	mean_time_to_happen = {
