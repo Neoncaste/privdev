@@ -1094,7 +1094,6 @@ decentralize_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		num_accepted_cultures = 3
-		global_unrest = -1
 		local_autonomy = +0.1
 		max_states = 2
 
@@ -1297,9 +1296,8 @@ letat_cest_moi_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		max_states = 5
-		global_unrest = 1
 		yearly_corruption = 0.2
-		max_absolutism = 10
+		yearly_absolutism = +0.2
 	}
 }
 
@@ -1308,9 +1306,7 @@ regional_representation_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		min_autonomy_in_territories = -0.10
-		legitimacy = 0.5
-		years_of_nationalism = -3
-		stability_cost_modifier = -0.05
+		legitimacy = 0.01
 		max_absolutism = -5
 	}
 }
@@ -1323,8 +1319,8 @@ political_absolutism_reform = {
 	modifiers = {
 		max_absolutism = 5
 		yearly_absolutism = 0.1
-		yearly_corruption = 0.20
-		global_unrest = +2
+		yearly_corruption = 0.10
+		global_unrest = +1
 
 	}
 }
@@ -1333,12 +1329,10 @@ legislative_houses_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
 	modifiers = {
+		max_absolutism = -20
 		possible_adm_policy = 1
 		global_tax_modifier = +0.10
-		local_autonomy = +0.1
 		global_unrest = -1
-		max_absolutism = -20
-		land_morale = 0.05
 	}
 }
 
