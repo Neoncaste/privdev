@@ -2,7 +2,7 @@
 country_event = {
 	id = ottoman_stagnation.1
 	title = ottoman_stagnation.1 t
-	picture = civil_war
+	picture = civil_war_eventpicture
 	
 	desc = {
 		trigger = {
@@ -21,7 +21,12 @@ country_event = {
 	}		
 	major = yes
 	is_triggered_only = yes
-	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	}
 	immediate = {
 		set_country_flag = had_ottoman_stagnation
 	}
@@ -53,3 +58,24 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ottoman_stagnation.2
+	title = ottoman_stagnation.2 t
+	picture = westernisation_eventpicture
+
+	is_triggered_only =  yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		end_disaster = ottoman_stagnation
+	}
+	option = { # Glory to the Ottomans!
+		name = "ottoman_stagnation.2.a"
+		add_stability = 2
+		add_prestige = 20
+		
+
+		}
+	}
