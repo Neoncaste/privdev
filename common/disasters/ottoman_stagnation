@@ -1,0 +1,55 @@
+# Ottoman Stagnation
+country_event = {
+	id = ottoman_stagnation.1
+	title = ottoman_stagnation.1 t
+	picture = civil_war
+	
+	desc = {
+		trigger = {
+				tag = TUR
+				exists = HAB
+				NOT = {alliance_with =  HAB}
+                NOT = { war_with = HAB }
+		        NOT = { is_year = 1684 }
+		        NOT = { truce_with = HAB }
+				134 = {
+			owned_by = HAB
+		}
+		TUR = {
+			is_subject = no
+		}
+	}		
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = had_ottoman_stagnation
+	}
+	
+	option = {		# Most worrisome
+		name = ottoman_stagnation.1.a
+		add_prestige = -35
+		add_legitimacy = -25
+		add_stability = -2
+		if = {
+			limit = { employed_advisor = { category = ADM } }
+			remove_advisor_by_category = ADM
+		}
+		if = {
+			limit = { employed_advisor = { category = DIP } }
+			remove_advisor_by_category = DIP
+		}
+		if = {
+			limit = { employed_advisor = { category = MIL } }
+			remove_advisor_by_category = MIL
+		} if = {
+			owns = 146
+			owns = 145
+			owns = 1773
+		}
+		spawn_rebels = {
+			type = separatist
+			size = 3
+		}
+	}
+}
