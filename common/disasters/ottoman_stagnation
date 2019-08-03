@@ -1,17 +1,17 @@
 # Ottoman Stagnation
 country_event = {
 	id = ottoman_stagnation.1
-	title = ottoman_stagnation.1 t
+	title = ottoman_stagnation.1.t
 	picture = civil_war_eventpicture
 	
 	desc = {
 		trigger = {
 				tag = TUR
 				exists = HAB
-				NOT = {alliance_with =  HAB}
-                NOT = { war_with = HAB }
-		        NOT = { is_year = 1684 }
-		        NOT = { truce_with = HAB }
+				NOT = {alliance_with = HAB}
+                NOT = {war_with = HAB}
+		        NOT = {is_year = 1684}
+		        NOT = {truce_with = HAB}
 				134 = {
 			owned_by = HAB
 		}
