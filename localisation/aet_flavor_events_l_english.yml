@@ -1,6 +1,6 @@
 ﻿l_english:
  flavor_aet.EVTNAME0001:0 "Aeternum Alpha V1.1.3"
- flavor_aet.EVTDESC0001:0 "Thank you for playing Aeternum Alpha V1.1.3 - This update includes a total rework of ideas and policies, alongside dozens of gameplay changes, improvements & new content."
+ flavor_aet.EVTDESC0001:0 "Thank you for playing Aeternum Alpha V1.1.3- This update includes a total rework of ideas and policies, alongside dozens of gameplay changes, improvements & new content." 
  flavor_aet.EVTOPTA0001:0 "Continue."
  flavor_aet.EVTNAME0002:0 "Giant Among Nations"
  flavor_aet.EVTDESC0002:0 "Across the known world the nation is renowned for our strength and capabilities. With this newfound reputation, we can influence lesser states and bend them to our will."
@@ -23,3 +23,7 @@
  flavor_aet.EVTNAME0008:0 "Corruption curtailed"
  flavor_aet.EVTDESC0008:0 "Quick and decisive action has allowed us to rapidly bring down our levels of corruption, steering us away from a potentially catastrophic diaster."
  flavor_aet.EVTOPTA0008:0 "We have narrowly avoided a crisis."
+ flavor_aet.EVTNAME0009:0 "Corrupt Offical"
+ flavor_aet.EVTDESC0009:0 "Rumours are circulating that our Spymaster has been playing the court for his own gain and twisting our orders and messages to fit his agenda, if true he could pose a significant threat, if not we could be seen as a tyrant.""
+ flavor_aet.EVTOPT0009a:0 "Off with his head!"
+ flavor_aet.EVTOPT0009b:0 "Put him on trial."

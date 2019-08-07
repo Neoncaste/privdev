@@ -212,3 +212,38 @@ country_event = {
 		}
 	}
 }
+
+#Aeternum Corruption Event
+country_event = {
+	id = flavor_aet.0009
+	title = "flavor_aet.EVTNAME0009"
+	desc = "flavor_aet.EVTDESC0009"
+	picture = SPY_eventPicture
+
+	trigger = {
+		corruption = 1
+		manpower = 0.001
+		employed_advisor = {
+			is_male = yes
+			type = spymaster
+		}
+
+	}
+	mean_time_to_happen = {
+		months = 600
+
+	}
+option = {
+	name = flavor_aet.EVTOPT0009a
+	add_corruption = -1
+	add_manpower = -1
+	kill_advisor = spymaster
+	}
+
+
+
+option = {
+	name = flavor_aet.EVTOPT0009b
+	add_prestige = -5
+}
+}
