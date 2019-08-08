@@ -53,7 +53,6 @@ country_event = {
 		random_list = {
 			75 = {
 				remove_advisor = spymaster
-				collapse_nation = yes
 				random_owned_province = {
 					spawn_rebels = {
 						type = pretender_rebels
@@ -74,14 +73,12 @@ country_event = {
 				}
 			}
 			10 = {
-				collapse_nation = yes
 				add_corruption = -1
 				add_manpower = -0.001
 				kill_advisor = spymaster
 				end_disaster = grand_conspiracy
 			}
 			15 = {
-				collapse_nation = yes
 				kill_ruler = yes
 				define_ruler = {
 					DIP = 6
@@ -90,16 +87,78 @@ country_event = {
 					claim = 50
 				}
 			}
-
-			}
-		}
-		add_manpower = -0.431
-		kill_leader = random
-		kill_leader = random
-		kill_advisor = random
-		capital_scope = {
-			remove_building = random
-			}
 		}
 	}
 }
+
+#############################################
+
+# Grand Conspiracy 1
+
+country_event = {
+	id = disasters_aet.0004
+	title = "grand_conspiracy.EVTNAME0002"
+	desc = "grand_conspiracy.EVTDESC0002"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "grand_conspiracy.EVTOPTA0002"
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 14
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 14
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 14
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 14
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 9
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 9
+			}
+			change_controller = REB
+		}
+		random_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { owned_by = ROOT }
+				num_of_cities = 3
+			}
+			change_controller = REB
+		}
+	}
