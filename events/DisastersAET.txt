@@ -65,6 +65,7 @@ country_event = {
 				kill_leader = random
 				add_legitimacy  = -33
 				add_prestige = -33
+				set_country_flag = aeternum_grand_conspiracy_begin
 				add_estate_loyalty = {
 					estate = estate_nobles
 					loyalty = -20
