@@ -182,11 +182,10 @@ option = {
 	name = flavor_aet.EVTOPTA0007
 	random_list = {
 		50 = {
+			remove_advisor = spymaster
 			add_disaster_progress = {
 				disaster = grand_conspiracy
 				value = 100
-			}
-				remove_advisor = spymaster
 			}
 		}
 		50 = {
