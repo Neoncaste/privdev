@@ -105,60 +105,39 @@ country_event = {
 	
 	option = {
 		name = "grand_conspiracy.EVTOPTA0002"
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 14
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 0
+				win = yes
 			}
-			change_controller = REB
 		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 14
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 0
+				win = yes
 			}
-			change_controller = REB
 		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 14
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 0
+				win = yes
 			}
-			change_controller = REB
 		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 14
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 0
+				win = yes
 			}
-			change_controller = REB
 		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 9
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 0
+				win = yes
 			}
-			change_controller = REB
-		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 9
-			}
-			change_controller = REB
-		}
-		random_province = {
-			limit = {
-				controlled_by = ROOT
-				NOT = { owned_by = ROOT }
-				num_of_cities = 3
-			}
-			change_controller = REB
 		}
 	}

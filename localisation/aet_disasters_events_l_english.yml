@@ -14,3 +14,6 @@
  grand_conspiracy.EVTNAME0001:0 "Grand Conspiracy Exposed"
  grand_conspiracy.EVTDESC0001:0 "Our attempt to consolidate our grasp on the court and remove one of our most problematic ministers has proven disasterous. The target has acted pre-emptively and has apparently gathered extensive amounts of supporters who oppose our rule, while the men we sent to arrest him have been killed, along with several of our loyal statesmen. Fighting has now erupted across our capital city as forces loyal to us or the conspirators clash, trying to establish control over key districts and causing extensive damage."
  grand_conspiracy.EVTOPTA0001:0 "We must pray we overcome the traitors."
+ grand_conspiracy.EVTNAME0002:0 "test"
+ grand_conspiracy.EVTDESC0002:0 "test loc"
+ grand_conspiracy.EVTOPTA0002:0 "opt test"
