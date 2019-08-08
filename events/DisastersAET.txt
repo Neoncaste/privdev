@@ -53,6 +53,7 @@ country_event = {
 		random_list = {
 			75 = {
 				remove_advisor = spymaster
+				collapse_nation = yes
 				random_owned_province = {
 					spawn_rebels = {
 						type = pretender_rebels
@@ -73,12 +74,14 @@ country_event = {
 				}
 			}
 			10 = {
+				collapse_nation = yes
 				add_corruption = -1
 				add_manpower = -0.001
 				kill_advisor = spymaster
 				end_disaster = grand_conspiracy
 			}
 			15 = {
+				collapse_nation = yes
 				kill_ruler = yes
 				define_ruler = {
 					DIP = 6
