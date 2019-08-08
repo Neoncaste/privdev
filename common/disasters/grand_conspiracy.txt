@@ -34,7 +34,6 @@ grand_conspiracy = {
 			NOT = { corruption = 0.1 }
 			}
 		}
-	}
 	
 	can_end = {
 	}
