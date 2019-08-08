@@ -55,33 +55,17 @@ country_event = {
 				add_manpower = -0.001
 				kill_advisor = spymaster
 				end_disaster = grand_conspiracy
+				set_country_flag = aeternum_grand_conspiracy_end
 			}
 			66 = {
-				random_owned_area = {
-					change_controller = REB
-				}
-				random_owned_area = {
-					change_controller = REB
-				}
-				random_owned_province = {
-					spawn_rebels = {
-						size = 3
-						win = yes
-						type = pretender_rebels
-					}
-					random_owned_province = {
-						spawn_rebels = {
-							size = 1
-							win = yes
-							friend = ROOT
-							type = pretender_rebels
-					}
-					random_owned_province = {
-						spawn_rebels = {
-							size = 1
-							win = yes
-							friend = ROOT
-							type = pretender_rebels
+				remove_advisor = spymaster
+				add_manpower = -0.452
+				kill_leader = random
+				add_legitimacy  = -33
+				add_prestige = -33
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = -20
 					}
 				}
 			}
@@ -91,7 +75,7 @@ country_event = {
 
 #############################################
 
-# Grand Conspiracy 1
+# Grand Conspiracy 2
 
 country_event = {
 	id = disasters_aet.0004
@@ -99,12 +83,15 @@ country_event = {
 	desc = "grand_conspiracy.EVTDESC0002"
 	picture = BATTLE_eventPicture
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 14
+	}
 	
+	trigger = {
+		has_country_flag = aeternum_grand_conspiracy_begin	
+	}
+
 	option = {
 		name = "grand_conspiracy.EVTOPTA0002"
-		random_owned_province = {
-			change_controller = REB
-			}
 		}
 	}
