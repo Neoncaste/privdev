@@ -184,7 +184,7 @@ option = {
 		50 = {
 			add_disaster_progress = {
 				disaster = grand_conspiracy
-				value = 100
+				value = 85
 			}
 		}
 		50 = {
@@ -193,7 +193,6 @@ option = {
 			kill_advisor = spymaster
 		}
 	}
-
 option = {
 	name = flavor_aet.EVTOPTB0007
 	add_prestige = -10
