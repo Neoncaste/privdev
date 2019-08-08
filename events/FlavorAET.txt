@@ -157,70 +157,15 @@ country_event = {
 	}
 }
 
-# Aeternum Widespread Corruption
+#Aeternum Corruption Event
 country_event = {
 	id = flavor_aet.0007
 	title = "flavor_aet.EVTNAME0007"
 	desc = "flavor_aet.EVTDESC0007"
-	picture = MERCHANTS_TALKING_eventPicture
-	
-	trigger = {
-		corruption = 6
-		NOT = { has_country_modifier = aet_widespread_corruption }
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = flavor_aet.EVTOPTA0007
-		add_country_modifier = {
-		name = "aet_widespread_corruption"
-		duration = -1
-		}
-	}
-	option = {
-		name = flavor_aet.EVTOPTB0007
-		add_country_modifier = {
-		name = "aet_widespread_corruption"
-		duration = -1
-		}
-	}
-}
-
-# Aeternum Widespread Corruption 2
-country_event = {
-	id = flavor_aet.0008
-	title = "flavor_aet.EVTNAME0008"
-	desc = "flavor_aet.EVTDESC0008"
-	picture = MERCHANTS_TALKING_eventPicture
-	
-	trigger = {
-		NOT = { corruption = 4 }
-		has_country_modifier = aet_widespread_corruption
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = flavor_aet.EVTOPTB0008
-		remove_country_modifier = {
-		name = "aet_widespread_corruption"
-		}
-	}
-}
-
-#Aeternum Corruption Event
-country_event = {
-	id = flavor_aet.0009
-	title = "flavor_aet.EVTNAME0009"
-	desc = "flavor_aet.EVTDESC0009"
 	picture = SPY_eventPicture
 
 	trigger = {
+		num_of_cities = 14
 		corruption = 1
 		manpower = 0.001
 		employed_advisor = {
@@ -234,16 +179,24 @@ country_event = {
 
 	}
 option = {
-	name = flavor_aet.EVTOPT0009a
-	add_corruption = -1
-	add_manpower = -1
-	kill_advisor = spymaster
+	name = flavor_aet.EVTOPTA0007
+	random_list = {
+		50 = {
+			add_disaster_progress = {
+				disaster = grand_conspiracy
+				value = 85
+			}
+		}
+		50 = {
+			add_corruption = -1
+			add_manpower = -0.001
+			kill_advisor = spymaster
+		}
 	}
-
-
-
 option = {
-	name = flavor_aet.EVTOPT0009b
-	add_prestige = -5
-}
+	name = flavor_aet.EVTOPTB0007
+	add_prestige = -10
+	remove_advisor = spymaster
+		}
+	}
 }
