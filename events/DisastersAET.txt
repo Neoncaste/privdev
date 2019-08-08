@@ -67,7 +67,6 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						win = yes
-						leader = noble_zealot
 						type = pretender_rebels
 					}
 					random_owned_province = {
@@ -75,15 +74,13 @@ country_event = {
 							size = 1
 							win = yes
 							friend = ROOT
-							leader = noble_zealot
 							type = pretender_rebels
 					}
 					random_owned_province = {
 						spawn_rebels = {
-							size = 3
+							size = 1
 							win = yes
 							friend = ROOT
-							leader = noble_zealot
 							type = pretender_rebels
 					}
 				}
