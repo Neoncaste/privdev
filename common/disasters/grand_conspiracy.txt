@@ -1,7 +1,6 @@
 grand_conspiracy = {
 
 	potential = {
-		corruption = 1
 		num_of_cities = 14
 		employed_advisor = {
 			is_male = yes
@@ -19,6 +18,7 @@ grand_conspiracy = {
 	}
 	
 	can_stop = {
+		NOT = { num_of_cities = 14 }
 	}
 	
 	progress = {
@@ -27,6 +27,11 @@ grand_conspiracy = {
 			has_disaster_progress = {
 				disaster = grand_conspiracy
 				value = 80
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { corruption = 0.1 }
 			}
 		}
 	}
