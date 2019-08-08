@@ -19,15 +19,6 @@ grand_conspiracy = {
 	}
 	
 	can_stop = {
-		OR = {
-			NOT = { corruption = 1 }
-			NOT = { num_of_cities = 14 }
-			NOT = { employed_advisor = {
-				is_male = yes
-				type = spymaster
-				}
-			}
-		}
 	}
 	
 	progress = {
