@@ -31,7 +31,7 @@ grand_conspiracy = {
 		}
 		modifier = {
 			factor = 1
-			NOT = { corruption = 0.1 }
+			NOT = { corruption = 1 }
 			}
 		}
 	
