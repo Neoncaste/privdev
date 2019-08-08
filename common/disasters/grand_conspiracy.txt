@@ -44,7 +44,7 @@ grand_conspiracy = {
 		advisor_pool = -1
 	}
 	
-	on_start = grand_conspiracy.1
+	on_start = disasters_aet.0003
 	on_end = grand_conspiracy.2
 
 	on_monthly = {

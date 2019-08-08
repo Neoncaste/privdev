@@ -40,7 +40,7 @@ country_event = {
 # Grand Conspiracy 1
 
 country_event = {
-	id = grand_conspiracy.1
+	id = disasters_aet.0003
 	title = "grand_conspiracy.EVTNAME0001"
 	desc = "grand_conspiracy.EVTDESC0001"
 	picture = MILITARY_CAMP_eventPicture
