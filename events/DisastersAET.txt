@@ -49,6 +49,18 @@ country_event = {
 	
 	option = {
 		name = aet_grand_conspiracy.EVTOPTA0001
+		random_list = {
+			75 = {
+				remove_advisor = spymaster
+			}
+			25 = {
+				add_corruption = -1
+				add_manpower = -1
+				kill_advisor = spymaster
+				end_disaster = grand_conspiracy
+
+			}
+		}
 		add_manpower = -83
 		kill_leader = random
 		kill_leader = random
