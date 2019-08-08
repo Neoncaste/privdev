@@ -36,3 +36,26 @@ country_event = {
 }
 
 #############################################
+
+# Grand Conspiracy 1
+
+country_event = {
+	id = aet_grand_conspiracy.1
+	title = "aet_grand_conspiracy.EVTNAME0001"
+	desc = "aet_grand_conspiracy.EVTDESC0001"
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aet_grand_conspiracy.EVTOPTA0001
+		add_manpower = -83
+		kill_leader = random
+		kill_leader = random
+		kill_advisor = random
+		capital_scope = {
+			remove_building = random
+			}
+		}
+	}
+}

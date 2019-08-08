@@ -1,0 +1,66 @@
+grand_conspiracy = {
+
+	potential = {
+		corruption = 1
+		num_of_cities = 14
+		employed_advisor = {
+			is_male = yes
+			type = spymaster
+		}
+	}
+
+	can_start = {
+		corruption = 1
+		num_of_cities = 14
+		employed_advisor = {
+			is_male = yes
+			type = spymaster
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			NOT = { corruption = 1 }
+			NOT = { num_of_cities = 14 }
+			NOT = { employed_advisor = {
+				is_male = yes
+				type = spymaster
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			corruption = 1
+		}
+	}
+	
+	can_end = {
+	}
+	
+	modifier = {
+		global_spy_defence = -0.95
+		spy_offence = -0.33
+		advisor_pool = -1
+	}
+	
+	on_start = aet_grand_conspiracy.1
+	on_end = aet_grand_conspiracy.2
+
+	on_monthly = {
+		events = {
+		}
+		
+		random_events = { 
+			1000 = 0
+			100 = aet_grand_conspiracy.3 # The Insanity of MONARCH
+			100 = aet_grand_conspiracy.4 # Famine Strikes
+			100 = aet_grand_conspiracy.5 # Plague
+			100 = aet_grand_conspiracy.6 # Brigands in PROVINCE
+			100 = aet_grand_conspiracy.7 # First Dimitri
+			100 = aet_grand_conspiracy.8 # False Dimitri Overthrown
+		}
+	}
+}
