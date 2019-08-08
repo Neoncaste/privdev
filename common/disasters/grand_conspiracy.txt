@@ -44,8 +44,8 @@ grand_conspiracy = {
 		advisor_pool = -1
 	}
 	
-	on_start = aet_grand_conspiracy.1
-	on_end = aet_grand_conspiracy.2
+	on_start = grand_conspiracy.1
+	on_end = grand_conspiracy.2
 
 	on_monthly = {
 		events = {
@@ -53,12 +53,12 @@ grand_conspiracy = {
 		
 		random_events = { 
 			1000 = 0
-			100 = aet_grand_conspiracy.3 # The Insanity of MONARCH
-			100 = aet_grand_conspiracy.4 # Famine Strikes
-			100 = aet_grand_conspiracy.5 # Plague
-			100 = aet_grand_conspiracy.6 # Brigands in PROVINCE
-			100 = aet_grand_conspiracy.7 # First Dimitri
-			100 = aet_grand_conspiracy.8 # False Dimitri Overthrown
+			100 = grand_conspiracy.3 # The Insanity of MONARCH
+			100 = grand_conspiracy.4 # Famine Strikes
+			100 = grand_conspiracy.5 # Plague
+			100 = grand_conspiracy.6 # Brigands in PROVINCE
+			100 = grand_conspiracy.7 # First Dimitri
+			100 = grand_conspiracy.8 # False Dimitri Overthrown
 		}
 	}
 }
