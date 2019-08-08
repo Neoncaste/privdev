@@ -31,6 +31,13 @@ grand_conspiracy = {
 	}
 	
 	progress = {
+		modifier = {
+			factor = 10
+			has_disaster_progress = {
+				disaster = grand_conspiracy
+				value = 80
+			}
+		}
 	}
 	
 	can_end = {
