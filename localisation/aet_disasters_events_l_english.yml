@@ -8,11 +8,6 @@
  disasters_aet.EVTNAME0002:0 "Recovery Of The Military"
  disasters_aet.EVTDESC0002:0 "Our forces have recovered from the brink against all odds. We must now use our improving situation to press on and snatch victory from the jaws of defeat. "
  disasters_aet.EVTOPTA0002:0 "We go forwards. Only forwards."
- ###################################################
- ottoman_stagnation:0 "Ottoman Stagnation"
- ottoman_stagnation_desc:0 "Grand Vizier Kara Mustafa Pasha's defeat at the Battle of Vienna has shown that our aggressive nature in Europe is coming to a close. Multiple sultans and political factions have forced us into a political crisis, forced to carry out administrative and financial reforms we are at a cruical point in our history. This will either be the end of the Ottoman Empire or a graceful period of reform and economic growth. Only time will tell..."
- ottoman_stagnation.2:0 "Glory to the Ottomans"
- ottoman_stagnation.2_desc:0 "After years of reform and hardship we have finally taught our neighbours that we are as powerful as ever. Now the Holy League must pay and Russia should be destroyed. Glory to the Ottomans!"
 ###################################################
  grand_conspiracy:0 "Grand Conspiracy"
  grand_conspiracy_desc:0 "Enemies lurk in the shadows. No one can be trusted. Whispers follow our leadership and behind every wall, ever door, every smiling face is malicious intent, personal ambition, traitors and rotten corruption."

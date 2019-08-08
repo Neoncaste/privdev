@@ -91,6 +91,11 @@ country_event = {
 			days = 1
 		}
 		option = {
+			name = "flavor_AETturEVTOPA0002"
+			modifier = { 
+				mil_tech_cost_modifier = +0.2
+				land_morale = -0.1
+			}
 
 		}
 
