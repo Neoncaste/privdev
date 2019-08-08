@@ -106,38 +106,7 @@ country_event = {
 	option = {
 		name = "grand_conspiracy.EVTOPTA0002"
 		random_owned_province = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = -1
-				win = yes
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = -1
-				win = yes
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = -1
-				win = yes
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = -1
-				win = yes
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = -1
-				win = yes
+			change_controller = REB
 			}
 		}
 	}
