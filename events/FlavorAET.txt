@@ -183,7 +183,10 @@ option = {
 	random_list = {
 		50 = {
 			option = {
-				add_disaster_progress = { disaster = grand_conspiracy value = 100 }
+				add_disaster_progress = {
+					disaster = grand_conspiracy
+					value = 100
+				}
 				remove_advisor = spymaster
 			}
 		}

@@ -31,10 +31,6 @@ grand_conspiracy = {
 	}
 	
 	progress = {
-		modifier = {
-			factor = 1
-			corruption = 1
-		}
 	}
 	
 	can_end = {
