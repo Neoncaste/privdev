@@ -55,13 +55,13 @@ country_event = {
 			}
 			25 = {
 				add_corruption = -1
-				add_manpower = -1
+				add_manpower = -0.001
 				kill_advisor = spymaster
 				end_disaster = grand_conspiracy
 
 			}
 		}
-		add_manpower = -83
+		add_manpower = -0.083
 		kill_leader = random
 		kill_leader = random
 		kill_advisor = random
