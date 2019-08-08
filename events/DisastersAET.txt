@@ -43,16 +43,34 @@ country_event = {
 	id = disasters_aet.0003
 	title = "grand_conspiracy.EVTNAME0001"
 	desc = "grand_conspiracy.EVTDESC0001"
-	picture = MILITARY_CAMP_eventPicture
+	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = grand_conspiracy.EVTOPTA0001
+		custom_tooltip = aet_events.1.a.tt
 		random_list = {
 			75 = {
 				remove_advisor = spymaster
-
+				random_owned_province = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+					}
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						type = noble_rebels
+						size = 1
+					}
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+					}
+				}
 			}
 			10 = {
 				add_corruption = -1
@@ -66,8 +84,7 @@ country_event = {
 					DIP = 6
 					ADM = 2
 					MIL = 2
-					claim = 100
-					culture = polish
+					claim = 50
 				}
 			}
 
