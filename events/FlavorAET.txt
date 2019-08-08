@@ -183,16 +183,13 @@ option = {
 	random_list = {
 		50 = {
 			option = {
-				add_disaster_progress = {
-				disaster = "aet_conspiracy"
-				effect = 100
+				add_disaster_progress = { disaster = grand_conspiracy value = 100 }
 				remove_advisor = spymaster
-				}
 			}
 		}
 		50 = {
 			add_corruption = -1
-			add_manpower = -1
+			add_manpower = -0.001
 			kill_advisor = spymaster
 		}
 	}
@@ -201,5 +198,6 @@ option = {
 	name = flavor_aet.EVTOPTB0007
 	add_prestige = -10
 	remove_advisor = spymaster
+		}
 	}
 }
