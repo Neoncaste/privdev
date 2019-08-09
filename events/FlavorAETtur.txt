@@ -2,7 +2,7 @@ country_event = {
 	id = flavor_AETtur.0001 #intended as an AI enhancement but also a boost to player expansion
 	title = "flavor_AETtur.EVTNAME0001"
 	desc = "flavor_AETtur.EVTDESC0001"
-	picture = HORSE_ON_HORSEBACK_eventPicture
+	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	trigger ={
 		tag = TUR
@@ -71,33 +71,52 @@ country_event = {
 		}
 	}
 
-}
+
 	country_event = {
 		id = flavor_AETtur.0002 #Used to slow down AI expansion and development lategame.
 		title = "flavor_AETtur.EVTNAME0002"
 		desc = "flavor_AETtur.EVTDESC0002"
-		picture = siege_eventPICTURE
+		picture = SIEGE_eventPicture
 		
 		trigger = {
 			tag = TUR 
 			134 = {
 				owned_by  = HAB} 
 			is_year = 1700
-			NOT = {war_wth = HAB}
+			NOT = {war_with = HAB}
 		}
 
+		is_triggered_only = yes
 		fire_only_once = yes
 		mean_time_to_happen = {
 			days = 1
 		}
 		option = {
-			name = "flavor_AETturEVTOPA0002"
-			modifier = { 
-				mil_tech_cost_modifier = +0.2
-				land_morale = -0.1
+			name = "flavor_AETtur.EVTOPA0002" 
+			add_prestige = -20
+			add_stability = -1
+			add_country_modifier = {
+				name = aet_ottoman_stagnation
+				
 			}
 
-		}
+			}
+				
+			}
 
-		
-	}
+		country_event = {
+			id = flavor_AETtur.0003 #How to end the Otoman stagnation.
+			title = "flavor_AETtur.EVTNAME0003"
+			desc = "flavor_AETtur.EVTDESC0003"
+			picture = GOOD_WITH_MONARCH_eventPicture
+
+			trigger = {
+				prestige = 75
+				legitimacy = 50
+				average_autonomy = 25
+				religious_unity = 100
+				corruption = 0
+				total_base_tax = 2000
+			}
+		}
+	
