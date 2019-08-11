@@ -101,24 +101,53 @@ province_event = {
 		days = 1
 	}
 
-	every_owned_province = {
-		limit = { has_port = yes }
-		set_country_flag = aet_init_coast
-		random_list = {
-			5 = {
-				add_province_modifier = shipwright
+	set_country_flag = aet_init_coast
+
+	random_list = {
+		5 = {
+			every_owned_province = {
+					limit = {
+						has_port = yes
+					}
+						add_province_modifier = {
+							name = shipwright
+							duration = -1
+					}
+				}
 			}
-			5 = {
-				add_province_modifier = fishery
-			}
-			5 = {
-				add_province_modifier = smuggling_cove
-			}
-			5 = {
-				add_province_modifier = smuggling_hub
-			}
-			80 = {
-			}
+		5 = {
+			every_owned_province = {
+					limit = {
+							has_port = yes
+						}
+						add_province_modifier = {
+							name = fishery
+								duration = -1
+						}
+					}
+				}
+		5 = {
+			every_owned_province = {
+					limit = {
+							has_port = yes
+						}
+						add_province_modifier = {
+							name = smuggling_cove
+								duration = -1
+						}
+					}
+				}
+		5 = {
+			every_owned_province = {
+					limit = {
+							has_port = yes
+						}
+						add_province_modifier = {
+							name = smuggling_cove
+								duration = -1
+						}
+					}
+				}
 	}
 	
 	option = {
