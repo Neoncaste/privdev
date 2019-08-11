@@ -89,15 +89,16 @@ province_event = {
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
 	
-	
-	hidden = no
+	fire_only_once = yes
+
+	hidden = yes
 
 	trigger = {
 		has_port = yes
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 31
 	}
 
 	immediate = {
