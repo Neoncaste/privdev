@@ -89,7 +89,7 @@ province_event = {
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
 	
-	hidden = yes
+	hidden = no
 
 	trigger = {
 		has_port = yes
