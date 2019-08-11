@@ -89,8 +89,6 @@ province_event = {
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
 	
-	fire_only_once = yes
-
 	hidden = yes
 
 	trigger = {
@@ -101,15 +99,15 @@ province_event = {
 		days = 31
 	}
 
-	immediate = {
-		random_list = {
-			7 = { add_province_modifier = { name = shipwright duration = -1} }
-			7 = { add_province_modifier = { name = fishery duration = -1} }
-			7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-			7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
-			72 = {}
-		}
+	every_owned_province = {
+	random_list = {
+		7 = { add_province_modifier = { name = shipwright duration = -1} }
+		7 = { add_province_modifier = { name = fishery duration = -1} }
+		7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+		7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+		72 = {}
 	}
+}
 	
 	option = {
 		name = province_aet.EVTOPTA0001
