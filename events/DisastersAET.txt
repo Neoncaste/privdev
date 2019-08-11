@@ -84,7 +84,7 @@ country_event = {
 	id = disasters_aet.0004
 	title = "grand_conspiracy.EVTNAME0002"
 	desc = "grand_conspiracy.EVTDESC0002"
-	picture = BATTLE_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	mean_time_to_happen = {
 		days = 14
