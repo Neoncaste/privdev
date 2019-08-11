@@ -94,6 +94,7 @@ province_event = {
 
 	trigger = {
 		has_port = yes
+		NOT { has_country_flag = aet_init_coast }
 	}
 	
 	mean_time_to_happen = {
