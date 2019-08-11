@@ -123,5 +123,6 @@ province_event = {
 	
 	option = {
 		name = province_aet.EVTOPTA0001
+		}
 	}
 }
