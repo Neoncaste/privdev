@@ -100,15 +100,10 @@ province_event = {
 	}
 
 	every_owned_province = {
-		limit = {
-			has_port = yes
+		add_province_modifier = {
+			name = shipwright
+			duration = -1
 		}
-	random_list = {
-		7 = { add_province_modifier = { name = shipwright duration = -1} }
-		7 = { add_province_modifier = { name = fishery duration = -1} }
-		7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-		7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
-		72 = {}
 	}
 }
 	
