@@ -102,7 +102,11 @@ province_event = {
 
 	immediate = {
 		random_list = {
-			100 = { add_province_modifier = { name = shipwright duration = -1} }
+			7 = { add_province_modifier = { name = shipwright duration = -1} }
+			7 = { add_province_modifier = { name = fishery duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+			72 = {}
 		}
 	}
 	
