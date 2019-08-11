@@ -2,7 +2,7 @@
 # Aeternum Event Modifiers.
 ##################################################################################################
 
-#CITY SIZE MODIFIERS
+#CITY MODIFIERS
 
 #20-29 Development
 
@@ -26,6 +26,26 @@ enormous_settlement = {
 	local_unrest = 1
 	local_manpower_modifier = 0.20
 	trade_goods_size_modifier = 0.10
+}
+
+# Random Chance Modifiers
+
+shipwright = {
+	ship_recruit_speed = -0.10
+}
+
+fishery = {
+	trade_goods_size_modifier = 0.05
+}
+
+smuggling_cove = {
+	local_institution_spread = 0.10
+	local_tax_modifier = -0.05
+}
+
+smuggling_hub = {
+	local_institution_spread = 0.20
+	local_tax_modifier = -0.10
 }
 
 #MILITARY MODIIFERS
