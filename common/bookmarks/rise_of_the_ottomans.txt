@@ -11,7 +11,7 @@ bookmark =
 	country = CAS
 	country = HAB
 	country = MNG
-	country = ASH
+	country = ASK
 	country = BEI
 	country = CSU
 	
