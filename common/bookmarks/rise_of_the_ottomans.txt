@@ -4,14 +4,14 @@ bookmark =
 	desc = "RISE_OF_THE_OTTOMANS_DESC"
 	date = 1444.11.11
 	
-	center = 112
+	center = 54
 	default = yes
 	
 	country = TUR
 	country = CAS
 	country = HAB
 	country = MNG
-	country = ASH	
+	country = ASH
 	country = BEI
 	country = CSU
 	
