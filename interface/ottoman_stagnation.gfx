@@ -1,0 +1,10 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_disaster_ottoman_stagnation"
+texturefile = "gfx//interface//disasters//ottoman_stagnation.dds"
+noOfFrames = 3
+loadType = "INGAME"
+    }
+   }
+
+   

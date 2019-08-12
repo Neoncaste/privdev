@@ -58,9 +58,9 @@ aet_massive_troop_desertion = {
 	discipline = -0.10
 }
 
-aet_ottoman_stagnation = {
-land_morale = -0.25
-discipline = -0.2
+Ottoman_Stagnation = {
+land_morale = -0.10
+discipline = -0.05
 mil_tech_cost_modifier = +0.25
 global_unrest = 2
 stability_cost_modifier = 0.1
