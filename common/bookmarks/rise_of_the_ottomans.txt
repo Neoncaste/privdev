@@ -4,22 +4,18 @@ bookmark =
 	desc = "RISE_OF_THE_OTTOMANS_DESC"
 	date = 1444.11.11
 	
-	center = 112
+	center = 54
 	default = yes
 	
 	country = TUR
 	country = CAS
-	country = FRA	
-	country = POR	
-	country = ENG
 	country = HAB
-	country = BRA	
-	country = SWE
-	country = MOS
-	country = BUR
-	country = POL
+	country = MNG
+	country = ASK
+	country = BEI
+	country = CSU
 	
-	easy_country = CAS
-	easy_country = FRA
 	easy_country = TUR
+	easy_country = CAS
+	easy_country = HAB
 }

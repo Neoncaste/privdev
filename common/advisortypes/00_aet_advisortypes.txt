@@ -147,6 +147,10 @@ ambassador = {
 
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 0
+			owner = { NOT = { num_of_subjects = 1 } }
+		}
 	}
 	
 	ai_will_do = {
@@ -168,11 +172,7 @@ nautical_engineer = {
 		factor = 1
 		modifier = {
 			factor = 0
-			has_port = no
-		}
-		modifier = {
-			factor = 0
-			owner = { primitives = yes }
+			owner = { NOT = { num_of_ports = 0 } }
 		}
 	}
 	
@@ -222,7 +222,7 @@ colonial_representative = {
 	monarch_power = DIP
 	
 	# Bonus
-	liberty_desire = -10 
+	reduced_liberty_desire = 10
 	
 	skill_scaled_modifier = { meritocracy = 0.5 }
 
@@ -382,6 +382,10 @@ artillery_officer = {
 		modifier = {
 			factor = 1.5
 			is_at_war = no
+		}
+		modifier = {
+			factor = 0
+			owner = { NOT = { mil_tech = 7 } }
 		}
 	}
 }

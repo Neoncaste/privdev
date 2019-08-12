@@ -5,9 +5,9 @@
 namespace = province_aet
 normal_or_historical_nations = yes
 
-# Aeternum City Growth 5
+# Aeternum City Growth 1
 province_event = {
-	id = province_aet.0005
+	id = province_aet.0001
 	title = "province_aet.EVTNAME0001"
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
@@ -45,9 +45,9 @@ province_event = {
 
 
 
-# Aeternum City Growth 6
+# Aeternum City Growth 2
 province_event = {
-	id = province_aet.0006
+	id = province_aet.0002
 	title = "province_aet.EVTNAME0001"
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
@@ -80,4 +80,30 @@ province_event = {
 	option = {
 		name = province_aet.EVTOPTA0001
 	}
+}
+
+# Aeternum Init Coast
+province_event = {
+	id = province_aet.0003
+	title = "province_aet.EVTNAME0001"
+	desc = "province_aet.EVTDESC0001"
+	picture = CITY_VIEW_eventPicture
+	
+	
+	hidden = no
+
+	trigger = {
+		has_port = yes
+		NOT { has_country_flag = aet_init_coast }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	set_country_flag = aet_init_coast
+	
+	option = {
+		name = province_aet.EVTOPTA0001
+		}
 }
