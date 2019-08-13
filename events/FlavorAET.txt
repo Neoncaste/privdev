@@ -263,6 +263,10 @@ trigger = {
 }
 option = {
 	name = flavor_aet.EVTOPTA0009
+	ai_chance = {
+		factor = 90
+		
+	}
 	1773 = {
 		cede_province = VEN
 		if = {
@@ -280,6 +284,21 @@ option = {
 }
 option = {
 	name = flavor_aet.EVTOPTB0009
-	release = BYZ
+	1773 = {
+		cede_province = BYZ
+		if = {
+			limit = { NOT = { is_core = BYZ } }
+			add_core = BYZ
+		}
+	}
+	145 = {
+		cede_province = BYZ
+		if = {
+			limit = { NOT = { is_core = BYZ } }
+			add_core = BYZ
+		}
+	}
+		
 }
 }
+
