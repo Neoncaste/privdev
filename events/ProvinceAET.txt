@@ -104,7 +104,7 @@ province_event = {
 	option = {
 		name = province_aet.EVTOPTA0001
 		random_list = {
-			4 = {
+			25 = {
 				every_province = {
 					limit = { has_port = yes }
 					add_province_modifier = {
@@ -113,7 +113,7 @@ province_event = {
 					}
 				}
 			}
-			4 = {
+			25 = {
 				every_province = {
 					limit = { has_port = yes }
 					add_province_modifier = {
@@ -122,7 +122,7 @@ province_event = {
 					}
 				}
 			}
-			4 = {
+			25 = {
 				every_province = {
 					limit = { has_port = yes }
 					add_province_modifier = {
@@ -131,17 +131,12 @@ province_event = {
 					}
 				}
 			}
-			4 = {
+			25 = {
 				every_province = {
 					limit = { has_port = yes }
 					add_province_modifier = {
 						name = "smuggling_hub"
 						duration = -1
-					}
-				}
-			}
-			84 = {
-				every_province = {
 					}
 				}
 			}
