@@ -172,18 +172,20 @@ trigger = {
 						is_capital = yes
 						owned_by = ROOT
 					}
-				}
+				
 				spawn_rebels = {
 					type = seperatist
 					size = 10
 				}
 			}
+				}
+			}
 		}
-        }
-    }
+        
+    
 			
 option = {
-	name = ottoman_stagnation.EVTOPB0003 
+	name = ottoman_stagnation.EVTOPTB0003 
 	ai_chance = {
 		factor = 90
 	}
@@ -197,9 +199,16 @@ option = {
 				}
 			
 			add_truce_with = VEN
-			release = HUN
+			any_owned_province = {
+				culture = hungarian
+				OR = {
+					area =  Alföld
+					area = Transdanubia
+					area = Slovakia
+				}
+				}
+			}
 
-}
 	
 
 
