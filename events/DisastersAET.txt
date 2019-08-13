@@ -164,23 +164,15 @@ trigger = {
 		name = ottoman_stagnation.EVTOPTA0003 
 		add_prestige = -50
 		add_stability = -1
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					region = morea_region
-						is_capital = yes
-						owned_by = ROOT
-					}
-				
-				spawn_rebels = {
-					type = seperatist
-					size = 10
-				}
-			}
-				}
-			}
+		spawn_rebels = {
+			any_owned_province = {
+				is_core = HUN
+				culture = hungarian
+				can_spawn_rebels = nationalist_rebels
 		}
+		
+		}
+	
         
     
 			
@@ -199,6 +191,7 @@ option = {
 				}
 			
 			add_truce_with = VEN
+			cede_province = {
 			any_owned_province = {
 				culture = hungarian
 				OR = {
@@ -208,9 +201,5 @@ option = {
 				}
 				}
 			}
-
-	
-
-
-
 			}
+		}
