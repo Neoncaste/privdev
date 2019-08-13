@@ -230,7 +230,7 @@ country_event = {
 			2 = { add_province_modifier = { name = shipwright duration = -1} }
 			2 = { add_province_modifier = { name = fishery duration = -1} }
 			2 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-			2 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+			2 = { add_province_modifier = { name = piracy_haven duration = -1} }
 			92 = {}
 				}
 			}
