@@ -81,7 +81,7 @@ on_end = disaster_aet.0006
         }
 random_events =  {
     1000 = 0
-100 = ottoman_stagnation.4 # Revolts in Greece and Hungary
+100 = disaster_aet.0006 # Revolts in Greece and Hungary
 100 = ottoman_stagnation.5 # Autonomy in Algeria
 100 = ottoman_stagnation.6 # Autonomy in Egypt
 100 = ottoman_stagnation.7 # Wars with Russia

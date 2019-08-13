@@ -161,7 +161,7 @@ trigger = {
 		months = 24
 	}
 	option = {
-		name = "ottoman_stagnation.EVTOPTA0003"
+		name = ottoman_stagnation.EVTOPTA0003 
 		add_prestige = -50
 		add_stability = -1
 	immediate = {
@@ -169,37 +169,26 @@ trigger = {
 			random_owned_province = {
 				limit = {
 					region = morea_region
-					culture = greek
-					can_spawn_rebels = nationalist_rebels
+						is_capital = yes
+						owned_by = ROOT
+					}
 				}
-				set_province_flag = greek_uprising_6
-			}
-			random_owned_province = {
-				limit = {
-					region = morea_region
-					culture = greek
-					can_spawn_rebels = nationalist_rebels
+				spawn_rebels = {
+					type = seperatist
+					size = 10
 				}
-				set_province_flag = greek_uprising_5
-			}
-			random_owned_province = {
-				limit = {
-					region = carpathia_region
-					culture = hungarian
-					can_spawn_rebels= nationalist_rebels
-				}
-				set_province_flag = hungarian_uprising_12
 			}
 		}
-	}
-}
+        }
+    }
+			
 option = {
-	name = ottoman_stagnation.EVTOPB0003
+	name = ottoman_stagnation.EVTOPB0003 
 	ai_chance = {
 		factor = 90
 	}
 	add_prestige = 20
-	VEN = { country_event = {id = aet_flavor.0009}}
+	VEN = {country_event = {id = flavor_aet.0009}}
 			1773 = {
 				cede_province = VEN
 			}
