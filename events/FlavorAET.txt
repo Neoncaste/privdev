@@ -244,14 +244,17 @@ country_event = {
 
 #Ottoman Stagnation - Venice is given Morea
 country_event = {
-	id = flavor_aet.008
-	title = "flavor_aet.EVTNAME0008"
-	desc = "flavor_aet.EVTDESC0008"
+	id = flavor_aet.009
+	title = "flavor_aet.EVTNAME0009"
+	desc = "flavor_aet.EVTDESC0009"
 	picture = city_view_eventPicture
 
 is_triggered_only = yes
-
+mean_time_to_happen = {
+	days = 1
+}
 trigger = {
+	tag = VEN
 	1773 = {
 		145  = {
 		owned_by = VEN
@@ -259,17 +262,13 @@ trigger = {
 }
 }
 option = {
-	name = flavor_aet.EVTOPTA0008
+	name = flavor_aet.EVTOPTA0009
 	add_core = 1773 
 	add_core = 145
+	
 }
 option = {
-	name = flavor_aet.EVTOPTB0008
+	name = flavor_aet.EVTOPTB0009
 	release = BYZ
 }
-
-
-
-
-
 }
