@@ -210,7 +210,7 @@ country_event = {
 	
 	fire_only_once = no
 
-	hidden = no
+	hidden = yes
 
 	trigger = {
 		num_of_cities = 1
