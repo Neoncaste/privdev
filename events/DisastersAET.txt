@@ -109,19 +109,21 @@ country_event = {
 		picture = SIEGE_eventPicture
 
 		is_triggered_only = yes
+		
 
 		option = {
-			name = ottoman_stagnation.EVTOPA0001
+			name = ottoman_stagnation.EVTOPTA0001
 			add_prestige = -20
 			add_stability = -1
 			add_country_modifier = {
 				name = Ottoman_Stagnation	
-				set_country_flag = Ottoman_Stagnation
-				days = 7350
+				duration = 7500
 			}
+			set_country_flag = Ottoman_Stagnation
 			}	
-			}
-set_country_flag = aet_ottoman_stagnation
+			
+
+		}
 		country_event = {
 			id = disaster_aet.0006 #Rewards for ending the disaster.
 			title = "ottoman_stagnation.EVTNAME0002"
@@ -130,17 +132,17 @@ set_country_flag = aet_ottoman_stagnation
 			
 
 			is_triggered_only = yes
+			trigger = {
+				has_country_flag = Ottoman_Stagnation
+			}
 			option = {
-				name = ottoman_stagnation.EVTOPA0002
+				name = ottoman_stagnation.EVTOPTA0002
 				add_prestige = 25
 				add_stability = 1
-				remove_country_modifier = {
-					name = Ottoman_Stagnation
-				}
-				land_morale = 0.5
-				days = 365
+			clr_country_flag = Ottoman_Stagnation
 			}
-		}
+				}
+		
 			#Ottoman Stagnation revolt events
 			country_event = {
 				id = disaster_aet.0007 #Fall of Greece and Hungary
@@ -150,12 +152,16 @@ set_country_flag = aet_ottoman_stagnation
 			
 				
 	fire_only_once = yes
+is_triggered_only = yes
+trigger = {
+	has_country_flag = Ottoman_Stagnation
+}
 
 	mean_time_to_happen = {
 		months = 24
 	}
 	option = {
-		name = "ottoman_stagnation.EVTOPA0003"
+		name = "ottoman_stagnation.EVTOPTA0003"
 		add_prestige = -50
 		add_stability = -1
 	immediate = {
@@ -176,12 +182,38 @@ set_country_flag = aet_ottoman_stagnation
 				}
 				set_province_flag = greek_uprising_5
 			}
+			random_owned_province = {
+				limit = {
+					region = carpathia_region
+					culture = hungarian
+					can_spawn_rebels= nationalist_rebels
+				}
+				set_province_flag = hungarian_uprising_12
+			}
 		}
 	}
 }
 option = {
 	name = ottoman_stagnation.EVTOPB0003
-	add_prestige = 10
+	ai_chance = {
+		factor = 90
+	}
+	add_prestige = 20
+	cede_province = {
+		tooltip = {
+			1773 = {
+				cede_province = VEN
+			}
+			add_truce_with = VEN
+		}
+	}
+	tooltip = {
+		145 = {
+			cede_province = VEN
+		}
+		add_truce_with = VEN
+	}
+	release = HUN
 
 }
 	

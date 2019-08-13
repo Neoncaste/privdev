@@ -47,7 +47,7 @@ ottoman_stagnation = {
                 prestige = 50
                 legitimacy = 75
                 corruption = 0
-				total_base_tax = 500
+				total_development = 1500
             }
 
         
