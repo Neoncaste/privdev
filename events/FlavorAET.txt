@@ -250,7 +250,9 @@ country_event = {
 	picture = city_view_eventPicture
 
 is_triggered_only = yes
-
+mean_time_to_happen = {
+	days = 1
+}
 trigger = {
 	1773 = {
 		145  = {
@@ -262,6 +264,7 @@ option = {
 	name = flavor_aet.EVTOPTA0008
 	add_core = 1773 
 	add_core = 145
+	add_core = VEN
 }
 option = {
 	name = flavor_aet.EVTOPTB0008
