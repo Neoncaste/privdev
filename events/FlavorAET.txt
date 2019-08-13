@@ -200,3 +200,39 @@ option = {
 		}
 	}
 }
+
+# Aeternum Init Coast
+country_event = {
+	id = province_aet.0003
+	title = "province_aet.EVTNAME0001"
+	desc = "province_aet.EVTDESC0001"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	hidden = no
+
+	trigger = {
+		num_of_cities = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 31
+	}
+	
+	immediate = {
+		every_owned_province = {
+			random_list = {
+			7 = { add_province_modifier = { name = shipwright duration = -1} }
+			7 = { add_province_modifier = { name = fishery duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+			72 = {}
+				}
+			}
+		}
+		
+	option = {
+		name = province_aet.EVTOPTA0001
+	}
+}
