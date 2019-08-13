@@ -241,3 +241,35 @@ country_event = {
 		name = province_aet.EVTOPTA0001
 	}
 }
+
+#Ottoman Stagnation - Venice is given Morea
+country_event = {
+	id = flavor_aet.008
+	title = "flavor_aet.EVTNAME0008"
+	desc = "flavor_aet.EVTDESC0008"
+	picture = city_view_eventPicture
+
+is_triggered_only = yes
+
+trigger = {
+	1773 = {
+		145  = {
+		owned_by = VEN
+	}
+}
+}
+option = {
+	name = flavor_aet.EVTOPTA0008
+	add_core = 1773 
+	add_core = 145
+}
+option = {
+	name = flavor_aet.EVTOPTB0008
+	release = BYZ
+}
+
+
+
+
+
+}
