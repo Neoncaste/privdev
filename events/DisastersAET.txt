@@ -162,17 +162,49 @@ trigger = {
 	}
 	option = {
 		name = ottoman_stagnation.EVTOPTA0003 
-		add_prestige = -50
-		add_stability = -1
-		spawn_rebels = {
-			any_owned_province = {
-				is_core = HUN
+		add_prestige = -100
+		add_stability = -3
+		add_corruption = 5
+		add_unrest = 20
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = carpathia_region
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				win = yes
+				size = 30
 				culture = hungarian
-				can_spawn_rebels = nationalist_rebels
+				friend = HUN
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = carpathia_region
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				win = yes
 				size = 20
+				culture = hungarian
+			}
 		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = carpathia_region
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				win = yes
+				size = 20
+				culture = hungarian
+			}
+		}
+	}
 		
-		}
 	
         
     
@@ -203,5 +235,5 @@ option = {
 				}
 			}
 			}
-		}
+		
 			}
