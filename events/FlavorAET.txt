@@ -244,7 +244,7 @@ country_event = {
 
 #Ottoman Stagnation - Venice is given Morea
 country_event = {
-	id = flavor_aet.009
+	id = flavor_aet.0009
 	title = "flavor_aet.EVTNAME0009"
 	desc = "flavor_aet.EVTDESC0009"
 	picture = city_view_eventPicture
