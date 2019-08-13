@@ -203,7 +203,7 @@ option = {
 
 # Aeternum Init Coast
 country_event = {
-	id = province_aet.0003
+	id = flavor_aet.0008
 	title = "province_aet.EVTNAME0001"
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
