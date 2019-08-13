@@ -94,14 +94,24 @@ province_event = {
 
 	trigger = {
 		has_port = yes
-		NOT { has_country_flag = aet_init_coast }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 	}
 
-	set_country_flag = aet_init_coast
+	immediate = {
+		hidden_effect = {
+			all_owned_province = {
+				limit = { has_port = yes }
+				set_province_flag = aet_init_coast_complete
+				add_province_modifier = {
+					name = shipwright
+					duration = -1
+				}
+			}
+		}
+	}
 	
 	option = {
 		name = province_aet.EVTOPTA0001
