@@ -169,6 +169,7 @@ trigger = {
 				is_core = HUN
 				culture = hungarian
 				can_spawn_rebels = nationalist_rebels
+				size = 20
 		}
 		
 		}
@@ -203,3 +204,4 @@ option = {
 			}
 			}
 		}
+			}
