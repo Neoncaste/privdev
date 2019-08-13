@@ -264,7 +264,7 @@ option = {
 	add_core = 145
 }
 option = {
-	name = flavor_aet.EVTOPTB0009
+	name = flavor_aet.EVTOPTB0008
 	release = BYZ
 }
 
