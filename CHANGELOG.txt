@@ -340,4 +340,7 @@ AI CHANGES:
 •AI scoring for developing a subject’s provinces decreased from 0.75 to 0.65.
 •AI balance scoring for calling in allies to a war decreased from 4.0 to 3.5.
 
+VERSION 1.1.4
+
+Added new province modifiers to increase flavour & dynamism.
 

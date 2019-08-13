@@ -2,7 +2,7 @@
  province_aet.EVTNAME0001:0 "Settlement Grows In Size"
  province_aet.EVTDESC0001:0 "$PROVINCENAME$, one of our provincial capitals, has changed in size substantially enough to be reclassified by our administration. Its new development will have a noticable effect locally."
  province_aet.EVTOPTA0001:0 "Interesting"
- piracy_haven:0 "Piracy Haven"
+ piracy_haven:0 "Pirate Haven"
  fishery:0 "Fishery"
  shipwright:0 "Shipwright"
  smuggling_cove:0 "Smuggling Cove"
