@@ -227,11 +227,11 @@ country_event = {
 				has_port = yes
 			}
 			random_list = {
-			7 = { add_province_modifier = { name = shipwright duration = -1} }
-			7 = { add_province_modifier = { name = fishery duration = -1} }
-			7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-			7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
-			72 = {}
+			2 = { add_province_modifier = { name = shipwright duration = -1} }
+			2 = { add_province_modifier = { name = fishery duration = -1} }
+			2 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+			2 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+			92 = {}
 				}
 			}
 		set_country_flag = aet_init_coast
