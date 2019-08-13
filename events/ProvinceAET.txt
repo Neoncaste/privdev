@@ -98,48 +98,20 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 90
+		days = 60
 	}
 	
+	immediate = {
+		random_list = {
+			7 = { add_province_modifier = { name = shipwright duration = -1} }
+			7 = { add_province_modifier = { name = fishery duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+			7 = { add_province_modifier = { name = smuggling_hub duration = -1} }
+			72 = {}
+		}
+	}
+
 	option = {
 		name = province_aet.EVTOPTA0001
-		random_list = {
-			25 = {
-				every_province = {
-					limit = { has_port = yes }
-					add_province_modifier = {
-						name = "shipwright"
-						duration = -1
-					}
-				}
-			}
-			25 = {
-				every_province = {
-					limit = { has_port = yes }
-					add_province_modifier = {
-						name = "fishery"
-						duration = -1
-					}
-				}
-			}
-			25 = {
-				every_province = {
-					limit = { has_port = yes }
-					add_province_modifier = {
-						name = "smuggling_cove"
-						duration = -1
-					}
-				}
-			}
-			25 = {
-				every_province = {
-					limit = { has_port = yes }
-					add_province_modifier = {
-						name = "smuggling_hub"
-						duration = -1
-					}
-				}
-			}
-		}
 	}
 }
