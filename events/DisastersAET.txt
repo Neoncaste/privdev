@@ -199,21 +199,16 @@ option = {
 		factor = 90
 	}
 	add_prestige = 20
-	cede_province = {
-		tooltip = {
+	VEN = { country_event = {id = aet_flavor.0009}}
 			1773 = {
 				cede_province = VEN
 			}
+			145 = {
+					cede_province = VEN
+				}
+			
 			add_truce_with = VEN
-		}
-	}
-	tooltip = {
-		145 = {
-			cede_province = VEN
-		}
-		add_truce_with = VEN
-	}
-	release = HUN
+			release = HUN
 
 }
 	
