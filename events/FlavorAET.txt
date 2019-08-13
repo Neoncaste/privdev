@@ -263,9 +263,20 @@ trigger = {
 }
 option = {
 	name = flavor_aet.EVTOPTA0009
-	add_core = 1773 
-	add_core = 145
-	
+	1773 = {
+		cede_province = VEN
+		if = {
+			limit = { NOT = { is_core = VEN } }
+			add_core = VEN
+		}
+	}
+	145 = {
+		cede_province = VEN
+		if = {
+			limit = { NOT = { is_core = VEN } }
+			add_core = VEN
+		}
+	}
 }
 option = {
 	name = flavor_aet.EVTOPTB0009
