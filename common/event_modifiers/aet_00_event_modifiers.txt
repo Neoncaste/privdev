@@ -46,11 +46,12 @@ smuggling_cove = {
 	trade_value_modifier = 0.05
 }
 
-smuggling_hub = {
-	local_institution_spread = 0.20
-	local_tax_modifier = -0.10
-	trade_value_modifier = 0.10
+piracy_haven = {
+	local_unrest = -2
 }
+
+
+
 
 #MILITARY MODIIFERS
 
