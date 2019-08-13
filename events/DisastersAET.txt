@@ -182,7 +182,7 @@ option = {
 	ai_chance = {
 		factor = 90
 	}
-	add_prestige = 20
+	add_prestige = 10
 	VEN = {country_event = {id = flavor_aet.0009}}
 			1773 = {
 				cede_province = VEN
