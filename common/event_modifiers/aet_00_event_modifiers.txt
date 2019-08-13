@@ -48,6 +48,9 @@ smuggling_cove = {
 
 piracy_haven = {
 	local_unrest = -2
+	province_trade_power_modifier = 0.02
+	local_tax_modifier = -0.15
+	local_production_efficiency = -0.05
 }
 
 
