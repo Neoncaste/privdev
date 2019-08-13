@@ -208,16 +208,17 @@ country_event = {
 	desc = "province_aet.EVTDESC0001"
 	picture = CITY_VIEW_eventPicture
 	
-	fire_only_once = yes
+	fire_only_once = no
 
 	hidden = no
 
 	trigger = {
 		num_of_cities = 1
+		NOT { has_country_flag  = aet_init_coast }
 	}
 	
 	mean_time_to_happen = {
-		days = 31
+		days = 1
 	}
 	
 	immediate = {
@@ -230,6 +231,7 @@ country_event = {
 			72 = {}
 				}
 			}
+		set_country_flag = aet_init_coast
 		}
 		
 	option = {
