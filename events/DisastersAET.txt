@@ -236,29 +236,34 @@ option = {
 	
 	ai_chance = {
 		factor = 90
-		
+	}
 	add_prestige = 10
 	VEN = {country_event = {id = flavor_aet.0009}}
 			1773 = {
 				cede_province = VEN
 				}
-			}
+			
 			145 = {
 					cede_province = VEN
 				}
 			
 			add_truce_with = VEN
 			add_truce_with = HAB
+			HAB = {country_event = {id = flavor_aet.0010}}
 			transdanubia_area = {
 				cede_province = HAB
 			}
 			slovakia_area = {
 				cede_province = HAB
 			}
+			alfold_area = {
+				cede_province = HAB
+			}
+			}
 			}
 				
-				}
-			}
+				
+			
 			
 		
 			
