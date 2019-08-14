@@ -117,7 +117,7 @@ country_event = {
 			add_stability = -1
 			add_country_modifier = {
 				name = Ottoman_Stagnation	
-				duration = 1000
+				duration = 10000
 			}
 			set_country_flag = Ottoman_Stagnation
 			}	
@@ -165,18 +165,42 @@ trigger = {
 		add_prestige = -100
 		add_stability = -3
 		add_corruption = 5
-		remove_accepted_culture = hungarian
-		remove_accepted_culture = greek
-		every_rival_country = { 
-			form_coalition = TUR
-		}	
-			HAB = {
+
+	
+		every_neighbor_country  = {
+			form_coalition_against = ROOT
+		any_coalition_member= {
 			declare_war_with_cb = {
 				who = TUR
-				casus_belli = cb_holy_war
+				casus_belli = cb_super_badboy
+			}
 		}
 	}
-
+		
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = carpathia_region
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				win = yes
+				size = 5
+				friend = HAB
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = carpathia_region
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				win = yes
+				size = 2
+				friend = HAB
+			}
+		}
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -192,42 +216,16 @@ trigger = {
 		random_owned_province = {
 			limit = {
 				is_capital = no
-				region = carpathia_region
+				area = morea_area
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
 				win = yes
-				size = 5
-				friend = HAB
+				size = 8
+				friend = VEN
 			}
 		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-				region = carpathia_region
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				win = yes
-				size = 5
-				friend = HAB
-			}
-		}
-		random_owned_province = {
-			limit = {
-				province_id = 1773
-				is_capital = no
-			}
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				win = yes
-				size = 5
-			}
-		}
-	
-		
-	
+	}
 		
 	
         
@@ -235,13 +233,15 @@ trigger = {
 			
 option = {
 	name = ottoman_stagnation.EVTOPTB0003 
+	
 	ai_chance = {
 		factor = 90
-	}
+		
 	add_prestige = 10
 	VEN = {country_event = {id = flavor_aet.0009}}
 			1773 = {
 				cede_province = VEN
+				}
 			}
 			145 = {
 					cede_province = VEN
@@ -249,17 +249,16 @@ option = {
 			
 			add_truce_with = VEN
 			add_truce_with = HAB
-			HAB= {country_event = {id = flavor_aet.0010}}
-			Alföld_area = {
+			transdanubia_area = {
 				cede_province = HAB
 			}
-			Transdanubia_area = {
+			slovakia_area = {
 				cede_province = HAB
 			}
-			Slovakia_area = {
-				cede_province = HAB
 			}
-		}
+				
+				}
+			}
 			
 		
-			}
+			

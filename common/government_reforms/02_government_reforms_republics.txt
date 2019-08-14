@@ -1093,11 +1093,9 @@ citizenry_reform = {
 		land_morale = 0.05
 		production_efficiency = +0.05
 		max_absolutism = -10}
-		potential = {
-			NOT = {
-				has_reform = noble_elite_reform}
+		
 	}
-}
+
 
 #Office Selection Method
 
@@ -1128,10 +1126,9 @@ universal_suffrage_reform = {
 		num_accepted_cultures = 1
 		global_unrest = -1.00
 		republican_tradition = +1.00
-	}potential = {
-		NOT = {
-			has_reform = noble_elite_reform
+
 }
+	}
 
 #Question of Dictatorship
 

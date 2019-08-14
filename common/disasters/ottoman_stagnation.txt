@@ -81,7 +81,7 @@ ottoman_stagnation = {
 
 on_start = ottoman_stagnation.2
 on_end = ottoman_stagnation.3
-        }
+        
 random_events =  {
     1000 = 0
 100 = ottoman_stagnation.4 # Revolts in Greece and Hungary
