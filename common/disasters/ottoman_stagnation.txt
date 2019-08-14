@@ -58,8 +58,11 @@ ottoman_stagnation = {
     }
         
         can_stop = {
-            134 = {
-                owned_by = TUR
+            TUR = {
+                is_core = 134    
+                is_core  = 361   
+                is_core = 429     
+            }
             }
         }
         
@@ -76,12 +79,12 @@ ottoman_stagnation = {
 
         
 
-on_start = disaster_aet.0005
-on_end = disaster_aet.0006
+on_start = ottoman_stagnation.2
+on_end = ottoman_stagnation.3
         }
 random_events =  {
     1000 = 0
-1000 = disaster_aet.0007 # Revolts in Greece and Hungary
+100 = ottoman_stagnation.4 # Revolts in Greece and Hungary
 100 = ottoman_stagnation.5 # Autonomy in Algeria
 100 = ottoman_stagnation.6 # Autonomy in Egypt
 100 = ottoman_stagnation.7 # Wars with Russia
