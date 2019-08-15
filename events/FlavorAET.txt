@@ -299,3 +299,63 @@ option = {
 }
 }
 
+#Ottoman Stagnation - Austria is given Slovakia, Transdanubia and Alföld.
+country_event = {
+	id = flavor_aet.0010
+	title = "flavor_aet.EVTNAME0010"
+	desc = "flavor_aet.EVTDESC0010"
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = flavor_aet.EVTOPTA0010
+		if = {
+			limit = {
+				tag = HAB
+				exists = TUR
+			}
+			  transdanubia_area = { 
+				limit = {
+					owned_by = TUR
+				}
+				  remove_core = TUR
+				  add_core = HAB
+				  cede_province = HAB
+			  }
+		  }
+		  if = {
+			limit = {
+				tag = HAB
+				exists = TUR
+			}
+			  slovakia_area = { 
+				limit = {
+					owned_by = TUR
+				}
+				  remove_core = TUR
+				  add_core = HAB
+				  cede_province = HAB
+			  }
+		  }
+		  if = {
+			limit = {
+				tag = HAB
+				exists = TUR
+			}
+			  alfold_area = { 
+				limit = {
+					owned_by = TUR
+				}
+				  remove_core = TUR
+				  add_core = HAB
+				  cede_province = HAB
+			  }
+		  }
+		}
+	}
+}
+}
