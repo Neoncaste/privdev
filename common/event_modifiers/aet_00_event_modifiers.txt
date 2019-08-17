@@ -87,17 +87,7 @@ aet_massive_troop_desertion = {
 	discipline = -0.10
 }
 
-Ottoman_Stagnation = {
-land_morale = -0.10
-discipline = -0.05
-mil_tech_cost_modifier = +0.25
-global_unrest = 2
-stability_cost_modifier = 0.1
-global_autonomy = 0.33
-core_creation = +0.5
-claim_duration = -0.75
-prestige = -2
-}
+
 
 aet_paid_off_deserters = { #reference modifier only
 }
