@@ -69,7 +69,6 @@ country_event = {
 			}
 		}
 	}
-}
 
 #############################################
 
@@ -121,16 +120,21 @@ country_event = {
 
 	option = {
 		name = "grand_conspiracy.EVTOPTA0003"
-		kill_leader = random
-		kill_advisor = random
-		add_yearly_manpower = -1.0
-		add_years_of_income = -0.5
-		capital_scope = {
-			add_devastation = 25
+		random_owned_area = {
+			if = {
+				limit = {
+					NOT = { controlled_by = REB }
+				}
+				change_controller = REB
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
 			}
 		remove_country_flag = aeternum_grand_conspiracy_1
 		set_country_flag = aeternum_grand_conspiracy_2
 		}
 	}
+}
 		
 			
