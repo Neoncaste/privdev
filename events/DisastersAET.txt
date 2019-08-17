@@ -64,6 +64,7 @@ country_event = {
 				add_stability = -2
 				remove_advisor = spymaster
 				add_manpower = -0.452
+				event = disasters_aet.0004
 				}
 			}
 		}
