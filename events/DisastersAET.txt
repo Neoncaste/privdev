@@ -64,7 +64,7 @@ country_event = {
 				add_stability = -2
 				remove_advisor = spymaster
 				add_manpower = -0.452
-				event = disasters_aet.0004
+				set_country_flag = aeternum_grand_conspiracy_begin
 				}
 			}
 		}
@@ -91,6 +91,11 @@ country_event = {
 
 	option = {
 		name = "grand_conspiracy.EVTOPTA0002"
+		kill_leader = random
+		kill_advisor = random
+		capital_scope = {
+			add_devastation = 25
+		}
 		}
 	}
 
