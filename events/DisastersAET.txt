@@ -90,13 +90,12 @@ country_event = {
 
 	option = {
 		name = "grand_conspiracy.EVTOPTA0004"
-		kill_leader = random
-		kill_advisor = random
+		capital_scope = {
+		add_devastation = 25
+		}
 		add_yearly_manpower = -1.0
 		add_years_of_income = -0.5
-		capital_scope = {
-			add_devastation = 25
-			}
+		kill_leader = random
 		remove_country_flag = aeternum_grand_conspiracy_1
 		set_country_flag = aeternum_grand_conspiracy_2
 		}
