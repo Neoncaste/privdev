@@ -41,14 +41,14 @@ country_event = {
 
 country_event = {
 	id = disasters_aet.0003
-	title = "grand_conspiracy.EVTNAME0001"
-	desc = "grand_conspiracy.EVTDESC0001"
+	title = "grand_conspiracy.EVTNAME0003"
+	desc = "grand_conspiracy.EVTDESC0003"
 	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "grand_conspiracy.EVTOPTA0001"
+		name = "grand_conspiracy.EVTOPTA0003"
 		random_list = {
 			33 = {
 				add_stability = 1
@@ -76,8 +76,8 @@ country_event = {
 
 country_event = {
 	id = disasters_aet.0004
-	title = "grand_conspiracy.EVTNAME0002"
-	desc = "grand_conspiracy.EVTDESC0002"
+	title = "grand_conspiracy.EVTNAME0004"
+	desc = "grand_conspiracy.EVTDESC0004"
 	picture = REVOLUTION_eventPicture
 	
 	mean_time_to_happen = {
@@ -89,7 +89,7 @@ country_event = {
 	}
 
 	option = {
-		name = "grand_conspiracy.EVTOPTA0002"
+		name = "grand_conspiracy.EVTOPTA0004"
 		kill_leader = random
 		kill_advisor = random
 		add_yearly_manpower = -1.0
@@ -106,8 +106,8 @@ country_event = {
 
 country_event = {
 	id = disasters_aet.0005
-	title = "grand_conspiracy.EVTNAME0003"
-	desc = "grand_conspiracy.EVTDESC0003"
+	title = "grand_conspiracy.EVTNAME0005"
+	desc = "grand_conspiracy.EVTDESC0005"
 	picture = BORDER_TENSION_eventPicture
 	
 	mean_time_to_happen = {
@@ -119,7 +119,7 @@ country_event = {
 	}
 
 	option = {
-		name = "grand_conspiracy.EVTOPTA0003"
+		name = "grand_conspiracy.EVTOPTA0005"
 		random_owned_area = {
 			if = {
 				limit = {
