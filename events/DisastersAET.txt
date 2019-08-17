@@ -48,7 +48,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = grand_conspiracy.EVTOPTA0001
+		name = "grand_conspiracy.EVTOPTA0001"
 		random_list = {
 			33 = {
 				add_stability = 1
@@ -64,7 +64,7 @@ country_event = {
 				add_stability = -2
 				remove_advisor = spymaster
 				add_manpower = -0.452
-				set_country_flag = aeternum_grand_conspiracy_begin
+				set_country_flag = aeternum_grand_conspiracy_1
 				}
 			}
 		}
@@ -86,19 +86,51 @@ country_event = {
 	}
 	
 	trigger = {
-		has_country_flag = aeternum_grand_conspiracy_begin	
+		has_country_flag = aeternum_grand_conspiracy_1
 	}
 
 	option = {
 		name = "grand_conspiracy.EVTOPTA0002"
 		kill_leader = random
 		kill_advisor = random
+		add_yearly_manpower = -1.0
+		add_years_of_income = -0.5
 		capital_scope = {
 			add_devastation = 25
-		}
+			}
+		remove_country_flag = aeternum_grand_conspiracy_1
+		set_country_flag = aeternum_grand_conspiracy_2
 		}
 	}
 
+# Grand Conspiracy 3
 
+country_event = {
+	id = disasters_aet.0005
+	title = "grand_conspiracy.EVTNAME0003"
+	desc = "grand_conspiracy.EVTDESC0003"
+	picture = BORDER_TENSION_eventPicture
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	trigger = {
+		has_country_flag = aeternum_grand_conspiracy_2
+	}
+
+	option = {
+		name = "grand_conspiracy.EVTOPTA0003"
+		kill_leader = random
+		kill_advisor = random
+		add_yearly_manpower = -1.0
+		add_years_of_income = -0.5
+		capital_scope = {
+			add_devastation = 25
+			}
+		remove_country_flag = aeternum_grand_conspiracy_1
+		set_country_flag = aeternum_grand_conspiracy_2
+		}
+	}
 		
 			

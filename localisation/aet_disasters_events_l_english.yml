@@ -17,4 +17,7 @@
  grand_conspiracy.EVTNAME0002:0 "The traitors escape!"
  grand_conspiracy.EVTDESC0002:0 "Although we have been victorious in the struggle for the capital, loyalist elements were unable to apprehend the key players behind the conspiracy, and reports from witnesses claim they saw many men riding with haste out of the city gates. No doubt the traitors have pulled back to their power base to plot their next move."
  grand_conspiracy.EVTOPTA0002:0 "We prevail for now, but the results of the skirmish are devastating."
+  grand_conspiracy.EVTNAME0003:0 "The conspirators surface"
+ grand_conspiracy.EVTDESC0003:0 "test"
+ grand_conspiracy.EVTOPTA0003:0 "Ree"
  ##################################################
