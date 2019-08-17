@@ -59,16 +59,11 @@ country_event = {
 				set_country_flag = aeternum_grand_conspiracy_end
 			}
 			66 = {
-				add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -20
-					}
 				add_legitimacy = -33
 				add_prestige = -33	
 				add_stability = -2
 				remove_advisor = spymaster
 				add_manpower = -0.452
-				kill_leader = random
 				}
 			}
 		}
