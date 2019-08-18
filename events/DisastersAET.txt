@@ -100,5 +100,38 @@ country_event = {
 		set_country_flag = aeternum_grand_conspiracy_2
 		}
 	}
-		
-			
+
+############################################
+
+country_event = {
+	id = disasters_aet.0005
+	title = "grand_conspiracy.EVTNAME0005"
+	desc = "grand_conspiracy.EVTDESC0005"
+	picture = BORDER_TENSION_eventPicture
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	trigger = {
+		has_country_flag = aeternum_grand_conspiracy_2
+	}
+
+	option = {
+		name = "grand_conspiracy.EVTOPTA0005"
+		random_owned_area = {
+			if = {
+				limit = {
+					NOT = { controlled_by = REB }
+				}
+				change_controller = REB
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		remove_country_flag = aeternum_grand_conspiracy_2
+		set_country_flag = aeternum_grand_conspiracy_3
+		}
+	}
+}
