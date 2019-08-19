@@ -171,7 +171,6 @@ country_event = {
 		corruption = 1
 		manpower = 0.001
 		employed_advisor = {
-			is_male = yes
 			type = spymaster
 		}
 
