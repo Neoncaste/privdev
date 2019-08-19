@@ -4,6 +4,17 @@
 
 #CITY MODIFIERS
 
+# Capital City
+
+capital_city = {
+	local_missionary_maintenance_cost = -0.10
+	local_culture_conversion_cost = -0.25
+	local_unrest = -1
+	allowed_num_of_buildings = 1
+	local_friendly_movement_speed = 0.10
+	local_production_efficiency = 0.05
+}
+
 #20-29 Development
 
 major_settlement = {
