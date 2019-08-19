@@ -69,7 +69,6 @@ trigger = {
 		is_revolution_target = no
 		war_exhaustion = 8
 		NOT = { war_score = 0 }
-		NOT = { has_country_modifier = aet_minor_troop_desertion }
 		NOT = { has_country_modifier = aet_large_troop_desertion }
 		NOT = { has_country_modifier = aet_massive_troop_desertion }
 		NOT = { has_country_modifier = aet_paid_off_deserters }
@@ -122,7 +121,6 @@ trigger = {
 		war_exhaustion = 16
 		NOT = { war_score = 0 }
 		NOT = { has_country_modifier = aet_minor_troop_desertion }
-		NOT = { has_country_modifier = aet_troop_desertion }
 		NOT = { has_country_modifier = aet_massive_troop_desertion }
 		NOT = { war_exhaustion = 25 }
 		NOT = { has_country_modifier = aet_paid_off_deserters }
@@ -173,7 +171,6 @@ trigger = {
 		war_exhaustion = 25
 		NOT = { war_score = 0 }
 		NOT = { has_country_modifier = aet_minor_troop_desertion }
-		NOT = { has_country_modifier = aet_large_troop_desertion }
 		NOT = { has_country_modifier = aet_troop_desertion }
 		NOT = { has_country_modifier = aet_paid_off_deserters }
 		}
