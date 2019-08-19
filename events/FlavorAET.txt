@@ -181,13 +181,13 @@ country_event = {
 option = {
 	name = flavor_aet.EVTOPTA0007
 	random_list = {
-		50 = {
+		80 = {
 			add_disaster_progress = {
 				disaster = grand_conspiracy
 				value = 85
 			}
 		}
-		50 = {
+		20 = {
 			add_corruption = -1
 			add_manpower = -0.001
 			kill_advisor = spymaster
