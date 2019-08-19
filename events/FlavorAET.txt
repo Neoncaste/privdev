@@ -176,7 +176,7 @@ country_event = {
 
 	}
 	mean_time_to_happen = {
-		months = 300
+		months = 300 #25 years
 
 	}
 option = {
