@@ -164,6 +164,8 @@ country_event = {
 	desc = "flavor_aet.EVTDESC0007"
 	picture = SPY_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		num_of_cities = 14
 		corruption = 1
@@ -175,7 +177,7 @@ country_event = {
 
 	}
 	mean_time_to_happen = {
-		months = 600
+		months = 300
 
 	}
 option = {
