@@ -202,47 +202,6 @@ option = {
 	}
 }
 
-# Aeternum Init Coast
-country_event = {
-	id = flavor_aet.0008
-	title = "province_aet.EVTNAME0001"
-	desc = "province_aet.EVTDESC0001"
-	picture = CITY_VIEW_eventPicture
-	
-	fire_only_once = no
-
-	hidden = yes
-
-	trigger = {
-		num_of_cities = 1
-		NOT { has_country_flag  = aet_init_coast }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		every_owned_province = {
-			limit = {
-				has_port = yes
-			}
-			random_list = {
-			3 = { add_province_modifier = { name = pirate_haven duration = -1} }	
-			3 = { add_province_modifier = { name = shipwright duration = -1} }
-			3 = { add_province_modifier = { name = fishery duration = -1} }
-			3 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-			88 = {}
-				}
-			}
-		set_country_flag = aet_init_coast
-		}
-		
-	option = {
-		name = province_aet.EVTOPTA0001
-	}
-}
-
 # Aeternum Province Engine
 country_event = {
 	id = flavor_aet.0008
@@ -259,94 +218,18 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 180
+		days = 31
 	}
 
-		
 	immediate = {
 		##############################
 		#CAPITAL
-		every_owned_province = { 
+		every_owned_province = {
 			limit = {
 				is_capital = yes
 			}
 			add_province_modifier = {
 				name = capital_city
-				duration = -1
-			}
-		}
-
-		##############################
-		#COAST
-		every_owned_province = { 
-			limit = {
-				has_port = yes
-			}
-			add_province_modifier = {
-				name = coastal_settlement
-				duration = -1
-			}
-		}
-
-		##############################
-		#Settlement growth
-		every_owned_province = {
-			limit = {
-				development = 3
-				NOT { development = 4 }
-			}
-			add_province_modifier = {
-				name = backwater_community
-				duration = -1
-			}
-			remove_province_modifier = modest_village
-			remove_province_modifier = small_town
-			remove_province_modifier = town
-			remove_province_modifier = large_town
-			remove_province_modifier = borough
-			remove_province_modifier = small_city
-			remove_province_modifier = aet_city
-			remove_province_modifier = sizeable_city
-			remove_province_modifier = large_city
-			remove_province_modifier = huge_city
-			remove_province_modifier = immense_city
-			remove_province_modifier = colossal_city
-			remove_province_modifier = metropolis
-		}
-		every_owned_province = {
-			limit = {
-				development = 4
-				NOT { development = 5 }
-			}
-			add_province_modifier = {
-				name = modest_village
-				duration = -1
-			}
-			remove_province_modifier = backwater_community
-			remove_province_modifier = small_town
-			remove_province_modifier = town
-			remove_province_modifier = large_town
-			remove_province_modifier = borough
-			remove_province_modifier = small_city
-			remove_province_modifier = aet_city
-			remove_province_modifier = sizeable_city
-			remove_province_modifier = large_city
-			remove_province_modifier = huge_city
-			remove_province_modifier = immense_city
-			remove_province_modifier = colossal_city
-			remove_province_modifier = metropolis
-		}
-		every_owned_province = { #TINY 9 - 11
-			limit = {
-				development = 9
-				NOT { development = 12 }
-			}
-			add_province_modifier = {
-				name = tiny_settlement
-				duration = -1
-			}
-			remove_province_modifier = {
-				name = backwater_settlement
 				duration = -1
 			}
 		}
