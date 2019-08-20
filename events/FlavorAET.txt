@@ -289,18 +289,67 @@ country_event = {
 		}
 
 		##############################
-		#Settlement Level 1
-		every_owned_province = { 
+		#Settlement growth
+		every_owned_province = {
 			limit = {
 				development = 3
 				NOT { development = 4 }
 			}
 			add_province_modifier = {
-				name = backwater
+				name = backwater_community
+				duration = -1
+			}
+			remove_province_modifier = modest_village
+			remove_province_modifier = small_town
+			remove_province_modifier = town
+			remove_province_modifier = large_town
+			remove_province_modifier = borough
+			remove_province_modifier = small_city
+			remove_province_modifier = aet_city
+			remove_province_modifier = sizeable_city
+			remove_province_modifier = large_city
+			remove_province_modifier = huge_city
+			remove_province_modifier = immense_city
+			remove_province_modifier = colossal_city
+			remove_province_modifier = metropolis
+		}
+		every_owned_province = {
+			limit = {
+				development = 4
+				NOT { development = 5 }
+			}
+			add_province_modifier = {
+				name = modest_village
+				duration = -1
+			}
+			remove_province_modifier = backwater_community
+			remove_province_modifier = small_town
+			remove_province_modifier = town
+			remove_province_modifier = large_town
+			remove_province_modifier = borough
+			remove_province_modifier = small_city
+			remove_province_modifier = aet_city
+			remove_province_modifier = sizeable_city
+			remove_province_modifier = large_city
+			remove_province_modifier = huge_city
+			remove_province_modifier = immense_city
+			remove_province_modifier = colossal_city
+			remove_province_modifier = metropolis
+		}
+		every_owned_province = { #TINY 9 - 11
+			limit = {
+				development = 9
+				NOT { development = 12 }
+			}
+			add_province_modifier = {
+				name = tiny_settlement
+				duration = -1
+			}
+			remove_province_modifier = {
+				name = backwater_settlement
 				duration = -1
 			}
 		}
-
 		##############################
 		#FISH
 		every_owned_province = { 
