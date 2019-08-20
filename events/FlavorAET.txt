@@ -242,3 +242,152 @@ country_event = {
 		name = province_aet.EVTOPTA0001
 	}
 }
+
+# Aeternum Province Engine
+country_event = {
+	id = flavor_aet.0008
+	title = "province_aet.EVTNAME0001"
+	desc = "province_aet.EVTDESC0001"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = no
+
+	hidden = yes
+
+	trigger = {
+		num_of_cities = 1
+	}
+	
+	mean_time_to_happen = {
+		days = 180
+	}
+
+		
+	immediate = {
+		##############################
+		#CAPITAL
+		every_owned_province = { 
+			limit = {
+				is_capital = yes
+			}
+			add_province_modifier = {
+				name = capital_city
+				duration = -1
+			}
+		}
+
+		##############################
+		#COAST
+		every_owned_province = { 
+			limit = {
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = coastal_settlement
+				duration = -1
+			}
+		}
+
+		##############################
+		#Settlement Level 1
+		every_owned_province = { 
+			limit = {
+				development = 3
+				NOT { development = 4 }
+			}
+			add_province_modifier = {
+				name = backwater
+				duration = -1
+			}
+		}
+
+		##############################
+		#FISH
+		every_owned_province = { 
+		limit = {
+			trade_goods = fish
+		}
+		add_province_modifier = {
+			name = fishery
+			duration = -1
+			}
+		}
+
+		##############################
+		#SHIPWRIGHT
+		every_owned_province = { 
+		limit = {
+			trade_goods = naval_supplies
+		}
+		add_province_modifier = {
+			name = shipwright
+			duration = -1
+			}
+		}
+
+		##############################
+		#PIRATE & SMUGGLE RANDOM CHANCE
+		every_owned_province = { 
+			limit = {
+				has_port = yes
+				is_capital = no
+			}
+			random_list = {
+			3 = { add_province_modifier = { name = pirate_haven duration = -1} }	
+			3 = { add_province_modifier = { name = smuggling_cove duration = -1} }
+			94 = {}
+			}
+		}
+
+		##############################
+		#SLAVER PORT
+		every_owned_province = { 
+		limit = {
+			trade_goods = slaves
+		}
+		add_province_modifier = {
+			name = slaver_port
+			duration = -1
+			}
+		}
+
+		##############################
+		#REMOVE SLAVER PORT
+		every_owned_province = {
+		limit = {
+			has_province_modifier = slaver_port
+			NOT = { trade_goods = slaves}
+		}
+		remove_province_modifier = {
+			name = slaver_port
+			}
+		}
+
+		##############################
+		#REMOVE FISHERY
+		every_owned_province = { 
+		limit = {
+			has_province_modifier = fishery
+			NOT = { trade_goods = fish}
+		}
+		remove_province_modifier = {
+			name = fishery
+			}
+		}
+
+		##############################
+		#REMOVE SHIPWRIGHT
+		every_owned_province = { 
+		limit = {
+			has_province_modifier = shipwright
+			NOT = { trade_goods = naval_supplies }
+		}
+		remove_province_modifier = {
+			name = shipwright
+			}
+		}
+		##############################
+	option = {
+		name = province_aet.EVTOPTA0001
+	}
+}
