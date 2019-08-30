@@ -323,3 +323,35 @@ country_event = {
 		name = province_aet.EVTOPTA0001
 	}
 }
+
+#Blockade Events
+
+#Economic Collapse
+country_event = {
+	id = flavor_aet.0009
+	title = "flavor_aet.EVTNAME0008"
+	desc = "flavor_aet.EVTDESC0008"
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "Art of War"
+		has_port = yes
+		blockade = 75
+		controlled_by = owner
+		trade_income_percentage = 60
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "flavor_aet.EVTOPTA0008"
+		add_country_modifier = {
+			name = "aet_trade_collapse"
+			duration = 1825
+		}
+}
+}

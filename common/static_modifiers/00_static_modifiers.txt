@@ -227,7 +227,10 @@ blockaded = {
 	ship_recruit_speed = 0.2
 	trade_goods_size_modifier = -0.5
 	province_trade_power_modifier = -0.75
-	local_monthly_devastation = 0.1
+	local_monthly_devastation = 0.2
+	local_sailors_modifier = -0.8
+	local_institution_spread = -1
+	local_production_efficiency = -0.5
 
 }
 
@@ -385,8 +388,7 @@ occupied = {
 	local_manpower_modifier = -0.5
 	local_sailors_modifier = -0.5
 	local_institution_spread = -0.1
-	
-	local_monthly_devastation = 0.2
+	local_monthly_devastation = 0.3
 }
 
 under_siege = {
@@ -589,8 +591,8 @@ negative_stability = {
 	global_institution_spread = 0.25
 	technology_cost = -0.025
 	idea_cost = -0.025
-	land_morale = 0.05
-	naval_morale = 0.05
+	land_morale = 0.0025
+	naval_morale = 0.0025
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
