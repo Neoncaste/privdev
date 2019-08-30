@@ -340,7 +340,7 @@ country_event = {
 		has_port = yes
 		blockade = 75
 		controlled_by = owner
-		trade_income_percentage = 60
+		trade_income_percentage = 0.6
 	}
 
 	mean_time_to_happen = {
