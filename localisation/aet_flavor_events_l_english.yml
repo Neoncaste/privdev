@@ -24,3 +24,6 @@
  flavor_aet.EVTNAME0008:0 "Blockade"
  flavor_aet.EVTDESC0008:0 "As the war continues, the enemy have seen it fit to blockade our ports, restricting imports and exports, this has led to our much reliant trade economy nearing total collapse."
  flavor_aet.EVTOPTA0008:0 "We must end this blockade!"
+ flavor_aet.EVTNAME0009:0 "Major trade port blockaded!"
+ flavor_aet.EVTDESC0009:0 "One of our most important ports is under blockade. The province is now close to rebellion and the merchants are demanding compensation."
+ english_civil_war.11.c:0 "Our leader has proved themselves. They will guide us forwards!"
