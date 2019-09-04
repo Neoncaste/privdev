@@ -522,7 +522,7 @@ trade_grants = {
 	}
 }
 
-seize_foreign_capital = {
+legalise_seizure_of_heretic_wealth = {
 	monarch_power = MIL
 
 	potential = {
@@ -534,7 +534,7 @@ seize_foreign_capital = {
 		full_idea_group = internationalism_ideas
 	}
 		
-	warscore_cost_vs_other_religion = -0.10
+	warscore_cost_vs_other_religion = -0.15
 		
 	ai_will_do = {
 		factor = 1		
