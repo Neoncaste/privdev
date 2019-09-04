@@ -233,3 +233,10 @@ kingdom_of_god = {
 	prestige = 1
 	devotion = 1
 }
+
+##############################
+#SPECIAL PLACES
+#############################
+san_marino = { #San Marino
+	trade_goods_size = 2.0
+}
