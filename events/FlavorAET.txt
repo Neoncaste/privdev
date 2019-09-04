@@ -325,6 +325,7 @@ country_event = {
 	}
 }
 }
+}
 #Blockade Events
 #Economic Collapse
 country_event = {
@@ -334,7 +335,9 @@ country_event = {
 	picture = PORT_BLOCKADED_eventPicture
 
 	is_triggered_only = yes
-
+	mean_time_to_happen = {
+		days = 7500
+	}
 	trigger = {
 		has_dlc = "Art of War"
 		blockade = 75
@@ -350,4 +353,17 @@ country_event = {
 	add_war_exhaustion = 10
 	add_stability = -1
 }
+}
+
+#Trade Estuary Blockaded
+country_event = {
+id = flavor_aet.0010
+title ="flavor_aet.EVTNAME0009"
+desc = "flavor_aet.EVTDESC0009"
+picture = PORT_BLOCKADED_eventPicture
+
+trigger = {
+	has_dlc = "Art of War"
+	blockade = 25
+	num_of_ports = 15
 }
