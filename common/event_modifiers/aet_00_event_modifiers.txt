@@ -221,3 +221,15 @@ aet_trade_collapse = {
 	development_cost = 0.5
 	global_colonial_growth = -50
 	}
+
+##############################
+#EDITED VANILLA MODIFIERS
+#############################
+
+kingdom_of_god = {
+	land_morale = 0.1
+	global_unrest = -1
+	stability_cost_modifier = -0.1
+	prestige = 1
+	devotion = 1
+}
