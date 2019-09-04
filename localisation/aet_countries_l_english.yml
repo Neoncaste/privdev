@@ -1,3 +1,5 @@
 ﻿l_english:
  KOG:0 "Kingdom Of God"
- KOG_ADJ: "Papal"
+ KOG_ADJ:0 "Papal"
+ COE:0 "Commonwealth Of England"
+ COE_ADJ:0 "English"
