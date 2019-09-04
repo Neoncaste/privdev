@@ -1,0 +1,26 @@
+##############################
+# Catholic Flavor Events     #
+#                            #
+# Written by Johan Andersson #
+##############################
+
+namespace = catholic_flavor
+
+# The Kingdom of God on Earth
+country_event = {
+	id = catholic_flavor.2
+	title = catholic_flavor.2.t
+	desc = catholic_flavor.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = catholic_flavor.2.a
+		add_prestige = 50
+		
+		PAP = { set_papacy_active = no }
+		change_tag = KOG
+	}
+}

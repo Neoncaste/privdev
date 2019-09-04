@@ -385,7 +385,7 @@ artillery_officer = {
 		}
 		modifier = {
 			factor = 0
-			owner = { NOT = { mil_tech = 7 } }
+			NOT = { mil_tech = 7 }
 		}
 	}
 }

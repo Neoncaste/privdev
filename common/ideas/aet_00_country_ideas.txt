@@ -1,0 +1,44 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+### Nation specific idea groups
+
+KOG_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		religious_unity = 0.25
+	}
+
+	bonus = {
+		yearly_army_professionalism = 0.15
+	}
+	
+	trigger = {
+		tag = KOG
+	}
+	free = yes		#will be added at load.
+	
+	deus_mecum = {
+		fire_damage_received = -0.1
+	}
+	papal_investiture_and_tithes = {
+		global_tax_modifier = 0.20
+	}
+	glory_of_rome = {
+		prestige_decay = -0.01
+	}
+	blessing_of_constantine = {
+		administrative_efficiency = 0.05
+	}
+	all_roads_lead_to_the_vatican = {
+		production_efficiency = 0.15
+	}
+	the_swiss_guard = {
+		discipline = 0.05
+		mercenary_cost = -0.1
+	}
+	the_holy_spirit = {
+		global_missionary_strength = 0.02
+	}
+}

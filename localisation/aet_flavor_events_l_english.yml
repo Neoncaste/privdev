@@ -21,5 +21,6 @@
  flavor_aet.EVTDESC0007:0 "Rumours are circulating that our spymaster has been playing the court for his own gain. Twisting our orders and messages to fit his agenda, he has positioned himself to pose a significant threat to both our administration and the nation at large."
  flavor_aet.EVTOPTA0007:0 "Off with his head!"
  flavor_aet.EVTOPTB0007:0 "Put him on trial."
-flavor_aet.EVTNAME0008:0 "Blockade"
-flavor_aet.EVTDESC0008:0 "As the war continues, the enemy have seen it fit to blockade our ports, restricting imports and exports, this has led to our much reliant trade economy nearing total collapse."
+ flavor_aet.EVTNAME0008:0 "Blockade"
+ flavor_aet.EVTDESC0008:0 "As the war continues, the enemy have seen it fit to blockade our ports, restricting imports and exports, this has led to our much reliant trade economy nearing total collapse."
+ flavor_aet.EVTOPTA0008:0 "We must end this blockade!"
