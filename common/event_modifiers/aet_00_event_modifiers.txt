@@ -216,7 +216,7 @@ aet_heir_death = {
 
 aet_trade_collapse = {
 	global_autonomy = 0.1
-	inflation_reduction = 2
+	inflation_reduction = -0.1
 	global_trade_power = -0.75
 	development_cost = 0.5
 	global_colonial_growth = -50
