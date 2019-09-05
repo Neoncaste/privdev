@@ -719,6 +719,7 @@ country_event = {
 		add_stability = 2
 		change_tag = COE
 		country_event = { id = ideagroups.1 }
+		set_country_flag = aet_formed_coe_flag
 		if = {
 			limit = {
 				NOT = { has_ruler_flag = cromwell_flag }
@@ -756,6 +757,7 @@ country_event = {
 		country_event = { id = ideagroups.1 }
 		change_government_reform_progress = 100
 		set_legacy_government = constitutional_republic
+		set_country_flag = aet_formed_coe_flag
 	}
 	option = {			# A Monarchy
 		name = "english_civil_war.11.b"
@@ -807,6 +809,7 @@ country_event = {
 		country_event = { id = ideagroups.1 }
 		change_government_reform_progress = 100
 		set_legacy_government = constitutional_republic
+		set_country_flag = aet_formed_coe_flag
 	}
 	option = {			# A Monarchy
 		name = "english_civil_war.11.b"
