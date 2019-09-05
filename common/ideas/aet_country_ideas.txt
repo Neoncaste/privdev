@@ -23,8 +23,8 @@ KOG_ideas = {
 		production_efficiency = 0.15
 	}
 	the_lords_gift = {
-		institution_spread_from_true_faith = 0.25
-		global_missionary_strength = 0.02
+		institution_spread_from_true_faith = 0.20
+		global_missionary_strength = 0.03
 	}
 	the_holy_land = {
 		ae_impact = -0.2
