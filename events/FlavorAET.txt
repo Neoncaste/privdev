@@ -361,7 +361,21 @@ desc = "flavor_aet.EVTDESC0009"
 picture = PORT_BLOCKADED_eventPicture
 
 trigger = {
-	has_dlc = "Art of War"
-	blockade = 25
-	num_of_ports = 15
+	any_owned_province = {
+	province_has_center_of_trade_of_level = 2
+	is_blockaded = yes
+	has_port = yes
+	is_state = yes
+}
+}
+option = {
+	name = "flavor_aet.EVTOPTA0009"
+	add_years_of_income = -0.3
+add_local_autonomy = 33
+}
+
+
+
+
+
 }
