@@ -22,6 +22,9 @@ country_event = {
 		
 		PAP = { set_papacy_active = no }
 		change_tag = KOG
-		swap_free_idea_group = yes
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
 	}
 }
