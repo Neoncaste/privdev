@@ -19,12 +19,8 @@ country_event = {
 	option = {
 		name = catholic_flavor.2.a
 		add_prestige = 50
-		
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
 		PAP = { set_papacy_active = no }
 		change_tag = KOG
+		country_event = { id = ideagroups.1 }
 	}
 }

@@ -751,11 +751,8 @@ country_event = {
 			limit = { NOT = { government = republic } }
 			change_government = republic
 		}
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
 		change_tag = COE
+		country_event = { id = ideagroups.1 }
 		change_government_reform_progress = 100
 		set_legacy_government = constitutional_republic
 	}
@@ -805,11 +802,8 @@ country_event = {
 			limit = { NOT = { government = republic } }
 			change_government = republic
 		}
-		if = {
-			limit = { has_custom_ideas = no }
-			country_event = { id = ideagroups.1 } #Swap Ideas
-		}
 		change_tag = COE
+		country_event = { id = ideagroups.1 }
 		change_government_reform_progress = 100
 		set_legacy_government = constitutional_republic
 	}
