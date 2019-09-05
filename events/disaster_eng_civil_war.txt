@@ -715,9 +715,10 @@ country_event = {
 		name = "flavor_eng.EVTOPTB9235"
 		trigger = { has_country_flag = supports_parliamentarians }
 		clr_country_flag = supports_parliamentarians
-		change_tag = COE
 		add_prestige = 50
 		add_stability = 2
+		change_tag = COE
+		country_event = { id = ideagroups.1 }
 		if = {
 			limit = {
 				NOT = { has_ruler_flag = cromwell_flag }
