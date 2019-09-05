@@ -55,16 +55,19 @@ country_event = {
 		}
 		change_government = republic
 		add_government_reform = presidential_despot_reform
-		define_ruler = {
-			name = "Oliver"
-			dynasty = Cromwell
-			MIL = 4
+		hidden_effect = {
+			define_ruler = {
+				name = "Oliver Cromwell"
+				dynasty = "Cromwell"
+			}
 		}
 		if = {
 			limit = {
 				has_dlc = "Rights of Man" 
 			}
 			hidden_effect = { add_ruler_personality = strict_personality }
+			hidden_effect = { add_ruler_personality = zealot_personality }
+			hidden_effect = { add_ruler_personality = malevolent_personality }
 		}
 		set_ruler_flag = cromwell_flag
 		random_owned_province = {
@@ -80,6 +83,36 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 3
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = british_isles_region
+				NOT = { area = munster_area }
+				NOT = { area = connacht_area }
+				NOT = { area = leinster_area }
+				NOT = { area = ulster_area }
+				NOT = { units_in_province = 1 }
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = british_isles_region
+				NOT = { area = munster_area }
+				NOT = { area = connacht_area }
+				NOT = { area = leinster_area }
+				NOT = { area = ulster_area }
+				NOT = { units_in_province = 1 }
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
 			}
 		}
 	}
