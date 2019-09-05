@@ -22,5 +22,6 @@ country_event = {
 		
 		PAP = { set_papacy_active = no }
 		change_tag = KOG
+		swap_free_idea_group = yes
 	}
 }
