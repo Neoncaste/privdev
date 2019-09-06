@@ -52,9 +52,11 @@ catholic_rome = {
 
 	trigger = {	
 		NOT = { overlord_of = PAP }
+		NOT = { overlord_of = KOG }
 		owns_or_vassal_of = 118 # Roma		
 		NOT = { tag = ITA }
 		NOT = { tag = ROM }
+		NOT = { tag = KOG }
 	}
 
 	papal_influence = -10

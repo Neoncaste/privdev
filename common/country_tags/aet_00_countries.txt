@@ -1,4 +1,4 @@
 #Aeternum Countries
 KOG	= "countries/KingdomOfGod.txt"
 COE = "countries/CommonwealthOfEngland.txt"
-TPE = "countries/TheProtectorate.txt"
+COB = "countries/CommonwealthOfBritain.txt"

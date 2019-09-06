@@ -55,16 +55,19 @@ country_event = {
 		}
 		change_government = republic
 		add_government_reform = presidential_despot_reform
-		define_ruler = {
-			name = "Oliver"
-			dynasty = Cromwell
-			MIL = 4
+		hidden_effect = {
+			define_ruler = {
+				name = "Oliver Cromwell"
+				dynasty = "Cromwell"
+			}
 		}
 		if = {
 			limit = {
 				has_dlc = "Rights of Man" 
 			}
 			hidden_effect = { add_ruler_personality = strict_personality }
+			hidden_effect = { add_ruler_personality = zealot_personality }
+			hidden_effect = { add_ruler_personality = malevolent_personality }
 		}
 		set_ruler_flag = cromwell_flag
 		random_owned_province = {
@@ -80,6 +83,36 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 3
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = british_isles_region
+				NOT = { area = munster_area }
+				NOT = { area = connacht_area }
+				NOT = { area = leinster_area }
+				NOT = { area = ulster_area }
+				NOT = { units_in_province = 1 }
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = british_isles_region
+				NOT = { area = munster_area }
+				NOT = { area = connacht_area }
+				NOT = { area = leinster_area }
+				NOT = { area = ulster_area }
+				NOT = { units_in_province = 1 }
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
 			}
 		}
 	}
@@ -681,9 +714,12 @@ country_event = {
 	option = {			# Order has finally been restored
 		name = "flavor_eng.EVTOPTB9235"
 		trigger = { has_country_flag = supports_parliamentarians }
+		set_country_flag = aet_formed_coe_flag
 		clr_country_flag = supports_parliamentarians
 		add_prestige = 50
 		add_stability = 2
+		change_tag = COE
+		country_event = { id = ideagroups.1 }
 		if = {
 			limit = {
 				NOT = { has_ruler_flag = cromwell_flag }
@@ -712,34 +748,85 @@ country_event = {
 	
 	option = {			# A Republic
 		name = "english_civil_war.11.a"
-		ai_chance = { factor = 33 }
+		ai_chance = { factor = 25 }
 		if = {
 			limit = { NOT = { government = republic } }
 			change_government = republic
 		}
+		set_country_flag = aet_formed_coe_flag
 		change_tag = COE
+		country_event = { id = ideagroups.1 }
 		change_government_reform_progress = 100
 		set_legacy_government = constitutional_republic
 	}
 	option = {			# A Monarchy
 		name = "english_civil_war.11.b"
-		ai_chance = { factor = 33 }
+		ai_chance = { factor = 75 }
 		if = {
 			limit = { NOT = { government = monarchy } }
 			change_government = monarchy
 		}
+		if = {
+			limit = { NOT = { has_country_flag = formed_great_britain_flag } }
+			change_tag = ENG
+		}
+		if = {
+			limit = { has_country_flag = formed_great_britain_flag }
+			change_tag = GBR
+		}
 		add_government_reform = english_monarchy
 		set_legacy_government = constitutional_monarchy
 	}
-	option = {			# A Dictatorship
-	name = "english_civil_war.11.c"
-	ai_chance = { factor = 33 }
-	if = {
-		limit = { NOT = { government = monarchy } }
-		change_government = republic
+}
+
+#Parliamentarian Victory - Death of Cromwell
+country_event = {
+	id = english_civil_war.12
+	title = "english_civil_war.12.t"
+	desc = "english_civil_war.12.d"
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = {
+		months = 12
 	}
-	change_tag = TPE
-	add_government_reform = english_monarchy
-	set_legacy_government = republican_dictatorship
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = english_civil_war_won_by_parliamentarians
+		NOT = { has_ruler_flag = cromwell_flag }
+		NOT = { has_reform = parliamentary_reform }
+	}
+	
+	option = {			# A Republic
+		name = "english_civil_war.11.a"
+		ai_chance = { factor = 25 }
+		if = {
+			limit = { NOT = { government = republic } }
+			change_government = republic
+		}
+		set_country_flag = aet_formed_coe_flag
+		change_tag = COE
+		country_event = { id = ideagroups.1 }
+		change_government_reform_progress = 100
+		set_legacy_government = constitutional_republic
+	}
+	option = {			# A Monarchy
+		name = "english_civil_war.11.b"
+		ai_chance = { factor = 75 }
+		if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
+		if = {
+			limit = { NOT = { has_country_flag = formed_great_britain_flag } }
+			change_tag = ENG
+		}
+		if = {
+			limit = { has_country_flag = formed_great_britain_flag }
+			change_tag = GBR
+		}
+		add_government_reform = english_monarchy
+		set_legacy_government = constitutional_monarchy
 	}
 }
