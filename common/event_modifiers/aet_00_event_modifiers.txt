@@ -188,7 +188,7 @@ aet_naval_buildup = {
 
 aet_land_buildup = {
 	global_regiment_cost = -0.15
-	land_morale = 0.05
+	global_regiment_recruit_speed = -0.2
 }
 
 aet_naval_supremacy = {

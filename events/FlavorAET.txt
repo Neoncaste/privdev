@@ -458,7 +458,7 @@ country_event = {
 		
 		trigger = {
 				navy_size_percentage = 1
-				num_of_heavy_ship = 300
+				num_of_heavy_ship = 200
 				num_of_ports_blockading = 30
 				is_great_power = yes
 			}
@@ -485,7 +485,7 @@ country_event = {
 			trigger = {
 				is_at_war = yes
 				blockade = 100
-				num_of_ports = 12
+				num_of_ports = 20
 			}
 			mean_time_to_happen = {
 				days = 20000
@@ -500,7 +500,6 @@ country_event = {
 			option = {
 				name = "flavor_aet.EVTOPTB0012"
 				trigger = {
-					is_great_power = no
 					OR ={
 					has_idea_group = naval_ideas
 					has_idea_group = maritime_ideas
@@ -516,9 +515,10 @@ country_event = {
 			}
 			option = {
 				name = "flavor_aet.EVTOPTC0012"
-			trigger = {is_great_power = yes}
+			trigger = {is_great_power = yes
+			NOt = {current_age = age_of_revolutions}
+			}
 				add_prestige = -20
-				add_stability = -1
 				add_country_modifier = {
 					name = executed_officers
 					duration = 525
@@ -534,4 +534,265 @@ country_event = {
 			}
 
 		}
+
+	#100% Blockaded - 2
+		country_event = {
+			id = flavor_aet.0014
+			title = "flavor_aet.EVTNAME0013"
+			desc = "flavor_aet.EVTDESC0013"
+			picture = PORT_BLOCKADED_eventPicture
+
+			trigger = {
+				is_at_war = yes
+				blockade = 100
+				num_of_ports = 10
+			}
+			mean_time_to_happen = {
+				days = 20000
+			}
+
+			option = {
+			name = "flavor_aet.EVTOPTA0013"
+			every_owned_province = {
+				limit = {
+					is_capital = no
+						is_blockaded = yes
+				}
+						add_province_modifier = {
+							name = unaided_during_blockade
+							duration = 1000
+						}
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTB0013"
+			add_prestige = -50
+			add_mercantilism = -5
+			random_list = {
+				90 = {
+					add_country_modifier = {
+						name = "aet_trade_collapse"
+						duration = 3650
+					}
+				}
+				10 = {
+					add_country_modifier = {
+						name = "trade_policy_working"
+						duration = 3650
+					}
+
+				}
+			}
+		}
+			option = {
+				name = "flavor_aet.EVTOPTC0013"
+				trigger = {is_great_power = yes}
+				add_dip_power = -50
+				add_country_modifier = {
+					name = aet_naval_buildup
+					duration = 365
+				}
+			}
 	
+	
+	option = {
+		name = "flavor_aet.EVTOPTD0013"
+		trigger = {is_great_power = no}
+		add_dip_power = -50
+		add_country_modifier = {
+			name = expansion_of_the_shipbuilding_industry
+			duration = 720
+		}
+	}
+		}
+	#100% Blockding
+	country_event = {
+		id = flavor_aet.0015
+		title = "flavor_aet.EVTNAME0014"
+		desc = "flavor_aet.EVTDESC0014"
+		picture = PORT_BLOCKADED_eventPicture
+
+		trigger = {
+			is_in_war = {
+				attacker_leader = ROOT
+			}
+			num_of_ports_blockading = 25
+		}
+		
+		mean_time_to_happen = {
+			days = 1000
+		}
+
+		option = {
+		name = "flavor_aet.EVTOPTA0014"
+		trigger = {is_great_power = yes}
+		add_prestige = 10
+		add_country_modifier = {
+			name = aet_naval_supremacy
+			duration = 365
+		}
+
+		}
+		option = {
+			name = "flavor_aet.EVTOPTB0014"
+		add_prestige = 20
+		add_dip_power = 50
+	}
+	option = {
+		name = "flavor_aet.EVTOPTC0014"
+		trigger = {
+		NOT = {  navy_size_percentage = 0.50  } }
+		add_prestige = 5
+	add_country_modifier = {
+		name = aet_naval_buildup
+		duration = 3650
+	}
+}
+	}
+
+	########################################
+	#REVOLTS LINKED TO WAR EXHAUSTION
+	########################################
+	
+	#Peasant Revolt during long war
+	country_event = {
+		id = flavor_aet.0016
+		title = "flavor_aet.EVTNAME0015"
+		desc = "flavor_aet.EVTDESC0015"
+		picture = ANGRY_MOB_eventPicture
+
+		trigger = {
+			is_in_war = {duration = 2240}
+			war_exhaustion = 8
+			NOT = {war_score = -33}
+		}
+		mean_time_to_happen = {
+			days = 5000
+		}
+		
+		option = {
+		name = "flavor_aet.EVTOPTA0015"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				controlled_by =  ROOT
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				win = yes
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				win = yes
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				win = yes
+				size = 2
+			}
+		}
+		
+		}
+	}
+		#Rival throne during war
+	country_event = {
+		id = flavor_aet.0017
+		title = "flavor_aet.EVTNAME0016"
+		desc = "flavor_aet.EVTDESC0016"
+		picture = ANGRY_MOB_eventPicture
+
+		trigger = {
+			is_at_war = yes
+			war_exhaustion = 25
+			NOT = {
+				stability = 0
+			}
+			NOT = {war_score = -50}
+		}
+		mean_time_to_happen = {
+			days = 365000
+			modifier = {
+				factor = 0.1
+				is_great_power = yes
+				
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0016"
+			add_legitimacy = -50
+			add_prestige = -5
+			add_mil_power = -100
+			random_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 5
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_in_capital_area = yes
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 3
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_in_capital_area = yes
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 3
+				}
+			}
+		}
+
+		option = {
+			name = "flavor_aet.EVTOPTB0016"
+			add_prestige = -20
+			define_ruler = {
+				claim = 20
+				culture = ROOT
+				religion = ROOT
+			}
+			kill_heir = yes
+			kill_consort = yes
+			add_country_modifier = {
+				name = "illegitimate_ruler"
+				duration = 1825
+			}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							is_capital = no
+						}
+						spawn_rebels = {
+							type = noble_rebels
+							win = yes
+							size = 3
+						}
+				}
+			}
+		}
+
+	}

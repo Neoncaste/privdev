@@ -578,8 +578,8 @@ privateering = {
 	pr_captains_influence = 0.1
 }
 negative_stability = {
-    global_unrest = -3					#-1% EXTRA revolt risk each step
-    global_tax_modifier = 0.075
+    global_unrest = -3			#-1% EXTRA revolt risk each step
+	global_tax_modifier = 0.05
     legitimacy = 1
 	interest = -1
 	migration_cooldown = 0.1
@@ -587,11 +587,10 @@ negative_stability = {
 	caravan_power = 0.05
     monthly_militarized_society = -0.05
 	global_institution_spread = 0.25
-	technology_cost = -0.025
-	idea_cost = -0.025
-	land_morale = 0.0025
-	naval_morale = 0.0025
-}
+	technology_cost = -0.05
+	idea_cost =  -0.05
+	land_morale = 0.05
+	naval_morale = 0.05
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	global_unrest = -2.5
