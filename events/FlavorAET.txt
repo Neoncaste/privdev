@@ -319,11 +319,12 @@ country_event = {
 			name = shipwright
 			}
 		}
+	}
 		##############################
 	option = {
 		name = province_aet.EVTOPTA0001
 		}
-	}
+	
 }
 #Blockade Events
 #Economic Collapse
@@ -333,14 +334,13 @@ country_event = {
 	desc = "flavor_aet.EVTDESC0008"
 	picture = PORT_BLOCKADED_eventPicture
 
-	is_triggered_only = yes
 	mean_time_to_happen = {
 		days = 7500
 	}
 	trigger = {
 		blockade = 75
 		num_of_ports = 15
-		trade_income_percentage = 0.6
+		trade_income_percentage = 0.8
 	}
 	option = {
 		name = "flavor_aet.EVTOPTA0008"
@@ -350,6 +350,7 @@ country_event = {
 		}
 	war_exhaustion = 0.25 #edited this so if they have already capped out on W.E it still has an effect.
 	add_stability = -1
+	add_mercantilism = -5
 	}
 }
 
@@ -362,20 +363,175 @@ picture = PORT_BLOCKADED_eventPicture
 
 trigger = {
 	any_owned_province = {
-	province_has_center_of_trade_of_level = 2
-	is_blockaded = yes
-	has_port = yes
-	is_state = yes
+		province_has_center_of_trade_of_level = 2
+		is_blockaded = yes
+	}
+		blockade = 33
+		war_exhaustion = 10
+	
 }
+mean_time_to_happen = {
+	days = 4520
 }
 option = {
-	name = "flavor_aet.EVTOPTA0009"
-	add_years_of_income = -0.3
-add_local_autonomy = 33
+	name = "flavor_aet.EVTOPTA0009" #Compensate 
+	add_years_of_income = -2
+	add_dip_power = -100
+		}
+		
+
+option = {
+	name = "flavor_aet.EVTOPTB0009" #Ignore
+	random_list = {
+		20 = {
+			add_country_modifier = {
+				name = "aet_trade_collapse"
+				duration = 1825
+			}
+		}
+		80 = {
+			add_prestige = -20
+			random_owned_province = {
+				limit = {
+					is_capital = no
+						province_has_center_of_trade_of_level = 2
+						is_blockaded = yes
+					}
+					add_local_autonomy = 100
+		}
+	}
 }
-
-
-
-
-
+	}
+option = {
+	name = "flavor_aet.EVTOPTC0009" #SendTroops
+	random_owned_province = {
+		limit = {
+				province_has_center_of_trade_of_level = 2
+				is_blockaded = yes
+			}
+			spawn_rebels = {
+				size = 2
+			}
+		}
+		add_mil_power = -100
+	}	
 }
+#Naval buildup
+country_event = {
+	id = flavor_aet.0011
+	title ="flavor_aet.EVTNAME0010"
+	desc = "flavor_aet.EVTDESC0010"
+	picture = PORT_BLOCKADED_eventPicture
+	
+	trigger = {
+		blockade = 100
+		num_of_ports = 3
+		NOT = {num_of_ports = 8}
+		is_at_war = yes
+	}
+	mean_time_to_happen = {
+		days = 500
+	}
+	option = {
+		name = "flavor_aet.EVTOPTA0010"
+		add_country_modifier = {
+			name = aet_naval_buildup
+		duration = 730
+		}
+	}
+
+		option = {
+			name = "flavor_aet.EVTOPTB0010"
+			add_country_modifier = {
+				name = aet_land_buildup
+				duration = 730
+			}
+		}
+	}	
+
+	#Blockading the Enemy
+	country_event = {
+		id = flavor_aet.0012
+		title = "flavor_aet.EVTNAME0011"
+		desc = "flavor_aet.EVTDESC0011"
+		picture = PORT_BLOCKADED_eventPicture
+		
+		trigger = {
+				navy_size_percentage = 1
+				num_of_heavy_ship = 300
+				num_of_ports_blockading = 30
+				is_great_power = yes
+			}
+		
+		mean_time_to_happen = {
+			days = 3000
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0011"
+			add_prestige = 10
+			add_country_modifier = {
+				name = aet_naval_supremacy
+				duration = 3650
+			}
+		}
+		}
+		#100% Blockaded
+		country_event = {
+			id = flavor_aet.0013
+			title = "flavor_aet.EVTNAME0012"
+			desc = "flavor_aet.EVTDESC0012"
+			picture = PORT_BLOCKADED_eventPicture
+
+			trigger = {
+				is_at_war = yes
+				blockade = 100
+				num_of_ports = 12
+			}
+			mean_time_to_happen = {
+				days = 20000
+			}
+
+			option = {
+			name = "flavor_aet.EVTOPTA0012"
+		trigger = {is_great_power = no}
+		add_prestige = -10
+		add_adm_power = -50
+			}
+			option = {
+				name = "flavor_aet.EVTOPTB0012"
+				trigger = {
+					is_great_power = no
+					OR ={
+					has_idea_group = naval_ideas
+					has_idea_group = maritime_ideas
+					has_idea_group = raiding_ideas
+					has_idea_group = competitiveness_ideas
+					}
+					NOT = {has_country_modifier = aet_naval_buildup}
+				}
+				add_country_modifier = {
+					name = aet_naval_buildup
+					duration = 1825
+				}
+			}
+			option = {
+				name = "flavor_aet.EVTOPTC0012"
+			trigger = {is_great_power = yes}
+				add_prestige = -20
+				add_stability = -1
+				add_country_modifier = {
+					name = executed_officers
+					duration = 525
+				}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTD0012"
+			trigger = {is_great_power = yes
+			current_age = age_of_revolutions
+			revanchism = 10}
+			add_war_exhaustion = 5
+			add_prestige = -50
+			}
+
+		}
+	

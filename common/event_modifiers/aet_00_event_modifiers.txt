@@ -181,6 +181,22 @@ aet_massive_troop_desertion = {
 	reserves_organisation = -0.20
 	discipline = -0.10
 }
+aet_naval_buildup = {
+	global_ship_cost = -0.20 
+	naval_morale = 0.1
+}
+
+aet_land_buildup = {
+	global_regiment_cost = -0.15
+	land_morale = 0.05
+}
+
+aet_naval_supremacy = {
+naval_morale = 0.1
+navy_tradition = 1
+global_sailors_modifier = 0.5
+blockade_efficiency = 0.2
+}
 
 
 
@@ -197,11 +213,8 @@ aet_gain_great_power = {
 }
 
 aet_lose_great_power = {
-	add_legitimacy = -25
-	add_prestige = -25
 	land_morale = -0.05
 	diplomatic_reputation = -1
-	add_unrest = 2
 }
 
 aet_heir_death = {
@@ -216,11 +229,11 @@ aet_heir_death = {
 
 aet_trade_collapse = {
 	global_autonomy = 0.1
-	inflation_reduction = -0.1
 	global_trade_power = -0.75
-	development_cost = 0.5
+	development_cost = 0.05
 	global_colonial_growth = -50
 	}
+	
 
 ##############################
 #EDITED VANILLA MODIFIERS
