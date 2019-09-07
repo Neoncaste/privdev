@@ -11,7 +11,7 @@ KOG_ideas = {
 	}
 
 	bonus = {
-		global_tax_modifier = 0.25
+		yearly_army_professionalism = 0.15
 	}
 	
 	trigger = {
@@ -22,12 +22,12 @@ KOG_ideas = {
 	all_roads_lead_to_the_vatican = {
 		production_efficiency = 0.15
 	}
-	the_lords_gift = {
+	the_holy_spirit = {
 		institution_spread_from_true_faith = 0.20
 		global_missionary_strength = 0.03
 	}
-	the_holy_land = {
-		ae_impact = -0.2
+	papal_investiture_and_tithes = {
+		global_tax_modifier = 0.20
 	}
 	deus_mecum = {
 		fire_damage_received = -0.1
@@ -36,7 +36,7 @@ KOG_ideas = {
 		prestige_decay = -0.01
 	}
 	the_swiss_guard = {
-		mercenary_discipline  = 0.05
+		discipline = 0.05
 		mercenary_cost = -0.1
 	}
 	blessing_of_constantine = {
@@ -88,3 +88,4 @@ COE_ideas = {
         blockade_efficiency = 0.33
     }
 }
+#COE Ideas Double as COB Ideas
