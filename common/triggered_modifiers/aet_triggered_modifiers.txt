@@ -63,3 +63,22 @@ catholic_rome = {
 	diplomatic_reputation = -1
 	#icon = 9
 }
+
+papal_subjugation = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_discovered = 118	# Roma
+		religion = catholic
+		NOT = { tag = PAP }
+		NOT = { tag = KOG }
+	}
+
+	trigger = {	
+		overlord_of = PAP
+		overlord_of = KOG
+		NOT = { tag = ITA }
+	}
+
+	diplomatic_reputation = -2
+	#icon = 9
+}
