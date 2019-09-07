@@ -663,7 +663,10 @@ country_event = {
 
 		trigger = {
 			is_in_war = {duration = 2240}
-			war_exhaustion = 8
+			war_exhaustion = 10
+			NOT = {
+				stability = 0
+			}
 			NOT = {war_score = -33}
 		}
 		mean_time_to_happen = {
@@ -680,7 +683,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				win = yes
-				size = 2
+				size = 1
 			}
 		}
 		random_owned_province = {
@@ -690,7 +693,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				win = yes
-				size = 2
+				size = 1
 			}
 		}
 		random_owned_province = {
@@ -701,7 +704,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				win = yes
-				size = 2
+				size = 1
 			}
 		}
 		
@@ -718,7 +721,7 @@ country_event = {
 			is_at_war = yes
 			war_exhaustion = 25
 			NOT = {
-				stability = 0
+				stability = -1
 			}
 			NOT = {war_score = -50}
 		}
@@ -742,7 +745,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					win = yes
-					size = 5
+					size = 1
 				}
 			}
 			random_owned_province = {
@@ -752,7 +755,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					win = yes
-					size = 3
+					size = 1
 				}
 			}
 			random_owned_province = {
@@ -762,7 +765,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					win = yes
-					size = 3
+					size = 1
 				}
 			}
 		}
