@@ -13,6 +13,7 @@ country_decisions = {
 			}
 			NOT = { exists = GBR }
 			NOT = { tag = PAP }
+			NOT = { tag = KOG }
 			NOT = { tag = COE }
 			NOT = { tag = HLR }
 			OR = {
