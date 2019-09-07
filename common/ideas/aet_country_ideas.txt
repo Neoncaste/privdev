@@ -26,7 +26,7 @@ KOG_ideas = {
 		institution_spread_from_true_faith = 0.20
 		global_missionary_strength = 0.03
 	}
-	the_holy_land = {
+	primacy_of_the_holy_see = {
 		ae_impact = -0.2
 	}
 	the_swiss_guard = {
