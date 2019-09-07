@@ -36,7 +36,7 @@ KOG_ideas = {
 		prestige_decay = -0.01
 	}
 	the_swiss_guard = {
-		mercenary_discipline  = 0.05
+		mercenary_discipline  = 0.1
 		mercenary_cost = -0.1
 	}
 	blessing_of_constantine = {
