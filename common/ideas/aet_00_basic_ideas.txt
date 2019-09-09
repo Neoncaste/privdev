@@ -196,32 +196,31 @@ bureaucratic_ideas = {
 	category = ADM
 
 	bonus = {
-		war_taxes_cost_modifier = -0.80
+		war_taxes_cost_modifier = -0.66
 	}
 
+	political_class = {
+		advisor_cost = -0.15
+		advisor_pool = 1
+	}
 	regional_governors = {
 		global_autonomy = -0.05
 		min_autonomy_in_territories = -0.25
 	}
-	political_class = {
-		advisor_cost = -0.15
-		advisor_pool = 2
-	}
 	adaptive_administration = {
 		claim_duration = 0.33
 	}
-	government_grants = {
-		administrative_efficiency = 0.05
-	}
 	contraction_economics = {
-		build_time = -0.25
+		build_cost = -0.15
 	}
 	local_councils = {
-		global_tax_modifier = 0.05
-		idea_cost = -0.05
+		idea_cost = -0.10
 	}
 	splendid_court = {
 		yearly_corruption = -0.10
+	}
+	government_grants = {
+		administrative_efficiency = 0.05
 	}
 
 	ai_will_do = {
