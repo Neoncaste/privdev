@@ -457,15 +457,14 @@ country_event = {
 			trigger = { is_great_power = no }
 			add_prestige = -10
 			add_adm_power = -50
-			NOT = {
-				OR ={
-					has_idea_group = naval_ideas
-					has_idea_group = maritime_ideas
-					has_idea_group = raiding_ideas
-					has_idea_group = competitiveness_ideas
-				}
+			OR ={
+				NOT = { has_idea_group = naval_ideas }
+				NOT = { has_idea_group = maritime_ideas }
+				NOT = { has_idea_group = raiding_ideas }
+				NOT = { has_idea_group = competitiveness_ideas }
 			}
 		}
+	}
 		option = {
 			name = "flavor_aet.EVTOPTB0012"
 			trigger = {
