@@ -425,7 +425,7 @@ country_event = {
 			}
 		
 		mean_time_to_happen = {
-			days = 3000
+			days = 2200
 		}
 		option = {
 			name = "flavor_aet.EVTOPTA0011"
@@ -454,9 +454,7 @@ country_event = {
 
 		option = {
 			name = "flavor_aet.EVTOPTA0012"
-			trigger = { is_great_power = no }
-			add_prestige = -10
-			add_adm_power = -50
+			trigger = { is_great_power = no 
 			OR ={
 				NOT = { has_idea_group = naval_ideas }
 				NOT = { has_idea_group = maritime_ideas }
@@ -464,7 +462,10 @@ country_event = {
 				NOT = { has_idea_group = competitiveness_ideas }
 			}
 		}
-	}
+			add_prestige = -10
+			add_adm_power = -50
+		}
+		
 		option = {
 			name = "flavor_aet.EVTOPTB0012"
 			trigger = {
@@ -503,6 +504,7 @@ country_event = {
 			}
 
 		}
+	
 
 	#100% Blockaded - 2
 	country_event = {
@@ -696,7 +698,7 @@ country_event = {
 			NOT = {war_score = -50}
 		}
 		mean_time_to_happen = {
-			days = 365000
+			days = 2222
 			modifier = {
 				factor = 0.1
 				is_great_power = yes
