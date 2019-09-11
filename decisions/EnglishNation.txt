@@ -16,6 +16,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = KOG }
+			NOT = { tag = COE }
 			OR = {
 				primary_culture = english
 				tag = KOI

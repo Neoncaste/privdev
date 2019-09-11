@@ -33,10 +33,6 @@ country_event = {
 	title = "flavor_aet.EVTNAME0002"
 	desc = "flavor_aet.EVTDESC0002"
 	picture = DIPLOMACY_eventPicture
-	
-	trigger = {
-		is_great_power = yes 
-	}
 
 	is_triggered_only = yes
 	
@@ -60,10 +56,6 @@ country_event = {
 	title = "flavor_aet.EVTNAME0003"
 	desc = "flavor_aet.EVTDESC0003"
 	picture = DIPLOMACY_eventPicture
-	
-	trigger = {
-		is_great_power = no
-	}
 
 	is_triggered_only = yes
 	

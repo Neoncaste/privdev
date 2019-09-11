@@ -83,11 +83,6 @@ on_gain_great_power_status = {
 
 # country
 on_lose_great_power_status = {
-	if = {
-		limit = {
-			NOT = { tag = JMN }
-		}
-	}
 	events = {
 		flavor_aet.0003
 	}

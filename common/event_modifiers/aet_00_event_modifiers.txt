@@ -253,3 +253,7 @@ kingdom_of_god = {
 san_marino = { #San Marino
 	trade_goods_size = 2.0
 }
+
+aet_theodosian_walls = {
+	local_defensiveness = 0.25
+}
