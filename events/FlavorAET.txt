@@ -457,24 +457,17 @@ country_event = {
 			trigger = { is_great_power = no }
 			add_prestige = -10
 			add_adm_power = -50
-			OR ={
-				NOT = { has_idea_group = naval_ideas }
-				NOT = { has_idea_group = maritime_ideas }
-				NOT = { has_idea_group = raiding_ideas }
-				NOT = { has_idea_group = competitiveness_ideas }
-			}
 		}
-	}
 		option = {
 			name = "flavor_aet.EVTOPTB0012"
 			trigger = {
-				OR ={
+				OR = {
 				has_idea_group = naval_ideas
 				has_idea_group = maritime_ideas
 				has_idea_group = raiding_ideas
 				has_idea_group = competitiveness_ideas
 				}
-				NOT = {has_country_modifier = aet_naval_buildup}
+				NOT = { has_country_modifier = aet_naval_buildup }
 			}
 			add_country_modifier = {
 				name = aet_naval_buildup
@@ -485,7 +478,7 @@ country_event = {
 			name = "flavor_aet.EVTOPTC0012"
 			trigger = {
 				is_great_power = yes
-				NOT = {current_age = age_of_revolutions}
+				NOT = { current_age = age_of_revolutions }
 			}
 				add_prestige = -20
 				add_country_modifier = {
@@ -500,9 +493,8 @@ country_event = {
 			revanchism = 10}
 			add_war_exhaustion = 5
 			add_prestige = -50
-			}
-
 		}
+	}
 
 	#100% Blockaded - 2
 	country_event = {
@@ -528,7 +520,7 @@ country_event = {
 					is_blockaded = yes
 				}
 				add_province_modifier = {
-				name = unaided_during_blockade
+				name = unaided_during_blockade #vanilla
 				duration = 1000
 				}
 			}
@@ -549,7 +541,6 @@ country_event = {
 						name = "trade_policy_working"
 						duration = 3650
 					}
-
 				}
 			}
 		}
@@ -560,10 +551,8 @@ country_event = {
 				add_country_modifier = {
 					name = aet_naval_buildup
 					duration = 365
-				}
 			}
-	
-	
+		}
 	option = {
 		name = "flavor_aet.EVTOPTD0013"
 		trigger = {is_great_power = no}
@@ -763,9 +752,8 @@ country_event = {
 							type = noble_rebels
 							win = yes
 							size = 3
-						}
 				}
 			}
 		}
-
 	}
+}
