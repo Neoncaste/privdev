@@ -206,16 +206,9 @@ country_event = {
 
 	hidden = yes
 
-	trigger = {
-		num_of_cities = 1
-	}
-	
-	mean_time_to_happen = {
-		days = 15
-	}
+	is_triggered_only = yes #on_actions on_bi_yearly_pulse_4
 
 	immediate = {
-		##############################
 		#CAPITAL
 		every_owned_province = {
 			limit = {
@@ -226,10 +219,10 @@ country_event = {
 				duration = -1
 			}
 		}
-		##############################
 		#FISH
 		every_owned_province = { 
 		limit = {
+			has_port = yes
 			trade_goods = fish
 		}
 		add_province_modifier = {
@@ -237,11 +230,10 @@ country_event = {
 			duration = -1
 			}
 		}
-
-		##############################
 		#SHIPWRIGHT
 		every_owned_province = { 
 		limit = {
+			has_port = yes
 			trade_goods = naval_supplies
 		}
 		add_province_modifier = {
@@ -249,25 +241,10 @@ country_event = {
 			duration = -1
 			}
 		}
-
-		##############################
-		#PIRATE & SMUGGLE RANDOM CHANCE
-		every_owned_province = { 
-			limit = {
-				has_port = yes
-				is_capital = no
-			}
-			random_list = {
-			3 = { add_province_modifier = { name = pirate_haven duration = -1} }	
-			3 = { add_province_modifier = { name = smuggling_cove duration = -1} }
-			94 = {}
-			}
-		}
-
-		##############################
 		#SLAVER PORT
 		every_owned_province = { 
 		limit = {
+			has_port = yes
 			trade_goods = slaves
 		}
 		add_province_modifier = {
@@ -275,8 +252,6 @@ country_event = {
 			duration = -1
 			}
 		}
-
-		##############################
 		#REMOVE SLAVER PORT
 		every_owned_province = {
 		limit = {
@@ -287,8 +262,6 @@ country_event = {
 			name = slaver_port
 			}
 		}
-
-		##############################
 		#REMOVE FISHERY
 		every_owned_province = { 
 		limit = {
@@ -299,8 +272,6 @@ country_event = {
 			name = fishery
 			}
 		}
-
-		##############################
 		#REMOVE SHIPWRIGHT
 		every_owned_province = { 
 		limit = {
@@ -312,12 +283,11 @@ country_event = {
 			}
 		}
 	}
-		##############################
 	option = {
 		name = province_aet.EVTOPTA0001
-		}
-	
+	}
 }
+
 #Blockade Events
 #Economic Collapse
 country_event = {
@@ -330,7 +300,7 @@ country_event = {
 		days = 7500
 	}
 	trigger = {
-		blockade = 75
+		blockade = 90
 		num_of_ports = 15
 		trade_income_percentage = 0.8
 	}
@@ -360,7 +330,6 @@ trigger = {
 	}
 		blockade = 33
 		war_exhaustion = 10
-	
 }
 mean_time_to_happen = {
 	days = 4520
@@ -408,6 +377,7 @@ option = {
 		add_mil_power = -100
 	}	
 }
+
 #Naval buildup
 country_event = {
 	id = flavor_aet.0011
@@ -450,8 +420,7 @@ country_event = {
 		
 		trigger = {
 				navy_size_percentage = 1
-				num_of_heavy_ship = 200
-				num_of_ports_blockading = 30
+				num_of_ports_blockading = 15
 				is_great_power = yes
 			}
 		
@@ -466,55 +435,64 @@ country_event = {
 				duration = 3650
 			}
 		}
-		}
+	}
 		#100% Blockaded
-		country_event = {
-			id = flavor_aet.0013
-			title = "flavor_aet.EVTNAME0012"
-			desc = "flavor_aet.EVTDESC0012"
-			picture = PORT_BLOCKADED_eventPicture
+	country_event = {
+		id = flavor_aet.0013
+		title = "flavor_aet.EVTNAME0012"
+		desc = "flavor_aet.EVTDESC0012"
+		picture = PORT_BLOCKADED_eventPicture
 
-			trigger = {
-				is_at_war = yes
-				blockade = 100
-				num_of_ports = 20
-			}
-			mean_time_to_happen = {
-				days = 20000
-			}
+		trigger = {
+			is_at_war = yes
+			blockade = 100
+			num_of_ports = 20
+		}
+		mean_time_to_happen = {
+			days = 1095
+		}
 
-			option = {
+		option = {
 			name = "flavor_aet.EVTOPTA0012"
-		trigger = {is_great_power = no}
-		add_prestige = -10
-		add_adm_power = -50
-			}
-			option = {
-				name = "flavor_aet.EVTOPTB0012"
-				trigger = {
-					OR ={
+			trigger = { is_great_power = no }
+			add_prestige = -10
+			add_adm_power = -50
+			NOT = {
+				OR ={
 					has_idea_group = naval_ideas
 					has_idea_group = maritime_ideas
 					has_idea_group = raiding_ideas
 					has_idea_group = competitiveness_ideas
-					}
-					NOT = {has_country_modifier = aet_naval_buildup}
-				}
-				add_country_modifier = {
-					name = aet_naval_buildup
-					duration = 1825
 				}
 			}
-			option = {
-				name = "flavor_aet.EVTOPTC0012"
-			trigger = {is_great_power = yes
-			NOt = {current_age = age_of_revolutions}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTB0012"
+			trigger = {
+				OR ={
+				has_idea_group = naval_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = raiding_ideas
+				has_idea_group = competitiveness_ideas
+				}
+				NOT = {has_country_modifier = aet_naval_buildup}
+			}
+			add_country_modifier = {
+				name = aet_naval_buildup
+				duration = 1825
+				}
+			}
+		option = {
+			name = "flavor_aet.EVTOPTC0012"
+			trigger = {
+				is_great_power = yes
+				NOT = {current_age = age_of_revolutions}
 			}
 				add_prestige = -20
 				add_country_modifier = {
 					name = executed_officers
 					duration = 525
-				}
+			}
 		}
 		option = {
 			name = "flavor_aet.EVTOPTD0012"
@@ -528,32 +506,32 @@ country_event = {
 		}
 
 	#100% Blockaded - 2
-		country_event = {
-			id = flavor_aet.0014
-			title = "flavor_aet.EVTNAME0013"
-			desc = "flavor_aet.EVTDESC0013"
-			picture = PORT_BLOCKADED_eventPicture
+	country_event = {
+		id = flavor_aet.0014
+		title = "flavor_aet.EVTNAME0013"
+		desc = "flavor_aet.EVTDESC0013"
+		picture = PORT_BLOCKADED_eventPicture
 
-			trigger = {
-				is_at_war = yes
-				blockade = 100
-				num_of_ports = 10
+		trigger = {
+			is_at_war = yes
+			blockade = 100
+			num_of_ports = 10
 			}
 			mean_time_to_happen = {
-				days = 20000
+				days = 1095
 			}
 
-			option = {
+		option = {
 			name = "flavor_aet.EVTOPTA0013"
 			every_owned_province = {
 				limit = {
 					is_capital = no
-						is_blockaded = yes
+					is_blockaded = yes
 				}
-						add_province_modifier = {
-							name = unaided_during_blockade
-							duration = 1000
-						}
+				add_province_modifier = {
+				name = unaided_during_blockade
+				duration = 1000
+				}
 			}
 		}
 		option = {
@@ -596,7 +574,8 @@ country_event = {
 			duration = 720
 		}
 	}
-		}
+}
+
 	#100% Blockding
 	country_event = {
 		id = flavor_aet.0015

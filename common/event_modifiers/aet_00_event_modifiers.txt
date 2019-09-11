@@ -124,22 +124,8 @@ shipwright = {
 }
 
 fishery = {
-	trade_goods_size_modifier = 0.05
 	trade_value_modifier = 0.02
-}
-
-smuggling_cove = {
-	local_institution_spread = 0.10
-	local_tax_modifier = -0.05
-	trade_value_modifier = 0.05
-}
-
-pirate_haven = {
-	local_unrest = -2
-	province_trade_power_modifier = 0.05
-	local_tax_modifier = -0.05
-	local_production_efficiency = -0.05
-	local_sailors_modifier = 0.25
+	ship_recruit_speed = -0.02
 }
 
 slaver_port = {
@@ -148,8 +134,6 @@ slaver_port = {
 	local_tax_modifier = 0.05
 	local_sailors_modifier = 0.25
 }
-
-
 
 
 #MILITARY MODIIFERS
@@ -231,7 +215,8 @@ aet_trade_collapse = {
 	global_autonomy = 0.1
 	global_trade_power = -0.75
 	development_cost = 0.05
-	global_colonial_growth = -50
+	global_colonial_growth = -25
+	inflation_reduction = 0.1
 	}
 	
 

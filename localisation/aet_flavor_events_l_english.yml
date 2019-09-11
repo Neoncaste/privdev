@@ -34,7 +34,7 @@
  flavor_aet.EVTOPTA0010:0 "[Root.GetName] shall rule the waves!"
  flavor_aet.EVTOPTB0010:0 "We have no need for a navy."
  flavor_aet.EVTNAME0011:0 "Successful Blockade!"
- flavor_aet.EVTDESC0011:0 "The current blockade against our biggest naval rival has proved not only effective, but has been a huge boost to naval morale and settled the question of who truly rules the waves."
+ flavor_aet.EVTDESC0011:0 "The current blockade against our enemy is proving not only effective, but has been a huge boost to naval morale and settled the question of who truly rules the waves."
  flavor_aet.EVTOPTA0011:0 "[Root.GetName] is the undisputed master of the sea!"
  flavor_aet.EVTNAME0012:0 "Blockade"
  flavor_aet.EVTDESC0012:0 "The war continues, the blockade continues, the people of [Root.GetName] are angry and our government is shaken. We should prepare for the worst."
