@@ -221,6 +221,7 @@
  the_glory_of_god_desc:0 "The Glory of the Lord our God extends beyond where the sunlight reaches, to the very edges of existence!"
  primacy_of_the_holy_see:0 "Primacy of The Holy See"
  primacy_of_the_holy_see_desc:0 "With the Holy See in our grasp, we serve as the absolute religious authority for all of christian Europe. No one dares oppose the word and ruling of God!"
+ KOG_ideas:0 "Kingdom of God Ideas"
  #COE/COB Ideas
  COE_ideas:0 "Commonwealth Of England Ideas"
  COE_ideas_start:0 "Commonwealth Of England Traditions"
@@ -236,3 +237,4 @@
  legacy_of_cromwell_desc:0 "Cromwell was one of the most influential britons ever - and one of the most powerful. At times, it would be simpler to return to the days of singular rule by a disciplined, powerful man, wouldn't it? Really makes you think..."
  britannia_rules_the_waves:0 "Britannia Rules the Waves"
  britannia_rules_the_waves_desc:0 "Rule Britannia!\nBritannia rule the waves.\nBritons never, never, never shall be slaves."
+ COE_ideas:0 "Commonwealth of England Ideas"
