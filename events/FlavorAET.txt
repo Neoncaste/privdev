@@ -149,52 +149,6 @@ country_event = {
 	}
 }
 
-#Aeternum Corruption Event
-country_event = {
-	id = flavor_aet.0007
-	title = "flavor_aet.EVTNAME0007"
-	desc = "flavor_aet.EVTDESC0007"
-	picture = SPY_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		num_of_cities = 14
-		corruption = 1
-		manpower = 0.001
-		employed_advisor = {
-			type = spymaster
-		}
-
-	}
-	mean_time_to_happen = {
-		months = 300 #25 years
-
-	}
-option = {
-	name = flavor_aet.EVTOPTA0007
-	random_list = {
-		80 = {
-			add_disaster_progress = {
-				disaster = grand_conspiracy
-				value = 85
-			}
-		}
-		20 = {
-			add_corruption = -1
-			add_manpower = -0.001
-			kill_advisor = spymaster
-		}
-	}
-}
-option = {
-	name = flavor_aet.EVTOPTB0007
-	add_prestige = -10
-	remove_advisor = spymaster
-		}
-	}
-
-
 # Aeternum Province Engine
 country_event = {
 	id = flavor_aet.0008
@@ -621,6 +575,7 @@ country_event = {
 		picture = ANGRY_MOB_eventPicture
 
 		trigger = {
+			num_of_cities = 9
 			is_in_war = {duration = 2240}
 			war_exhaustion = 10
 			NOT = {
@@ -664,9 +619,8 @@ country_event = {
 				type = anti_tax_rebels
 				win = yes
 				size = 1
+				}
 			}
-		}
-		
 		}
 	}
 		#Rival throne during war

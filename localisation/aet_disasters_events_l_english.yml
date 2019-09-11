@@ -9,15 +9,3 @@
  disasters_aet.EVTDESC0002:0 "Our forces have recovered from the brink against all odds. We must now use our improving situation to press on and snatch victory from the jaws of defeat. "
  disasters_aet.EVTOPTA0002:0 "We go forwards. Only forwards."
 ###################################################
- grand_conspiracy:0 "Grand Conspiracy"
- grand_conspiracy_desc:0 "Enemies lurk in the shadows. No one can be trusted. Whispers follow our leadership and behind every wall, ever door, every smiling face is malicious intent, personal ambition, traitors and rotten corruption."
- grand_conspiracy.EVTNAME0003:0 "Grand Conspiracy Exposed"
- grand_conspiracy.EVTDESC0003:0 "Our attempt to consolidate our grasp on the court and remove one of our most problematic ministers has proven disasterous. The target has acted pre-emptively and has apparently gathered extensive amounts of supporters who oppose our rule, while the men we sent to arrest him have been killed, along with several of our loyal statesmen. Fighting has now erupted across our capital city as forces loyal to us or the conspirators clash, trying to establish control over key districts and causing extensive damage."
- grand_conspiracy.EVTOPTA0003:0 "We must pray we overcome the traitors."
- grand_conspiracy.EVTNAME0004:0 "The traitors escape!"
- grand_conspiracy.EVTDESC0004:0 "Although we have been victorious in the struggle for the capital, loyalist elements were unable to apprehend the key players behind the conspiracy, and reports from witnesses claim they saw many men riding with haste out of the city gates. No doubt the traitors have pulled back to their power base to plot their next move."
- grand_conspiracy.EVTOPTA0004:0 "We prevail for now, but the results of the skirmish are devastating."
- grand_conspiracy.EVTNAME0005:0 "The conspirators surface"
- grand_conspiracy.EVTDESC0005:0 "Despite our pyrric victory in the capital, the conspirators escaped and have seemingly raised their banners in rebellion. Powerful men from across our nation have rallied to their cause citing many grievances with our handling of national affairs. Although this rebellion is currently limited to the upper echelons of our society, unless put down quickly the unrest may spread to the commonfolk and begin to spiral out of control."
- grand_conspiracy.EVTOPTA0005:0 "We must crush the usurpers."
- ##################################################

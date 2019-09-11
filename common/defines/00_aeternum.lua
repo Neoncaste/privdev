@@ -81,7 +81,7 @@ NDefines.NEconomy.REGAIN_COST_BEFORE_PROGRESS = 0.15 --Increased from 0.10
 NDefines.NEconomy.COT_DOWNGRADE_PRESTIGE_COST = -20 --Increased from 10
 
 --NMilitary
-NDefines.NMilitary.PARTICIPATION_SCORE_BLOCKADE = 0.01 --Increased from 0.001
+NDefines.NMilitary.PARTICIPATION_SCORE_BLOCKADE = 0.005 --Increased from 0.001
 NDefines.NMilitary.LOOT_DEVASTATION_IMPACT = 15 --Increased from 10
 NDefines.NMilitary.SCORCHED_DEVASTATION_IMPACT = 15 --Increased from 5
 NDefines.NMilitary.SEA_LANDING_PENALTY = -3 --Increased from -2
