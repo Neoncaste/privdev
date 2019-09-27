@@ -69,6 +69,16 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "aet_state_unrest"
+		potential = {
+		}
+		allow = {
+			any_province_in_state = {
+				NOT = { unrest = 2 }
+			}
+		}
+	}
 }
 
 can_abandon_state = {
