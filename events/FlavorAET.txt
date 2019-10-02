@@ -251,7 +251,7 @@ country_event = {
 	picture = PORT_BLOCKADED_eventPicture
 
 	mean_time_to_happen = {
-		days = 7500
+		days = 4015
 	}
 	trigger = {
 		blockade = 90
@@ -587,16 +587,16 @@ country_event = {
 		picture = ANGRY_MOB_eventPicture
 
 		trigger = {
-			num_of_cities = 9
+			num_of_cities = 12
 			is_in_war = {duration = 2240}
-			war_exhaustion = 10
+			war_exhaustion = 8
 			NOT = {
 				stability = 0
 			}
 			NOT = {war_score = -33}
 		}
 		mean_time_to_happen = {
-			days = 5000
+			days = 3650
 		}
 		
 		option = {
@@ -651,7 +651,7 @@ country_event = {
 			NOT = {war_score = -50}
 		}
 		mean_time_to_happen = {
-			days = 2222
+			days = 935
 			modifier = {
 				factor = 0.1
 				is_great_power = yes
@@ -723,3 +723,145 @@ country_event = {
 		}
 	}
 }
+
+#Regency Events
+
+country_event = {
+	id = flavor_aet.0018
+	title = "flavor_aet.EVTNAME0017"
+	desc = "flavor_aet.EVTDESC0017"
+	picture = ASSASSINATION_eventPicture
+
+	trigger = {
+		has_regency = yes
+			heir_adm = 3 
+			heir_dip = 3
+			heir_mil = 3
+			}
+		mean_time_to_happen = {
+			days = 4840
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0017"
+			add_prestige = -25
+			add_stability = -1
+			define_ruler = {
+				claim = 20
+				culture = ROOT
+				religion = ROOT
+			}
+			kill_heir = yes
+			hidden_effect = {
+						ROOT = {country_event = { id = flavor_aet.0019 } }
+						
+					}
+			
+			add_country_modifier = {
+				name = "illegitimate_ruler" #vanilla
+				duration = 1825
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTB0017"
+			random_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1
+				}
+			}
+			add_prestige = -20
+			add_mil_power = -50
+		kill_advisor = ADM
+		kil_advisor = DIP
+		kill_advisor = MIL
+		}
+}
+
+country_event = {
+	id = flavor_aet.0019 
+	title = "flavor_aet.EVTNAME0018"
+	desc = "flavor_aet.EVTDESC0018"
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_aet.EVTOPTA0018"
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				win = yes
+				size = 3
+			}
+	}
+	}
+option = {
+	name = "flavor_aet.EVTOPTB0018"
+	kill_ruler = yes
+	hidden_effect = {
+		set_dynasty = <orginal_dynasty>
+	}
+	add_prestige = 25
+	remove_advisor = ADM
+	remove_advisor = DIP
+	remove_advisor = MIL
+	
+}
+}
+
+country_event = {
+	id = flavor_aet.0020
+	title = "flavor_aet.EVTNAME0019"
+	desc = "flavor_aet.EVTDESC0019"
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		has_regency = yes
+		NOT = {
+			adm = 3 
+			dip = 3
+			mil = 3
+			}
+		}
+		mean_time_to_happen = {
+			days = 1825
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0019"
+			add_corruption = 2
+			add_country_modifier = {
+				name = "aet_weak_regency"
+				duration = 3650
+			}
+		}
+	}
+	country_event = {
+		id = flavor_aet.0021
+		title = "flavor_aet.EVTNAME0020"
+		desc = "flavor_aet.EVTDESC0020"
+		picture = GOOD_WITH_MONARCH_eventPicture
+	
+		trigger = {
+			has_regency = yes
+				adm = 6
+				dip = 6
+				mil = 6
+			}
+			mean_time_to_happen = {
+				days = 1825
+			}
+			option = {
+				name = "flavor_aet.EVTOPTA0020"
+				add_corruption = -2
+				add_country_modifier = {
+					name = "aet_strong_regency" 
+					duration = 3650
+				}
+			}
+		}

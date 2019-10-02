@@ -11,3 +11,8 @@
  desc_aet_land_buildup:0 "Our country is experiencing an increased interest in the buildup of a larger land force."
  aet_naval_supremacy:0 "Naval Supremacy"
  desc_aet_naval_supremacy:0 "Our victory over our largest naval rival has left us as the undisputed masters of the sea."
+ aet_weak_regency:0 "Weak Regency"
+ desc_aet_weak_regency:0 "We are suffering from a unstable and corrupt regency council."
+ aet_strong_regency "Strong Regency"
+desc_aet_strong_regency:0 "We are benefiting from a strong and stable regency council during these turbulent times."
+ 

@@ -711,6 +711,8 @@ authority = {
 
 regency_council = {
 	legitimacy = -2
+	global_unrest = +1
+	yearly_corruption = +0.01
 }
 
 trade_efficiency = {

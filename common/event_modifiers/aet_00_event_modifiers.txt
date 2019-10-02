@@ -206,6 +206,23 @@ aet_heir_death = {
 	land_morale = -0.05
 }
 
+aet_weak_regency = {
+	prestige = -1
+	land_morale = -0.05
+	local_defensiveness = -0.1
+	legitimacy = -1
+	add_corruption = 0.1
+	global_unrest = 2
+}
+
+aet_strong_regency = {
+	prestige = 1
+	land_morale = 0.05
+	local_defensiveness = 0.1
+	legitimacy = -1
+	global_unrest = -2
+}
+
 
 ##############################
 #TRADE MODIFIERS
