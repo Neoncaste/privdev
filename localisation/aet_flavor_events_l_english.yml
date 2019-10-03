@@ -75,5 +75,8 @@ flavor_aet.EVTOPTA0019:0 "Dark times are ahead..."
 flavor_aet.EVTNAME0020:0 "Strong and Stable"
 flavor_aet.EVTDESC0020:0 "During the absence of a monarch, we are ruled by a strong and stable regency council. Corruption is ever decreasing as our court works together to further the agenda of our monarch to be."
 flavor_aet.EVTOPTA0020:0 "The sun continues to shine on us."
-
+flavor_aet_EVTNAME0021:0 "Regency"
+flavor_aet_EVTDESC0021:0 "[Root.GetName] is ruled by a select group, the [Root.Monarch.GetName]. A weak, corrupt establishment who only cares about the native [Root.GetCulture] despite being a nation of many faiths and cultures. Corruption and brutality for years has twisted itself throughout the countryside. Now those opressed are rising up against us, this could provide dangerous to our position in the world..."
+flavor_aet.EVTOPTA0021:0 "Traitors! How dare they rise up against us!"
+flavor_aet.EVTOPTB0021:0 "I am the Queen!"
 

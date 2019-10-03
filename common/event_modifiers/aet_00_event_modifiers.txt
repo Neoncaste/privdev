@@ -219,11 +219,21 @@ aet_strong_regency = {
 	prestige = 1
 	land_morale = 0.05
 	local_defensiveness = 0.1
-	legitimacy = -1
+	legitimacy = +1
 	global_unrest = -2
 }
 
-
+aet_weak_regency_gp = {
+	prestige = -1
+	land_morale = -0.1
+	local_defensiveness = -0.1
+	legitimacy = -1
+	add_corruption = 0.1
+	global_unrest = 4
+	years_of_nationalism = +10
+	global_autonomy = +0.1
+	liberty_desire_from_subject_development = 0.25
+}
 ##############################
 #TRADE MODIFIERS
 #############################
@@ -233,7 +243,7 @@ aet_trade_collapse = {
 	global_trade_power = -0.75
 	development_cost = 0.05
 	global_colonial_growth = -25
-	inflation_reduction = 0.1
+	inflation_reduction = -0.1
 	}
 	
 

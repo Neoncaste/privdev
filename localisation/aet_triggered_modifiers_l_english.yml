@@ -15,4 +15,5 @@
  desc_aet_weak_regency:0 "We are suffering from a unstable and corrupt regency council."
  aet_strong_regency "Strong Regency"
 desc_aet_strong_regency:0 "We are benefiting from a strong and stable regency council during these turbulent times."
- 
+ aet_weak_regency_gp:0 "Weak Regency"
+  desc_aet_weak_regency_gp:0 "We are suffering from a unstable and corrupt regency council."

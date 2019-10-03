@@ -409,7 +409,7 @@ country_event = {
 		option = {
 			name = "flavor_aet.EVTOPTA0012"
 			trigger = { 
-				is_great_power = yes
+				is_great_power = no
 				OR ={
 					NOT = { has_idea_group = naval_ideas }
 					NOT = { has_idea_group = maritime_ideas }
@@ -456,11 +456,7 @@ country_event = {
 			add_war_exhaustion = 5
 			add_prestige = -50
 		}
-<<<<<<< HEAD
-	
-=======
 	}
->>>>>>> 437aa72c23d1913eb9c044ed9f4f6b257d477efe
 
 	#100% Blockaded - 2
 	country_event = {
@@ -727,13 +723,15 @@ country_event = {
 #Regency Events
 
 country_event = {
-	id = flavor_aet.0018
+	id = flavor_aet.0018 
 	title = "flavor_aet.EVTNAME0017"
 	desc = "flavor_aet.EVTDESC0017"
 	picture = ASSASSINATION_eventPicture
 
 	trigger = {
 		has_regency = yes
+		government = monarchy
+		is_lesser_in_union = no
 			heir_adm = 3 
 			heir_dip = 3
 			heir_mil = 3
@@ -823,6 +821,9 @@ country_event = {
 
 	trigger = {
 		has_regency = yes
+		is_great_power = no
+		government = monarchy
+		is_lesser_in_union = no
 		NOT = {
 			adm = 3 
 			dip = 3
@@ -849,6 +850,8 @@ country_event = {
 	
 		trigger = {
 			has_regency = yes
+			government = monarchy
+		is_lesser_in_union = no
 				adm = 6
 				dip = 6
 				mil = 6
@@ -865,3 +868,50 @@ country_event = {
 				}
 			}
 		}
+
+		country_event = {
+			id = flavor_aet.0022
+			title = "flavor_aet.EVTNAME0021"
+			desc = "flavor_aet.EVTDESC0021"
+			picture = ANGRY-MOB_eventpicture
+
+			trigger = {
+				OR = {
+				has_consort_regency = yes
+				has_regency = yes
+				}
+				is_great_power = yes
+				government = monarchy
+		is_lesser_in_union = no
+				corruption = 2
+				NOT = {
+					has_country_modifier = "aet_weak_regency"
+				}
+				NOT = {
+					adm = 4
+					dip = 4
+					mil = 4
+				}
+			}
+			mean_time_to_happen = {
+				days = 1825
+			}
+			option = {
+				name = "flavor_aet.EVTOPTA0021"
+				stability = -2
+				add_adm_power = -200
+				add_dip_power = -200
+				add_mil_power = -200
+				add_corruption = 3
+				add_country_modifier = {
+					name = "aet_weak_regency_gp" 
+					duration = 3650
+				}
+			}
+			option = {
+				name = "flavor_aet.EVTOPTB0021"
+				trigger = {has_consort_regency = yes}
+				stability = -3
+			}
+		}
+		
