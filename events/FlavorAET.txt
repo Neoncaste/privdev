@@ -1073,3 +1073,214 @@ hidden_effect = {
 			}
 		}
 		}
+
+		country_event = {
+			id = flavor_aet.0025
+			title = "flavor_aet.EVTNAME0025"
+			desc = "flavor_aet.EVTDESC0025"
+			picture = BIG_BOOK_eventPicture
+
+			trigger = {
+				OR = {
+					has_consort_regency = yes
+					has_regency = yes
+				}
+				NOT = {
+				heir_adm = 8
+				heir_dip = 8
+				heir_mil = 8
+			}
+		}
+			mean_time_to_happen = {
+			days = 1825
+			}
+			option = {
+				name = "flavor_aet.EVTOPTA0025"
+				random_list = {
+					80 = {
+						add_adm_power = 100
+					}
+					20 = {
+						change_heir_adm = 1
+					}
+
+				}
+			}
+			option = {
+				name = "flavor_aet.EVTOPTB0025"
+				random_list = {
+					80 = {
+						add_dip_power = 100
+					}
+					20 = {
+						change_heir_dip = 1
+					}
+
+				}
+			}
+			option = {
+				name = "flavor_aet.EVTOPTC0025"
+				random_list = {
+					80 = {
+						add_mil_power = 100
+					}
+					20 = {
+						change_heir_mil = 1
+					}
+
+				}
+			}
+		}
+		country_event = {
+			id = flavor_aet.0027
+			title = "flavor_aet.EVTNAME0026"
+			desc = "flavor_aet.EVTDESC0026"
+			picture = MILITARY_CAMP_eventPicture
+
+		mean_time_to_happen = {
+		days = 5840}
+		trigger = {
+			OR = {
+				has_consort_regency = yes
+				has_regency = yes
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0026"
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 3
+				}
+			}
+		}
+		}
+		country_event = {
+			id = flavor_aet.0028
+			title = "flavor_aet.EVTNAME0027"
+			desc = "flavor_aet.EVTDESC0027"
+			picture = MILITARY_CAMP_eventPicture
+
+		mean_time_to_happen = {
+		days = 3230}
+		trigger = {
+			OR = {
+				has_consort_regency = yes
+				has_regency = yes
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0027"
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 3
+				}
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTB0027"
+			define_ruler = {
+				culture = ROOT
+				age = 45
+				claim = 10
+			}
+		}
+		}
+		country_event = {
+			id = flavor_aet.0029
+			title = "flavor_aet.EVTNAME0028"
+			desc = "flavor_aet.EVTDESC0028"
+			picture = CORRUPTION_eventPicture
+
+		mean_time_to_happen = {
+		days = 5000}
+		trigger = {
+			OR = {
+				has_consort_regency = yes
+				has_regency = yes
+			}
+		}
+		option = {
+			name = "flavor_aet.EVTOPTA0028"
+			add_corruption = 2
+			add_stability = -1
+		}
+		}
+		country_event = {
+			id = flavor_aet.0030
+			title = "flavor_aet.EVTNAME0029"
+			desc = "flavor_aet.EVTDESC0029"
+			picture = COUNTRY_COLLAPSE_eventPicture
+
+		mean_time_to_happen = {
+		days = 9125}
+		trigger = {
+			OR = {
+				has_consort_regency = yes
+				has_regency = yes
+			}
+			is_at_war = yes
+			capital_scope = {
+				NOT = {controlled_by = ROOT
+			}
+		}
+			}
+		
+		option = {
+			name = "flavor_aet.EVTOPTA0029"
+			trigger = {is_great_power = yes}
+			random_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				add_base_tax = -5
+					add_base_production = -5
+					add_base_manpower = -5
+			}
+			add_prestige = -100
+			add_stability = -3
+			kill_ruler = yes
+			kill_heir = yes
+			kill_consort = yes
+			kill_advisor = adm
+			kill_advisor = dip
+			kill_advisor = mil
+			add_years_of_income = -2
+					add_war_exhaustion = 10
+					add_country_modifier = {
+					name = enemies_sacked_city #vanilla
+					duration = 3650
+				}
+				hidden_effect = {
+					ROOT = {country_event = { id = flavor_aet.0021 } }
+					
+				}
+			}
+		
+		option = { 
+			name = "flavor_aet.EVTOPTB0029"
+			trigger = {is_great_power = no}
+			kill_ruler = yes
+			kill_heir = yes
+			kill_consort = yes
+			kill_advisor = adm
+			kill_advisor = dip
+			kill_advisor = mil
+			add_stability = -1
+			add_years_of_income = -2
+			add_war_exhaustion = 5
+			hidden_effect = {
+				ROOT = {country_event = { id = flavor_aet.0021 } }
+				
+			}
+		}
+	}
