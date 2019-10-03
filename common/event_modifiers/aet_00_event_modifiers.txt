@@ -211,8 +211,9 @@ aet_weak_regency = {
 	land_morale = -0.05
 	local_defensiveness = -0.1
 	legitimacy = -1
-	add_corruption = 0.1
+	yearly_corruption = +0.1
 	global_unrest = 2
+	global_autonomy = +0.1
 }
 
 aet_strong_regency = {
@@ -224,15 +225,14 @@ aet_strong_regency = {
 }
 
 aet_weak_regency_gp = {
-	prestige = -1
+	prestige = -2
 	land_morale = -0.1
 	local_defensiveness = -0.1
-	legitimacy = -1
-	add_corruption = 0.1
-	global_unrest = 4
+	legitimacy = -2
+	yearly_corruption = +0.1
+	global_unrest = 5
 	years_of_nationalism = +10
-	global_autonomy = +0.1
-	liberty_desire_from_subject_development = 0.25
+	global_autonomy = +0.25
 }
 ##############################
 #TRADE MODIFIERS
@@ -257,6 +257,14 @@ kingdom_of_god = {
 	stability_cost_modifier = -0.1
 	prestige = 1
 	devotion = 1
+}
+aet_reign_of_terror ={
+	global_manpower_modifier = -20
+	prestige = -3
+	global_unrest = -1
+	global_tax_modifier = -0.1
+	production_efficiency = -0.1
+	global_autonomy = -0.1
 }
 
 ##############################

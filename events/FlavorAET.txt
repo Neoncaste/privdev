@@ -804,11 +804,12 @@ option = {
 	kill_ruler = yes
 	hidden_effect = {
 		set_dynasty = <orginal_dynasty>
+		
 	}
 	add_prestige = 25
-	remove_advisor = ADM
-	remove_advisor = DIP
-	remove_advisor = MIL
+	kill_advisor = ADM
+	kill_advisor = DIP
+	kill_advisor = MIL
 	
 }
 }
@@ -873,7 +874,7 @@ country_event = {
 			id = flavor_aet.0022
 			title = "flavor_aet.EVTNAME0021"
 			desc = "flavor_aet.EVTDESC0021"
-			picture = ANGRY-MOB_eventpicture
+			picture = ANGRY_MOB_eventPicture
 
 			trigger = {
 				OR = {
@@ -883,7 +884,6 @@ country_event = {
 				is_great_power = yes
 				government = monarchy
 		is_lesser_in_union = no
-				corruption = 2
 				NOT = {
 					has_country_modifier = "aet_weak_regency"
 				}
@@ -894,11 +894,12 @@ country_event = {
 				}
 			}
 			mean_time_to_happen = {
-				days = 1825
+				days = 2825
 			}
 			option = {
 				name = "flavor_aet.EVTOPTA0021"
-				stability = -2
+				trigger = {has_consort_regency = no}
+				add_stability = -2
 				add_adm_power = -200
 				add_dip_power = -200
 				add_mil_power = -200
@@ -911,7 +912,164 @@ country_event = {
 			option = {
 				name = "flavor_aet.EVTOPTB0021"
 				trigger = {has_consort_regency = yes}
-				stability = -3
-			}
+				add_stability = -3
+				add_legitimacy = -50
+				change_consort_regent_to_ruler = yes
+		set_heir_flag = had_throne_stolen
+		add_ruler_modifier = { 
+			name = devious_ruler
 		}
 		
+		hidden_effect = {
+			ROOT = {country_event = { id = flavor_aet.0026 } }
+			
+		}
+			}
+			option = {
+				name = "flavor_aet.EVTOPTC0021"
+				trigger = {has_consort_regency = no}
+				add_stability = -2
+				add_corruption = 3
+				random_owned_province = {
+					limit = {
+						is_capital = no
+					}
+					spawn_rebels = {
+						type = separatist_rebels
+						win = yes
+						size = 2
+					}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = separatist_rebels
+					win = yes
+					size = 1
+				}
+		}random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = separatist_rebels
+				win = yes
+				size = 2
+			}
+	}random_owned_province = {
+		limit = {
+			is_capital = no
+		}
+		spawn_rebels = {
+			type = anti_tax_rebels
+			win = yes
+			size = 1
+		}
+}
+random_owned_province = {
+	limit = {
+		is_capital = no
+	}
+	spawn_rebels = {
+		type = anti_tax_rebels
+		win = yes
+		size = 1
+	}
+}
+hidden_effect = {
+	random_list = {
+		90 = {	
+	ROOT = {country_event = { id = flavor_aet.0023 } } #PretenderSpawns
+		}
+		10 = {
+			ROOT = {country_event = { id = flavor_aet.0024 } } #Peasnt Mob
+		}
+	
+				}
+}
+}
+			}
+		
+
+		country_event = {
+			id = flavor_aet.0023
+			title = "flavor_aet.EVTNAME0022"
+			desc = "flavor_aet.EVTDESC0022"
+			picture = MILITARY_CAMP_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_aet.EVTOPTA0022"
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					win = yes
+					size = 3
+					culture = ROOT
+				}
+			}
+		}
+		}
+
+		country_event = {
+			id = flavor_aet.0024
+			title = "flavor_aet.EVTNAME0023"
+			desc = "flavor_aet.EVTDESC0023"
+			picture = ANGRY_MOB_eventPicture
+
+			is_triggered_only = yes
+
+			option = {
+				name = "flavor_aet.EVTOPTA0023"
+				add_prestige = -100
+				change_government = republic
+				add_government_reform = peasants_republic
+				kill_ruler = yes
+					limit = {
+						is_capital = yes
+					}
+					kill_advisor = adm
+					kill_advisor = dip
+					kill_advisor = mil
+			}
+		
+			option = {
+				name = "flavor_aet.EVTOPTB0023"
+				add_mil_power = -50
+				random_owned_province = {
+					limit = {
+						is_capital = yes
+					
+					}
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
+				}
+					
+		}
+		}
+	
+	
+		country_event = { #Queen consolidates power
+			id = flavor_aet.0025
+			title = "flavor_aet.EVTNAME0024"
+			desc = "flavor_aet.EVTDESC0024"
+			picture = FEMALE_RULER_eventPicture
+
+		is_triggered_only = yes
+		option = {
+			name = "flavor_aet.EVTOPTA0024"
+			kill_advisor = adm
+			kill_advisor = dip
+			kill_advisor = mil
+			add_ruler_modifier = {
+				name = aet_reign_of_terror
+			}
+		}
+		}
